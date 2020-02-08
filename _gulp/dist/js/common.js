@@ -3,24 +3,6 @@
 // Document ready
 $(document).on('ready', function(){
 
-  // E-mail Ajax Send
-  // Documentation & Example: https://github.com/agragregra/uniMail
-  $("form").submit(function() { //Change
-    var th = $(this);
-    $.ajax({
-      type: "POST",
-      url: "mail.php", //Change
-      data: th.serialize()
-    }).done(function() {
-      alert("Thank you!");
-      setTimeout(function() {
-        // Done Functions
-        th.trigger("reset");
-      }, 1000);
-    });
-    return false;
-  });
-
   // Magnific popup gallery
   $('.gallery').each(function() {
     $(this).magnificPopup({
@@ -71,6 +53,8 @@ $(document).on('ready', function(){
     type: 'inline',
     midClick: true // Allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source in href.
   });
+
+  mobileNav();
 
   // Chrome Smooth Scroll
   try {
@@ -155,4 +139,21 @@ function simpleForm(form, callback) {
 
     return false;
   });
+}
+
+function mobileNav() {
+  var btn = $('.header__btn');
+  var width = $(window).width();
+  var nav = $('.navigation');
+  var body = $('body');
+
+  btn.on('click', function() {
+    if (nav.hasClass('is-active')) {
+      nav.removeClass('is-active');
+      body.removeAttr('style');
+    } else {
+      nav.addClass('is-active');
+      body.attr('style', 'overflow: hidden')
+    }
+  })
 }

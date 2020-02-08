@@ -1,6 +1,7 @@
 /* base */
 *, *:before, *:after {
   box-sizing: border-box;
+  -webkit-tap-highlight-color: inherit;
 }
 
 // Basic Styles
@@ -17,11 +18,11 @@ html, body {
 }
 
 body {
-  // background-color: alpha(var(--color-primary), 1);
   background: $color-white;
   font-size: rem(16px);
-  font-family: $primary-font;
+  font-family: $font-montserrat;
   color: $primary-color;
+  // overflow: hidden;
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%;
 }
@@ -34,10 +35,11 @@ body {
   margin: 0 0 15px 0;
 }
 .h1, h1 {
-  font-size: 21px;
-  line-height: 1.05;
+  font-size: rem(30px);
+  line-height: 1.35;
   letter-spacing: -1px;
-  margin-bottom: 25px;
+  margin-bottom: 15px;
+  text-transform: uppercase;
 }
 .h2, h2 {
   font-size: 18px;
@@ -65,7 +67,7 @@ small, .small {
 }
 
 p {
-  line-height: 22px;
+  line-height: 1.65;
   margin: 0 0 20px 0;
 }
 

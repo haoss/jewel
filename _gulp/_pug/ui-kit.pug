@@ -1,0 +1,27 @@
+doctype
+
+html(lang="ru")
+
+  -var active = 'Ui-kit' //активный пункт меню, список в header.jade
+  -var pageTitle = 'Ui-kit' + ' - Jewell' //title страницы для генерации верстки
+
+  include ./_include/_head
+
+  body
+
+    // Preloader
+    include ./_include/_preloader
+
+    .clear30
+
+    .content
+      .container
+
+        .h1 Ui kit
+
+        a(href="#!").btn.btn--default Кнопка
+
+    // Load Scripts
+    include ./_include/_footer-js
+    script(src="./js/common.js")
+

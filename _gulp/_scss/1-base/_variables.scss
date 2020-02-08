@@ -5,14 +5,18 @@
 //   @include defineColorHSL(--color-primary, 0, 100%, 56%);
 // }
 
-$primary-color: black;
+$primary-color: #232323;
 
-$link-color: blue;
+$link-color: #5db3e2;
 
 $color-white: #ffffff;
-$color-gray: #cccccc;
+$color-gray: #909090;
 $color-black: #000000;
-$color-red: red;
+$color-red: #ff6e4b;
 $color-pink: pink;
+$color-yellow: #fff648;
+$color-blue: #5db3e2;
+$color-lightblue: #dfeaed;
 
 $primary-font: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+$font-montserrat: 'Montserrat',$primary-font;

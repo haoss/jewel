@@ -1,0 +1,84 @@
+doctype
+
+html(lang="ru")
+
+  -var active = 'Помощь клубу' //активный пункт меню, список в header.jade
+  -var pageTitle = 'Помощь клубу' + ' - Jewell' //title страницы для генерации верстки
+
+  include ./_include/_head
+
+  body
+
+    // Preloader
+    include ./_include/_preloader
+
+    .base
+
+      .navigation
+        .navigation__wrapper
+          .logo.navigation__logo
+            img(src="./images/logo.svg", alt="")
+          nav(role="navigation").navigation__nav
+            ul
+              li: a(href="#!") О НАС 
+              li: a(href="#!") НАШИ ПРОЕКТЫ
+              li: a(href="#!") МЕРОПРИЯТИЯ 
+              li: a(href="#!") КОНТАКТЫ
+          address.navigation__address Москва, 2й Вышеславцев пер., д. 5а, 7-ой этаж
+          .navigation__phones
+            div
+              a(href="tel:") +7(495) 
+                b 645-0-506
+            div
+              a(href="tel:") +7(999) 
+                b 555-1-613
+          .social.navigation__social
+            a(href="#!" target="_blank")
+              img(src="./images/icon-facebook.svg", alt="")
+            a(href="#!" target="_blank")
+              img(src="./images/icon-vk.svg", alt="")
+            a(href="#!" target="_blank")
+              img(src="./images/icon-instagram.svg", alt="")
+          .navigation__description Религиозная организация ортодоксального иудаизма — Московская Марьинорощинская Еврейская Община 
+          .copyright Jewell Club © 2019. 
+            br 
+            | All Rights Reserved Jewellclub
+          .development Разработка и продвижение
+            a(href="#!" target="_blank")
+              img(src="./images/piarme.png", alt="")
+
+      .wrapper
+        include ./_include/_header
+
+        .content
+          .container
+            .content__head
+              .small важен каждый
+              h1 Помочь клубу
+
+            .content__carousel
+              .content__carousel-wrapper
+                .j-carousel
+                  - for (var i=0; i<6; i++) {
+                  .slick-slide
+                    img(src="./tmp/img-tmp-1.jpg", alt="")
+                  - }
+
+            .content__document
+              
+              .row.content__row
+                .col-lg-6
+                  .content__row-head.content__row-head--exclamation
+                    h2 Заголовок текста, или текстовый заголовок
+                .col-lg-6
+                  h3 Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты.
+                  .content__row-content.fs14
+                    p Вдали от всех живут они в буквенных домах на берегу Семантика большого языкового океана. Маленький ручеек Даль журчит по всей стране и обеспечивает ее всеми необходимыми правилами. Эта парадигматическая страна, в которой жаренные предложения залетают прямо в рот. Даже всемогущая пунктуация не имеет власти над рыбными текстами, ведущими безорфографичный образ жизни. Однажды одна маленькая строчка рыбного текста по имени Lorem ipsum решила выйти в большой мир грамматики. 
+                  p
+                    strong Нам есть что тебе предложить
+
+
+    // Load Scripts
+    include ./_include/_footer-js
+    script(src="./js/common.js")
+

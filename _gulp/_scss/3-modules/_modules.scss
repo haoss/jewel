@@ -1,10 +1,40 @@
 /* modules */
 .wrapper {
   height: 100%;
+  @media (min-width: 1440px) {
+    padding-left: 290px;
+  }
+  &::before, &::after {
+    @media (min-width: 1440px) {
+      content: '';
+      position: fixed;
+      width: 441px;
+      height: 592px;
+      background-repeat: no-repeat;
+    }
+  }
+  &::before {
+    background-image: url("../images/bg-l-compressor.png");
+    left: -30px;
+    top: -30px;
+  }
+  &::after {
+    right: -287px;
+    top: -15px;
+    background-image: url('../images/bg-r-compressor.png');
+  }
 }
 .content {
   font-size: rem(18px);
   padding-top: 50px;
+  position: relative;
+  z-index: 50;
+  @media (min-width: 990px) {
+    padding-top: 60px;
+  }
+  @media (min-width: 1440px) {
+    padding-top: 68px;
+  }
   &__head {
     .small {
       font-size: rem(14px);
@@ -13,10 +43,150 @@
       margin-bottom: 6px;
       font-weight: 500;
       letter-spacing: 1.4px;
+      @media (min-width: 990px) {
+        font-size: rem(18px);
+      }
+      @media (min-width: 1440px) {
+        margin-bottom: 2px;
+      }
     }
     h1, .h1 {
       margin-bottom: 0;
     }
     margin-bottom: 15px;
+    @media (min-width: 990px) {
+      margin-bottom: 25px;
+    }
+    @media (min-width: 1440px) {
+      margin-bottom: 40px;
+    }
+  }
+  &__row {
+    &-head {
+      &>.h2, h2 {
+        
+      }
+      &--exclamation {
+        &>.h2, h2 {
+          display: inline-block;
+          position: relative;
+          &::before, &::after {
+            @media (min-width: 990px) {
+              position: absolute;
+              color: #f0f8fa;
+              z-index: -1;
+              content: '!';
+              font-weight: 600;
+              line-height: 1;
+            }
+          }
+          &::before {
+            font-size: 100px;
+            right: 60px;
+            top: -20px;
+          }
+          &::after {
+            font-size: 60px;
+            right: 115px;
+            top: -30px;
+          }
+        }
+      }
+    }
+    &-content {
+      &.fs14 {
+        font-size: rem(14px);
+      }
+    }
+  }
+  &__carousel {
+    position: relative;
+    margin-bottom: 60px;
+    @media (min-width: 990px) {
+      margin-bottom: 110px;
+    }
+    @media (min-width: 1440px) {
+      margin-bottom: 85px;
+    }
+    &-wrapper {
+      position: relative;
+      margin: 0 -15px;
+      .slick-list {
+        clip-path: polygon(50% 0%, 100% 0, 100% 40%, calc(100% - 50px) 100%, 0 100%, 0 50%, 40px 0);
+        @media (min-width: 990px) {
+          clip-path: polygon(50% 0%, 100% 0, 100% 0, calc(100% - 60px) 100%, 0 100%, 0 100%, 60px 0);
+        }
+        @media (min-width: 1440px) {
+          clip-path: polygon(50% 0%, 100% 0, 100% 0, calc(100% - 134px) 100%, 0 100%, 0 100%, 134px 0);
+        }
+      }
+      @media (min-width: 990px) {
+        margin: 0 -25px;
+      }
+      @media (min-width: 1650px) {
+        margin: 0 -85px;
+      }
+    }
+    .slick-slide {
+      overflow: hidden;
+      img {
+        width: 100%;
+        height: 180px;
+        object-fit: cover;
+        @media (min-width: 768px) {
+          height: 262px;
+        }
+        @media (min-width: 1440px) {
+          height: auto;
+          width: auto;
+          max-width: 100%;
+        }
+      }
+    }
+    .slick-dots {
+      text-align: right;
+      padding-right: 50px;
+      @media (min-width: 990px) {
+        padding-right: 60px;
+      }
+      @media (min-width: 1440px) {
+        padding-right: 135px;
+      }
+      li {
+        width: auto;
+        height: auto;
+        margin: 0 0 0 10px;
+        button {
+          width: 10px;
+          height: 3px;
+          padding: 0;
+          font-size: 0;
+          background: $color-lightblue;
+          transition: all 0.35s;
+          border-radius: 5px;
+          &::before {
+            display: none;
+          }
+          @media (min-width: 990px) {
+            height: 4px;
+          }
+          @media (min-width: 1440px) {
+            height: 6px;
+          }
+        }
+        &.slick-active {
+          button {
+            background: $color-yellow;
+            width: 30px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.slick-slide {
+  &:focus {
+    outline: none;
   }
 }

@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 290 249">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Rectangle_7" d="M0 0h290v249H0z" data-name="Rectangle 7" stroke="#707070" fill="#fff"/>
+    </clipPath>
+    <style>
+      .cls-4{fill:#fff}.cls-6{fill:none;stroke:#fff;stroke-width:5px}
+    </style>
+  </defs>
+  <g id="bg_pattern" data-name="bg pattern" clip-path="url(#clip-path)">
+    <g id="figure" transform="translate(-1271.3 -2563.3)" opacity=".1">
+      <path id="Path_21" d="M1420.4 2677.2l25 44.1h108.8l25.7-42.5 26.6 48.5s-44.5 37.7-50.7 38.9-125.5 2.3-125.5 2.3l-50.3-24.7 10.7-51.3 11.2-34.2 20.4-42.1 28.2 4.5-2.4 12.8z" class="cls-4" data-name="Path 21" transform="translate(-82.2 -69)"/>
+      <path id="Path_20" d="M1517.6 2691l-26.5-48.4 26.5-41-21.6-46.2h-54.4l-27.8-45.4h-45.6l-27.6 45.4h-56L1264 2598l21.8 44.7-21.9 47 20.5 39.9h56.1l27.2 45.3h46l30.6-45.3 51.6 2.9z" data-name="Path 20" transform="translate(26.5 10.2)" fill="#09a3cb" opacity=".7"/>
+      <path id="Line_1" d="M0 0l156.6 264.8" class="cls-6" data-name="Line 1" transform="translate(1308.1 2556.7)"/>
+      <path id="Line_2" d="M0 0l162.6 282.8" class="cls-6" data-name="Line 2" transform="translate(1388.2 2509.6)"/>
+      <path id="Line_3" d="M0 0l155.5 268.6" class="cls-6" data-name="Line 3" transform="translate(1433 2502.5)"/>
+      <path id="Line_4" d="M0 0l155 268" class="cls-6" data-name="Line 4" transform="translate(1272.8 2580.3)"/>
+      <path id="Line_5" d="M153.3 0L0 268.5" class="cls-6" data-name="Line 5" transform="translate(1244.5 2507.3)"/>
+      <path id="Line_6" d="M160.2 0L0 269" class="cls-6" data-name="Line 6" transform="translate(1284.6 2514.3)"/>
+      <path id="Line_7" d="M163.6 0L0 274.6" class="cls-6" data-name="Line 7" transform="translate(1375.5 2537.8)"/>
+      <path id="Path_22" d="M152 0L-5.6 271.2" class="cls-6" data-name="Path 22" transform="translate(1420 2563.8)"/>
+      <path id="Line_9" d="M54.2 0L0 91.9" class="cls-6" data-name="Line 9" transform="translate(1390.6 2606.2)"/>
+      <path id="Line_10" d="M0 0l54.1 91" class="cls-6" data-name="Line 10" transform="translate(1390.6 2606.2)"/>
+      <path id="Line_11" d="M0 0h108.4" class="cls-6" data-name="Line 11" transform="translate(1364.7 2653.3)"/>
+      <path id="Line_12" d="M0 0h285.1" class="cls-6" data-name="Line 12" transform="translate(1275.1 2608.3)"/>
+      <path id="Line_13" d="M0 0h285.1" class="cls-6" data-name="Line 13" transform="translate(1275.1 2563.8)"/>
+      <path id="Line_14" d="M0 0h285.1" class="cls-6" data-name="Line 14" transform="translate(1275.1 2697.3)"/>
+      <path id="Line_15" d="M0 0h285.1" class="cls-6" data-name="Line 15" transform="translate(1275.1 2739.7)"/>
+    </g>
+    <path id="Path_137" d="M119 134h53.7l25.7-42.9-25.7-45.6h-56L92.9 89.8z" class="cls-4" data-name="Path 137"/>
+  </g>
+</svg>

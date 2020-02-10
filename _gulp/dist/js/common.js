@@ -54,6 +54,17 @@ $(document).on('ready', function(){
     midClick: true // Allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source in href.
   });
 
+  $('.j-carousel').slick({
+    arrows: false,
+    dots: true,
+    autoplay: true,
+    autoplaySpeed: 5000,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    pauseOnHover: false,
+    pauseOnDotsHover: false
+  });
+
   mobileNav();
 
   // Chrome Smooth Scroll
@@ -148,11 +159,14 @@ function mobileNav() {
   var body = $('body');
 
   btn.on('click', function() {
+    var _this = $(this);
     if (nav.hasClass('is-active')) {
       nav.removeClass('is-active');
+      _this.removeClass('is-active');
       body.removeAttr('style');
     } else {
       nav.addClass('is-active');
+      _this.addClass('is-active');
       body.attr('style', 'overflow: hidden')
     }
   })

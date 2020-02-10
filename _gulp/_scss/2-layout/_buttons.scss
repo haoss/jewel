@@ -6,3 +6,54 @@ button {
     outline: none;
   }
 }
+
+.btn {
+  min-height: 48.4px;
+  padding: 12px 75px 8px 38.9px;
+  font-size: rem(18px);
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $primary-color;
+  display: inline-block;
+  background: transparent;
+  position: relative;
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 10px;
+    bottom: 0;
+    width: 157px;
+    transform: skewX(25deg);
+    transition: ease-in-out 0.25s;
+    background: $color-yellow;
+  }
+  &>span {
+    position: relative;
+    z-index: 5;
+    &::after, &::before {
+      content: '';
+      position: absolute;
+      right: -40px;
+      bottom: 5px;
+      background: $primary-color;
+    }
+    &::after {
+      width: 26px;
+      height: 2px;
+    }
+    &::before {
+      width: 2px;
+      height: 13px;
+      transform: rotate(-20deg);
+    }
+  }
+  &:hover {
+    color: $primary-color;
+    text-decoration: none;
+    &::before {
+      width: calc(100% - 20px);
+    }
+  }
+}

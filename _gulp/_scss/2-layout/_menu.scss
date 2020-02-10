@@ -23,26 +23,33 @@
   left: -276px;
   transform: translateX(0);
   transition: all 0.15s;
+  @media (min-width: 1440px) {
+    width: 290px;
+    left: 0;
+  }
   &.is-active {
     transform: translateX(276px);
   }
-  // display: none;
   &__close {
     display: none;
   }
   &__wrapper {
+    overflow-x: hidden;
     overflow-y: auto;
     height: 100%;
     padding: 31px 0 0 0;
-    // &::-webkit-scrollbar {
-    //   width: 3px;
-    // }
-    // &::-webkit-scrollbar-track {
-    //   background: #eee;
-    // }
-    // &::-webkit-scrollbar-thumb {
-    //   background: $link-color;
-    // }
+    @media (min-width: 1440px) {
+      padding-top: 0;
+      &::-webkit-scrollbar {
+        width: 3px;
+      }
+      &::-webkit-scrollbar-track {
+        background: #eee;
+      }
+      &::-webkit-scrollbar-thumb {
+        background: $link-color;
+      }
+    }
   }
   &__nav {
     font-weight: bold;
@@ -60,10 +67,15 @@
           text-decoration: none;
           color: $primary-color;
           text-transform: uppercase;
+          letter-spacing: 2px;
+          @media (min-width: 1440px) {
+            padding-left: 40px;
+          }
         }
         &>a {
           &:hover {
             color: $link-color;
+            text-decoration: underline;
           }
         }
         &.active {
@@ -78,11 +90,17 @@
     font-size: rem(12px);
     padding: 0 35px 0 25px;
     line-height: 1.7;
+    @media (min-width: 1440px) {
+      padding-left: 40px;
+    }
   }
   &__phones {
     font-size: rem(14px);
     padding: 0 20px 0 25px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+    @media (min-width: 1440px) {
+      padding-left: 40px;
+    }
     a {
       text-decoration: none;
       color: $primary-color;
@@ -101,13 +119,22 @@
     margin-bottom: 25px;
     line-height: 1.7;
     font-weight: 500;
+    @media (min-width: 1440px) {
+      padding-left: 40px;
+    }
   }
   &__logo {
     display: none;
+    @media (min-width: 1440px) {
+      display: block;
+    }
   }
   &__social {
-    padding: 0 25px 0 25px;
-    margin-bottom: 35px;
+    padding: 0 25px 0 10px;
+    margin-bottom: 20px;
+    @media (min-width: 1440px) {
+      padding-left: 25px;
+    }
   }
 }
 
@@ -116,6 +143,9 @@
   padding: 0 35px 0 25px;
   line-height: 1.85;
   margin-bottom: 10px;
+  @media (min-width: 1440px) {
+    padding-left: 40px;
+  }
 }
 .development {
   display: flex;
@@ -124,18 +154,43 @@
   line-height: 1.4;
   padding: 0 75px 0 25px;
   margin-bottom: 25px;
+  position: relative;
+  @media (min-width: 1440px) {
+    padding-left: 40px;
+  }
+  &::before {
+    @media (min-width: 1440px) {
+      content: '';
+      width: 290px;
+      height: 116px;
+      background-repeat: no-repeat;
+      background-position: top center;
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 290 116'%3E%3Cdefs%3E%3Cstyle%3E .cls-1,.cls-4{fill:%23fff}.cls-1{stroke:%23707070}.cls-2{clip-path:url(%23clip-path)}.cls-3{opacity:.05}.cls-5{fill:%2309a3cb;opacity:.747}.cls-6{fill:none;stroke:%23fff;stroke-width:5px} %3C/style%3E%3CclipPath id='clip-path'%3E%3Cpath id='Rectangle_8' d='M0 0h290v116H0z' class='cls-1' data-name='Rectangle 8' transform='translate(0 133)'/%3E%3C/clipPath%3E%3C/defs%3E%3Cg id='bg_pattern' class='cls-2' data-name='bg pattern' transform='rotate(180 145 124.5)'%3E%3Cg id='figure' class='cls-3' transform='translate(-1271.251 -2563.3)'%3E%3Cpath id='Path_42' d='M1420.389 2677.212l24.985 44.107H1554.2l25.66-42.5 26.681 48.472s-44.579 37.681-50.757 38.873-125.5 2.368-125.5 2.368l-50.315-24.7 10.758-51.365 11.171-34.156 20.421-42.141 28.169 4.529-2.387 12.814z' class='cls-4' data-name='Path 42' transform='translate(-82.186 -68.962)'/%3E%3Cpath id='Path_43' d='M1517.6 2691.068l-26.483-48.512 26.483-41.048-21.591-46.068h-54.4l-27.848-45.44h-45.535l-27.627 45.435h-56.049l-20.5 42.424 21.881 44.693-21.881 47.01 20.5 39.91h56.05l27.244 45.338h45.918l30.654-45.338 51.6 2.9z' class='cls-5' data-name='Path 43' transform='translate(26.517 10.178)'/%3E%3Cpath id='Line_51' d='M0 0l156.641 264.79' class='cls-6' data-name='Line 51' transform='translate(1308.119 2556.694)'/%3E%3Cpath id='Line_52' d='M0 0l162.582 282.752' class='cls-6' data-name='Line 52' transform='translate(1388.232 2509.569)'/%3E%3Cpath id='Line_53' d='M0 0l155.513 268.614' class='cls-6' data-name='Line 53' transform='translate(1433.001 2502.5)'/%3E%3Cpath id='Line_54' d='M0 0l155.013 267.973' class='cls-6' data-name='Line 54' transform='translate(1272.775 2580.257)'/%3E%3Cpath id='Line_55' d='M153.333 0L0 268.535' class='cls-6' data-name='Line 55' transform='translate(1244.5 2507.292)'/%3E%3Cpath id='Line_56' d='M160.164 0L0 269.051' class='cls-6' data-name='Line 56' transform='translate(1284.619 2514.281)'/%3E%3Cpath id='Line_57' d='M163.557 0L0 274.594' class='cls-6' data-name='Line 57' transform='translate(1375.476 2537.844)'/%3E%3Cpath id='Path_44' d='M152.083 0L-5.655 271.189' class='cls-6' data-name='Path 44' transform='translate(1419.938 2563.763)'/%3E%3Cpath id='Line_58' d='M54.194 0L0 91.894' class='cls-6' data-name='Line 58' transform='translate(1390.588 2606.175)'/%3E%3Cpath id='Line_59' d='M0 0l54.113 91.019' class='cls-6' data-name='Line 59' transform='translate(1390.588 2606.175)'/%3E%3Cpath id='Line_60' d='M0 0h108.388' class='cls-6' data-name='Line 60' transform='translate(1364.669 2653.301)'/%3E%3Cpath id='Line_61' d='M0 0h285.108' class='cls-6' data-name='Line 61' transform='translate(1275.131 2608.25)'/%3E%3Cpath id='Line_62' d='M0 0h285.108' class='cls-6' data-name='Line 62' transform='translate(1275.131 2563.763)'/%3E%3Cpath id='Line_63' d='M0 0h285.108' class='cls-6' data-name='Line 63' transform='translate(1275.131 2697.326)'/%3E%3Cpath id='Line_64' d='M0 0h285.108' class='cls-6' data-name='Line 64' transform='translate(1275.131 2739.689)'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+      position: absolute;
+      left: 0;
+      top: -60px;
+      z-index: -1;
+    }
+  }
 }
 
 .social {
   font-size: 0;
   a {
-    display: inline-block;
     vertical-align: middle;
+    height: 50px;
+    width: 50px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    border-radius: 50%;
+    transition: all 0.35s;
     img {
       display: block;
     }
-    &+a {
-      margin-left: 25px;
+    &:hover {
+      background: $color-yellow;
     }
   }
 }

@@ -30,7 +30,7 @@ body {
 //  Typography
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
   color: $primary-color;
-  font-weight: bold;
+  font-weight: 400;
   text-decoration: none;
   margin: 0 0 15px 0;
 }
@@ -40,25 +40,38 @@ body {
   letter-spacing: -1px;
   margin-bottom: 15px;
   text-transform: uppercase;
+  font-weight: bold;
+  @media (min-width: 990px) {
+    font-size: rem(45px);
+    line-height: 1.2;
+    margin-bottom: 25px;
+  }
+  @media (min-width: 1440px) {
+    font-size: 55px;
+    line-height: 1.1;
+    margin-bottom: 40px;
+  }
 }
 .h2, h2 {
-  font-size: 18px;
-  line-height: 1.14;
-  margin-bottom: 20px;
+  font-size: rem(28px);
+  line-height: 1.4;
+  margin-bottom: 10px;
+  font-weight: bold;
 }
 .h3, h3 {
-  font-size: 16px;
-  line-height: 1.38;
+  font-size: rem(18px);
+  line-height: 1.9;
+  margin-bottom: 12px;
 }
 .h4, h4 {
-  font-size: 14px;
+  font-size: rem(14px);
   line-height: 1.38;
 }
 .h5, h5 {
-  font-size: 13px;
+  font-size: rem(13px);
 }
 .h6, h6 {
-  font-size: 12px;
+  font-size: rem(12px);
 }
 
 small, .small {
@@ -274,5 +287,32 @@ ol li {
   }
   &--white {
     color: $color-white !important;
+  }
+}
+
+@for $i from 0 through 100 {
+  .mb#{$i} {
+    margin-bottom: #{$i}px !important;
+  }
+  .mt#{$i} {
+    margin-top: #{$i}px !important;
+  }
+  .ml#{$i} {
+    margin-left: #{$i}px !important;
+  }
+  .mr#{$i} {
+    margin-right: #{$i}px !important;
+  }
+  .pb#{$i} {
+    padding-bottom: #{$i}px !important;
+  }
+  .pt#{$i} {
+    padding-top: #{$i}px !important;
+  }
+  .pl#{$i} {
+    padding-left: #{$i}px !important;
+  }
+  .pr#{$i} {
+    padding-right: #{$i}px !important;
   }
 }

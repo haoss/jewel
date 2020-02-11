@@ -26,7 +26,7 @@
 }
 .content {
   font-size: rem(18px);
-  padding-top: 50px;
+  padding-top: 45px;
   position: relative;
   z-index: 50;
   @media (min-width: 990px) {
@@ -217,6 +217,30 @@
       }
     }
   }
+  &__contacts {
+    &-head {
+      font-size: rem(12px);
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+    &-wrapper {
+      font-size: rem(14px);
+      padding-left: 20px;
+      a {
+        color: $primary-color;
+        text-decoration: none;
+      }
+    }
+  }
+  &__map {
+    clip-path: polygon(50% 0%, 100% 0, 100% 40%, calc(100% - 50px) 100%, 0 100%, 0 50%, 40px 0);
+    @media (min-width: 990px) {
+      clip-path: polygon(50% 0%, 100% 0, 100% 0, calc(100% - 60px) 100%, 0 100%, 0 100%, 60px 0);
+    }
+    @media (min-width: 1440px) {
+      clip-path: polygon(50% 0%, 100% 0, 100% 0, calc(100% - 134px) 100%, 0 100%, 0 100%, 134px 0);
+    }
+  }
 }
 
 .slick-slide {
@@ -351,7 +375,7 @@
         border: 1px solid $color-yellow;
       }
       input {
-        background: transparent;
+        background: transparent !important;
         padding: 0;
         border: 0;
         height: 48px;
@@ -380,5 +404,15 @@
         font-weight: 400;
       }
     }
+  }
+}
+
+.map {
+  height: 180px;
+  @media (min-width: 768px) {
+    height: 262px;
+  }
+  @media (min-width: 1200px) {
+    height: 327px;
   }
 }

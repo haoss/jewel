@@ -1,0 +1,147 @@
+doctype
+
+html(lang="ru")
+
+  -var active = 'Наши контакты' //активный пункт меню, список в header.jade
+  -var pageTitle = 'Наши контакты' + ' - Jewell' //title страницы для генерации верстки
+
+  include ./_include/_head
+
+  body
+
+    // Preloader
+    include ./_include/_preloader
+
+    // Base
+    .base
+
+      // Navigation
+      include ./_include/_navigation
+
+      // Wrapper
+      .wrapper
+        include ./_include/_header
+
+        // Content
+        .content
+          .container
+            .content__head
+              .small связь с нами
+              h1 наши контакты
+
+            // Carousel
+            .content__carousel
+              .content__carousel-wrapper
+                .content__map
+                  #map.map
+
+            // Content document
+            .content__document
+              
+              .row.content__row
+                .col-lg-12
+                  .content__row-head
+                    h2 Еврейский клуб Jewell club
+                .col-lg-12
+                  .content__row-content
+                    p Все наши мероприятия, весь коворкинг, все лекции и курсы сделаны для тебя! И без тебя они не имеют смысла, поэтому, если возникают любые вопросы, идеи или предложения, связывайся с нами всеми возможными способами. Наш клуб очень молодой, а поэтому гибкий — это не рекламная фраза, а призыв действовать! Мы рады новым идеям и новым лицам и очень ждем их. Звони, пиши, добавляйся в группы, подписывайся на обновления!
+
+              // Bottom form
+              .content__form
+                .row
+                  .col-lg-6
+                    .content__contacts
+                      .content__contacts-head Адрес:
+                      .content__contacts-wrapper 
+                        h3 Москва, 2-ой Вышеславцев переулок 5а МЕОЦ) 7-ой этаж
+                        p Пн-Чт с 10:00 до 23:00
+                          br
+                          | Пт с 11:00 до окончания застолья в шаббат
+                          br
+                          | Сб выходной
+                          br
+                          | Вс с 11:00 до 23:00
+                      
+                      .content__contacts-head Телефон:
+                      .content__contacts-wrapper 
+                        h3
+                          a(href="tel:") +7 (495) 64-50-506
+                          br
+                          a(href="tel:") +7 (999) 555-1-613
+                        p с 12:00 до 22:00
+
+                      .content__contacts-head Email:
+                      .content__contacts-wrapper 
+                        h3
+                          a(href="mailto:") Jewellclub@gmail.com
+
+                  .col-lg-6
+                    form(action="#!" autocomplete="off").form
+                      label.form__group.has-icon
+                        .form__label.j-label Фамилия и Имя
+                          sup *
+                        input.form__control.j-input(type="text" name="text" placeholder="" value="")
+                        img(src="./images/icon-form-user.svg", alt="").icon-img
+                      label.form__group.has-icon
+                        .form__label.j-label E-mail
+                          sup *
+                        input.form__control.j-input(type="text" name="text" placeholder="" value="")
+                        img(src="./images/icon-form-mail.svg", alt="").icon-img
+                      label.form__group.has-icon
+                        .form__label.j-label Телефон
+                          sup *
+                        input.form__control.j-input(type="text" name="text" placeholder="" value="")
+                        img(src="./images/icon-form-phone.svg", alt="").icon-img
+                      label.form__group.has-icon
+                        .form__label.j-label Ваше сообщение
+                          sup *
+                        textarea.form__control.j-input(rows="5" name="message" placeholder="" value="")
+                        img(src="./images/icon-form-pencil.svg", alt="").icon-img
+                      .form__group
+                        label.form__checkbox
+                          input(type="checkbox" checked)
+                          span.form__checkbox-input
+                          span.form__checkbox-label Даю согласие на обработку личных данных
+
+                      .text-center.text-lg-left
+                        button(type="button").btn.btn--send
+                          span отправить 
+                            span.d-none.d-md-inline-block сообщение
+
+        include ./_include/_footer
+
+    // Load Scripts
+    include ./_include/_footer-js
+    script(src="./js/common.js")
+
+    script(src="https://api-maps.yandex.ru/2.1/?lang=ru_RU")
+    script.
+      $(document).ready(function(){
+        // Contacts map
+        ymaps.ready(function() {
+          var myMap = new ymaps.Map('map', {
+              center: [55.7905455, 37.6076889],
+              zoom: 16,
+              controls: ['zoomControl']
+            }, {}),
+            myPlacemark = new ymaps.Placemark([55.7905455, 37.6076889], {
+              hintContent: '',
+              balloonContent: ''
+            }, {
+              // Опции.
+              // Необходимо указать данный тип макета.
+              iconLayout: 'default#image',
+              // Своё изображение иконки метки.
+              iconImageHref: './images/map-pin.png',
+              // Размеры метки.
+              iconImageSize: [200, 58],
+              // Смещение левого верхнего угла иконки относительно
+              // её "ножки" (точки привязки).
+              iconImageOffset: [-100, -24]
+            });
+          myMap.behaviors.disable('scrollZoom');
+          myMap.geoObjects.add(myPlacemark);
+        });
+        // Contacts map END
+      })
+

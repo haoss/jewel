@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="21.1" height="16.9" viewBox="0 0 21.1 16.9">
+  <defs>
+    <style>
+      .cls-1{fill:#50acde}
+    </style>
+  </defs>
+  <g id="pencil" transform="translate(0 -51.2)">
+    <g id="Group_37" data-name="Group 37" transform="translate(0 61.3)">
+      <g id="Group_36" data-name="Group 36">
+        <path id="Path_165" d="M3.9 299.3l-2.7-2.6a.2.2 0 00-.3 0l-.9 3.4a.4.4 0 00.4.5l3.4-1a.2.2 0 00.1-.3z" class="cls-1" data-name="Path 165" transform="translate(0 -296.6)"/>
+      </g>
+    </g>
+    <g id="Group_39" data-name="Group 39" transform="translate(8.1 53.4)">
+      <g id="Group_38" data-name="Group 38">
+        <path id="Path_166" d="M201.7 107.3l-3-3a.2.2 0 00-.3 0l-.3.2a.2.2 0 000 .3l3 3a.2.2 0 00.3 0l.3-.3a.2.2 0 000-.2z" class="cls-1" data-name="Path 166" transform="translate(-198 -104.2)"/>
+      </g>
+    </g>
+    <g id="Group_41" data-name="Group 41" transform="translate(1.5 54.4)">
+      <g id="Group_40" data-name="Group 40">
+        <path id="Path_167" d="M45.2 132.9l-3-3a.2.2 0 00-.3 0l-6 5.8a.2.2 0 000 .3l3.1 3a.2.2 0 00.3 0l5.9-5.9a.2.2 0 000-.2z" class="cls-1" data-name="Path 167" transform="translate(-36 -129.8)"/>
+      </g>
+    </g>
+    <g id="Group_43" data-name="Group 43" transform="translate(9.2 51.2)">
+      <g id="Group_42" data-name="Group 42">
+        <path id="Path_168" d="M228.4 54.1l-2.8-2.8a.4.4 0 00-.5 0l-1.4 1.4a.2.2 0 000 .2l3 3a.2.2 0 00.3 0l1.4-1.3a.4.4 0 000-.5z" class="cls-1" data-name="Path 168" transform="translate(-223.6 -51.2)"/>
+      </g>
+    </g>
+    <g id="Group_45" data-name="Group 45" transform="translate(0 55.4)">
+      <g id="Group_44" data-name="Group 44">
+        <path id="Path_169" d="M16.9 153.6H15c-.6 0-1 .1-1 .7s.4.7 1 .7h1.8c1 0 2.8 2.6 2.8 5s-1.7 4.8-2.8 4.8H1c-.6 0-1.1.1-1.1.7s.5.7 1 .7H17c2.3 0 4.2-3 4.2-6.3s-1.9-6.3-4.2-6.3z" class="cls-1" data-name="Path 169" transform="translate(0 -153.6)"/>
+      </g>
+    </g>
+  </g>
+</svg>

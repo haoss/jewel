@@ -53,7 +53,7 @@ button {
       transform: rotate(-20deg);
     }
   }
-  &:hover {
+  &:hover, &:focus {
     color: $primary-color;
     text-decoration: none;
     &::before {
@@ -64,6 +64,9 @@ button {
     transform: translateX(-25px);
     &::before, &::after {
       width: 125px;
+      @media (min-width: 768px) {
+        width: 160px;
+      }
     }
   }
 
@@ -107,7 +110,7 @@ button {
       span {
         opacity: 0.7;
         &::after {
-          opacity: 0;
+          // opacity: 0;
         }
       }
     }

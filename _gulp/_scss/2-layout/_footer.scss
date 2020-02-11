@@ -1,4 +1,53 @@
 /* footer */
 .footer {
-  background-color: $color-gray;
+  background-color: #2a81b7;
+  color: $color-white;
+  overflow: hidden;
+  padding: 57px 0 50px 0;
+  @media (min-width: 990px) {
+    display: none;
+  }
+  &__address {
+    font-size: rem(13px);
+    padding: 0;
+    line-height: 1.7;
+    margin-bottom: 10px;
+  }
+  &__phones {
+    font-size: rem(16px);
+    padding: 0;
+    margin-bottom: 20px;
+    a {
+      text-decoration: none;
+      color: $color-white;
+      &:hover {
+        color: $color-white;
+      }
+      b {
+        font-weight: 600;
+        font-size: rem(20px);
+      }
+    }
+  }
+  &__description {
+    font-size: rem(13px);
+    padding: 0;
+    margin-bottom: 25px;
+    line-height: 1.7;
+    font-weight: 500;
+  }
+  &__copyright {
+    font-size: rem(12px);
+    line-height: 1.85;
+    margin-bottom: 15px;
+  }
+  &__development {
+    display: flex;
+    align-items: center;
+    font-size: rem(11px);
+    line-height: 1.4;
+    padding: 0;
+    position: relative;
+    max-width: 180px;
+  }
 }

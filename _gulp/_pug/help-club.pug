@@ -16,42 +16,7 @@ html(lang="ru")
     .base
 
       // Navigation
-      .navigation
-        .navigation__wrapper
-          .logo.navigation__logo
-            img(src="./images/logo.svg", alt="")
-          nav(role="navigation").navigation__nav
-            ul
-              li: a(href="#!") О НАС 
-              li: a(href="#!") НАШИ ПРОЕКТЫ
-              li: a(href="#!") МЕРОПРИЯТИЯ 
-              li: a(href="#!") КОНТАКТЫ
-          #navigation__btn.navigation__btn
-            p Быстрая регистрация на
-            a(href="#!").btn.btn--register
-              span Регистрация на шаббат
-          address.navigation__address Москва, 2й Вышеславцев пер., д. 5а, 7-ой этаж
-          .navigation__phones
-            div
-              a(href="tel:") +7(495) 
-                b 645-0-506
-            div
-              a(href="tel:") +7(999) 
-                b 555-1-613
-          .social.navigation__social
-            a(href="#!" target="_blank")
-              img(src="./images/icon-facebook.svg", alt="")
-            a(href="#!" target="_blank")
-              img(src="./images/icon-vk.svg", alt="")
-            a(href="#!" target="_blank")
-              img(src="./images/icon-instagram.svg", alt="")
-          .navigation__description Религиозная организация ортодоксального иудаизма — Московская Марьинорощинская Еврейская Община 
-          .copyright Jewell Club © 2019. 
-            br 
-            | All Rights Reserved Jewellclub
-          .development Разработка и продвижение
-            a(href="#!" target="_blank")
-              img(src="./images/piarme.png", alt="")
+      include ./_include/_navigation
 
       // Wrapper
       .wrapper
@@ -97,6 +62,53 @@ html(lang="ru")
                       p Отправка денежных переводов доступна 24 часа в сутки, 7 дней в неделю без перерывов и выходных. Оформление перевода займет всего несколько минут.
                   .col-lg-6
                     form(action="#!").form
+                      .donations
+                        .donations__row
+                          div
+                            label.donations__label
+                              input(type="radio" name="donations" value="500" checked)
+                              span.donations__label-span
+                                span 500
+                                  i.icon-rouble
+                          div
+                            label.donations__label
+                              input(type="radio" name="donations" value="1000")
+                              span.donations__label-span
+                                span 1 000
+                                  i.icon-rouble
+                          div
+                            label.donations__label
+                              input(type="radio" name="donations" value="5000")
+                              span.donations__label-span
+                                span 5 000
+                                  i.icon-rouble
+                          div
+                            label.donations__label
+                              input(type="radio" name="donations" value="10000")
+                              span.donations__label-span
+                                span 10 000
+                                  i.icon-rouble
+                          div
+                            label.donations__label
+                              input(type="radio" name="donations" value="20000")
+                              span.donations__label-span
+                                span 20 000
+                                  i.icon-rouble
+                          div
+                            label.donations__label
+                              input(type="radio" name="donations" value="50000")
+                              span.donations__label-span
+                                span 50 000
+                                  i.icon-rouble
+                          div
+                            .donations__input
+                              div
+                                span.donations__input-span Введите свою сумму
+                              div
+                                .donations__input-input
+                                  input(type="text" value="2 000 000")
+                                  i.icon-rouble
+
                       label.form__group.has-icon
                         .form__label.j-label Фамилия и Имя
                           sup *
@@ -123,6 +135,7 @@ html(lang="ru")
                           span отправить 
                             span.d-none.d-md-inline-block перевод
 
+        include ./_include/_footer
 
     // Load Scripts
     include ./_include/_footer-js

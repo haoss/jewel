@@ -115,4 +115,27 @@ button {
       }
     }
   }
+
+  &--big {
+    min-height: 63px;
+    padding-top: 19px;
+    padding-bottom: 12px;
+  }
+  &--thin {
+    transform: translateX(-45px);
+    &::before {
+      width: 95px;
+    }
+  }
+  &--very-thin {
+    transform: translateX(-30px);
+    &::before {
+      width: 80px;
+    }
+  }
+  &--light {
+    &::before {
+      background: #f5fbfd;
+    }
+  }
 }

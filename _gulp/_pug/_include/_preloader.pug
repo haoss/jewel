@@ -3,3 +3,125 @@
 //-     div
 //-     div
 //-     div
+
+#confirm.modal.mfp-hide
+  button(type="button").modal__close Закрыть окно
+    i
+  .modal__wrapper
+    .modal__title Подтвердите бронь места для %имя% %фамилия%
+    p Дополнительный пояснительный текст для объяснения что происходит или дальнейшие действия
+
+#sure.modal.mfp-hide
+  button(type="button").modal__close Закрыть окно
+    i
+  .modal__wrapper
+    .modal__title Вы уверены, что хотите снять бронь?
+    .clear10
+    .div-table
+      .div-table-cell
+        a(href="#!").btn.btn--very-thin 
+          span НЕТ
+      .div-table-cell
+        a(href="#!").btn.btn--very-thin.btn--light
+          span Да
+    .clear30
+
+#senks.modal.modal--biggest.mfp-hide
+  button(type="button").modal__close Закрыть окно
+    i
+  .modal__wrapper
+    .modal__title Спасибо за вашу заявку!
+    p На почту и телефон получите уведомление от нас с дальнейшей информацией.
+
+#senks2.modal.modal--biggest.mfp-hide
+  button(type="button").modal__close Закрыть окно
+    i
+  .modal__wrapper
+    .modal__wrapper-payment
+      div
+        .modal__title Спасибо за проявленное сострадание!
+        p Сейчас вы будете перенаправленные на сайт платежной системы
+      div
+        .text-center.text-lg-left
+          a(href="#!").btn.btn--big.btn--thin
+            span Оплатить
+
+#reservation.modal.modal--big.mfp-hide
+  button(type="button").modal__close Закрыть окно
+    i
+  .modal__wrapper
+    form(action="").form
+      fieldset
+        .row
+          .col-lg-6
+            .modal__title Представься
+            p Все поля обязательны для заполнения.
+          .col-lg-6
+            label.form__group.has-icon
+              .form__label.j-label Фамилия и Имя
+                sup *
+              input.form__control.j-input(type="text" name="text" placeholder="" value="")
+              img(src="./images/icon-form-user.svg", alt="").icon-img
+            label.form__group.has-icon
+              .form__label.j-label E-mail
+                sup *
+              input.form__control.j-input(type="text" name="text" placeholder="" value="")
+              img(src="./images/icon-form-mail.svg", alt="").icon-img
+            label.form__group.has-icon
+              .form__label.j-label Телефон
+                sup *
+              input.form__control.j-input(type="text" name="text" placeholder="" value="")
+              img(src="./images/icon-form-phone.svg", alt="").icon-img
+            label.form__group.has-icon
+              .form__label.j-label Пароль
+                sup *
+              input.form__control.j-input(type="text" name="text" placeholder="" value="")
+              img(src="./images/icon-form-lock.svg", alt="").icon-img
+
+        .clear30
+      fieldset
+        .row
+          .col-lg-6
+            .content__row-head.content__row-head--question
+              .h3 Евреи в твоей семье?
+          .col-lg-6
+            .form__group.mb12
+              label.form__checkbox
+                input(type="checkbox")
+                span.form__checkbox-input
+                span.form__checkbox-label Бабушка по материнской линии
+            .form__group.mb12
+              label.form__checkbox
+                input(type="checkbox")
+                span.form__checkbox-input
+                span.form__checkbox-label Дедушка по материнской линии
+            .form__group.mb12
+              label.form__checkbox
+                input(type="checkbox")
+                span.form__checkbox-input
+                span.form__checkbox-label Бабушка по отцовской линии
+            .form__group.mb12
+              label.form__checkbox
+                input(type="checkbox")
+                span.form__checkbox-input
+                span.form__checkbox-label Дедушка по отцовской линии
+            .form__group.mb12
+              label.form__checkbox
+                input(type="checkbox")
+                span.form__checkbox-input
+                span.form__checkbox-label Может кто-то и есть но я не знаю(  
+            .form__group.mb35
+              label.form__checkbox
+                input(type="checkbox")
+                span.form__checkbox-input
+                span.form__checkbox-label Я прошел\а Гиюр
+      .form__group
+        label.form__checkbox
+          input(type="checkbox" checked)
+          span.form__checkbox-input
+          span.form__checkbox-label.fs12 Заполняя эту анкету, Вы соглашаетесь с политикой конфиденциальности и даете разрешение на обработку персональных данных. 
+            a(href="#!" target="_blank") Политика конфиденциальности.
+      .text-center
+        button(type="button").btn.btn--big 
+          span.d-none.d-md-inline-block Забронировать
+          span.d-md-none Бронь

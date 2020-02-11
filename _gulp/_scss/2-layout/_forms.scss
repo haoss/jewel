@@ -236,6 +236,7 @@ button, input[type=button], input[type=reset], input[type=submit] {
     margin: 0;
     padding-left: 41px;
     cursor: pointer;
+    font-size: 0;
     input[type="checkbox"] {
       display: none;
       &:checked {
@@ -252,13 +253,16 @@ button, input[type=button], input[type=reset], input[type=submit] {
       border: 1px solid #b6d6e0;
       position: absolute;
       left: 10px;
-      top: 4px;
+      top: 0px;
       transition: all 0.35s;
       box-shadow: 0 0 0 0 inset $color-white;
     }
     &-label {
       font-size: rem(14px);
       line-height: 1.45;
+      &.fs12 {
+        font-size: rem(12px);
+      }
     }
   }
 }

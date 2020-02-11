@@ -16,6 +16,129 @@
     </head>
     <body>
         <!-- Preloader-->
+        <div class="modal mfp-hide" id="confirm">
+            <button class="modal__close" type="button">Закрыть окно<i></i></button>
+            <div class="modal__wrapper">
+                <div class="modal__title">Подтвердите бронь места для %имя% %фамилия%</div>
+                <p>Дополнительный пояснительный текст для объяснения что происходит или дальнейшие действия</p>
+            </div>
+        </div>
+        <div class="modal mfp-hide" id="sure">
+            <button class="modal__close" type="button">Закрыть окно<i></i></button>
+            <div class="modal__wrapper">
+                <div class="modal__title">Вы уверены, что хотите снять бронь?</div>
+                <div class="clear10"></div>
+                <div class="div-table">
+                    <div class="div-table-cell"><a class="btn btn--very-thin" href="#!"> <span>НЕТ</span></a></div>
+                    <div class="div-table-cell"><a class="btn btn--very-thin btn--light" href="#!"><span>Да</span></a></div>
+                </div>
+                <div class="clear30"></div>
+            </div>
+        </div>
+        <div class="modal modal--biggest mfp-hide" id="senks">
+            <button class="modal__close" type="button">Закрыть окно<i></i></button>
+            <div class="modal__wrapper">
+                <div class="modal__title">Спасибо за вашу заявку!</div>
+                <p>На почту и телефон получите уведомление от нас с дальнейшей информацией.</p>
+            </div>
+        </div>
+        <div class="modal modal--biggest mfp-hide" id="senks2">
+            <button class="modal__close" type="button">Закрыть окно<i></i></button>
+            <div class="modal__wrapper">
+                <div class="modal__wrapper-payment">
+                    <div>
+                        <div class="modal__title">Спасибо за проявленное сострадание!</div>
+                        <p>Сейчас вы будете перенаправленные на сайт платежной системы</p>
+                    </div>
+                    <div>
+                        <div class="text-center text-lg-left"><a class="btn btn--big btn--thin" href="#!"><span>Оплатить</span></a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal modal--big mfp-hide" id="reservation">
+            <button class="modal__close" type="button">Закрыть окно<i></i></button>
+            <div class="modal__wrapper">
+                <form class="form" action="">
+                    <fieldset>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="modal__title">Представься</div>
+                                <p>Все поля обязательны для заполнения.</p>
+                            </div>
+                            <div class="col-lg-6">
+                                <label class="form__group has-icon">
+                                    <div class="form__label j-label">Фамилия и Имя<sup>*</sup></div>
+                                    <input class="form__control j-input" type="text" name="text" placeholder="" value=""><img class="icon-img" src="./images/icon-form-user.svg" alt="">
+                                </label>
+                                <label class="form__group has-icon">
+                                    <div class="form__label j-label">E-mail<sup>*</sup></div>
+                                    <input class="form__control j-input" type="text" name="text" placeholder="" value=""><img class="icon-img" src="./images/icon-form-mail.svg" alt="">
+                                </label>
+                                <label class="form__group has-icon">
+                                    <div class="form__label j-label">Телефон<sup>*</sup></div>
+                                    <input class="form__control j-input" type="text" name="text" placeholder="" value=""><img class="icon-img" src="./images/icon-form-phone.svg" alt="">
+                                </label>
+                                <label class="form__group has-icon">
+                                    <div class="form__label j-label">Пароль<sup>*</sup></div>
+                                    <input class="form__control j-input" type="text" name="text" placeholder="" value=""><img class="icon-img" src="./images/icon-form-lock.svg" alt="">
+                                </label>
+                            </div>
+                        </div>
+                        <div class="clear30"></div>
+                    </fieldset>
+                    <fieldset>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="content__row-head content__row-head--question">
+                                    <div class="h3">Евреи в твоей семье?</div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="form__group mb12">
+                                    <label class="form__checkbox">
+                                        <input type="checkbox"><span class="form__checkbox-input"></span><span class="form__checkbox-label">Бабушка по материнской линии</span>
+                                    </label>
+                                </div>
+                                <div class="form__group mb12">
+                                    <label class="form__checkbox">
+                                        <input type="checkbox"><span class="form__checkbox-input"></span><span class="form__checkbox-label">Дедушка по материнской линии</span>
+                                    </label>
+                                </div>
+                                <div class="form__group mb12">
+                                    <label class="form__checkbox">
+                                        <input type="checkbox"><span class="form__checkbox-input"></span><span class="form__checkbox-label">Бабушка по отцовской линии</span>
+                                    </label>
+                                </div>
+                                <div class="form__group mb12">
+                                    <label class="form__checkbox">
+                                        <input type="checkbox"><span class="form__checkbox-input"></span><span class="form__checkbox-label">Дедушка по отцовской линии</span>
+                                    </label>
+                                </div>
+                                <div class="form__group mb12">
+                                    <label class="form__checkbox">
+                                        <input type="checkbox"><span class="form__checkbox-input"></span><span class="form__checkbox-label">Может кто-то и есть но я не знаю(  </span>
+                                    </label>
+                                </div>
+                                <div class="form__group mb35">
+                                    <label class="form__checkbox">
+                                        <input type="checkbox"><span class="form__checkbox-input"></span><span class="form__checkbox-label">Я прошел\а Гиюр</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <div class="form__group">
+                        <label class="form__checkbox">
+                            <input type="checkbox" checked><span class="form__checkbox-input"></span><span class="form__checkbox-label fs12">Заполняя эту анкету, Вы соглашаетесь с политикой конфиденциальности и даете разрешение на обработку персональных данных. <a href="#!" target="_blank">Политика конфиденциальности.</a></span>
+                        </label>
+                    </div>
+                    <div class="text-center">
+                        <button class="btn btn--big" type="button"> <span class="d-none d-md-inline-block">Забронировать</span><span class="d-md-none">Бронь</span></button>
+                    </div>
+                </form>
+            </div>
+        </div>
         <!-- Base-->
         <div class="base">
             <!-- Navigation-->

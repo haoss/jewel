@@ -21,8 +21,15 @@ html(lang="ru")
 
         .clear30
 
-        a(href="#!").btn.btn--default
+        a(href="#!").btn
           span заполнить анкету
+
+        .clear20
+
+        a(href="#!").btn.btn--register
+          span Регистрация на шаббат
+        button(type="button").btn.btn--register
+          span Регистрация на шаббат
 
         .clear30
 
@@ -33,6 +40,61 @@ html(lang="ru")
             img(src="./images/icon-vk.svg", alt="")
           a(href="#!" target="_blank")
             img(src="./images/icon-instagram.svg", alt="")
+
+        .clear30
+
+        .row
+          .col-lg-6
+            label.form__group.has-icon
+              .form__label.j-label Фамилия и Имя
+                sup *
+              input.form__control.j-input(type="text" name="text" placeholder="" value="")
+              img(src="./images/icon-form-user.svg", alt="").icon-img
+          .col-lg-6
+            label.form__group.has-icon
+              .form__label.j-label Фамилия и Имя
+                sup *
+              input.form__control.j-input(type="text" name="text" placeholder="" value="Иванов Иван")
+              img(src="./images/icon-form-user.svg", alt="").icon-img
+        .row
+          .col-lg-6
+            label.form__group.has-icon
+              .form__label.j-label E-mail
+                sup *
+              input.form__control.j-input(type="text" name="text" placeholder="" value="")
+              img(src="./images/icon-form-mail.svg", alt="").icon-img
+          .col-lg-6
+            label.form__group.has-icon.has-error
+              .form__label.j-label E-mail
+                sup *
+              input.form__control.j-input(type="text" name="text" placeholder="" value="5465654343.ру")
+              img(src="./images/icon-form-mail.svg", alt="").icon-img
+        .row
+          .col-lg-6
+            label.form__group.has-icon
+              .form__label.j-label Телефон
+                sup *
+              input.form__control.j-input(type="text" name="text" placeholder="" value="")
+              img(src="./images/icon-form-phone.svg", alt="").icon-img
+          .col-lg-6
+            label.form__group.has-icon
+              .form__label.j-label Телефон
+                sup *
+              input.form__control.j-input(type="text" name="text" placeholder="" value="1 815 555 12 12")
+              img(src="./images/icon-form-phone.svg", alt="").icon-img
+        .row
+          .col-lg-6
+            .form__group
+              label.form__checkbox
+                input(type="checkbox")
+                span.form__checkbox-input
+                span.form__checkbox-label Отправить анонимно и не присылать мне на почту отчеты использования денежных средств
+          .col-lg-6
+            .form__group
+              label.form__checkbox
+                input(type="checkbox" checked)
+                span.form__checkbox-input
+                span.form__checkbox-label Отправить анонимно и не присылать мне на почту отчеты использования денежных средств
 
     // Load Scripts
     include ./_include/_footer-js

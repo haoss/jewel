@@ -62,6 +62,13 @@
     }
   }
   &__row {
+    margin-bottom: 25px;
+    @media (min-width: 990px) {
+      margin-bottom: 50px;
+    }
+    @media (min-width: 1440px) {
+      margin-bottom: 45px;
+    }
     &-head {
       &>.h2, h2 {
         
@@ -180,6 +187,29 @@
             width: 30px;
           }
         }
+      }
+    }
+  }
+  &__form {
+    border: 2px solid #fff648;
+    padding: 30px 15px 40px 15px;
+    margin: 0 -15px 70px -15px;
+    background: $color-white;
+    @media (min-width: 990px) {
+      padding: 60px 30px 55px 30px;
+    }
+    @media (min-width: 1440px) {
+      padding: 65px 70px;
+    }
+    &-title {
+      font-size: rem(22px);
+      font-weight: 600;
+      line-height: 1.45;
+      margin-bottom: 16px;
+    }
+    &-content {
+      &.fs14 {
+        font-size: rem(14px);
       }
     }
   }

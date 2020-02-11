@@ -66,6 +66,8 @@ $(document).on('ready', function(){
   });
 
   mobileNav();
+  navBtnScroll();
+  inputFocus();
 
   // Chrome Smooth Scroll
   try {
@@ -169,5 +171,53 @@ function mobileNav() {
       _this.addClass('is-active');
       body.attr('style', 'overflow: hidden')
     }
+  })
+}
+
+function navBtnScroll() {
+  var btn = $('#navigation__btn');
+  var wrapper = $('.navigation__wrapper');
+
+  wrapper.on('scroll', function(){
+    btn.css('transform',"translateY(-"+ wrapper.scrollTop() +"px)")
+    console.log();
+  });
+
+  if ($('.navigation__wrapper').scrollTop() > 0) {
+    btn.addClass('is-scroll');
+  } else {
+    btn.removeClass('is-scroll');
+  }
+}
+
+function inputFocus(){
+  var jinput = $(".j-input");
+
+  jinput.each(function(){
+    var _this = $(this);
+    var val = _this.val();
+
+    if (val.length > 0 && _this.is('input') || val.length > 0 && _this.is('textarea')) {
+      _this.parent().addClass("active-full");
+    } else {
+      _this.parent().removeClass("active-full");
+    }
+
+    // input on focus
+    _this.focus(function () {
+      _this.parent().addClass("active");
+    }).blur(function () {
+      _this.parent().removeClass("active");
+    })
+
+    _this.on('change', function () {
+      var val = _this.val();
+
+      if (val == '') {
+        _this.parent().removeClass("active-full");
+      } else {
+        _this.parent().addClass("active-full");
+      }
+    });
   })
 }

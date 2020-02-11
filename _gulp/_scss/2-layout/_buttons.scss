@@ -18,7 +18,7 @@ button {
   display: inline-block;
   background: transparent;
   position: relative;
-  &::before {
+  &::before, &::after {
     content: '';
     position: absolute;
     top: 0;
@@ -28,6 +28,10 @@ button {
     transform: skewX(25deg);
     transition: ease-in-out 0.25s;
     background: $color-yellow;
+  }
+  &::after {
+    background: #f0f5fa;
+    display: none;
   }
   &>span {
     position: relative;
@@ -54,6 +58,58 @@ button {
     text-decoration: none;
     &::before {
       width: calc(100% - 20px);
+    }
+  }
+  &--send {
+    transform: translateX(-25px);
+    &::before, &::after {
+      width: 125px;
+    }
+  }
+
+  &--register {
+    min-height: 39px;
+    padding: 10px 42px 8px 35px;
+    font-size: rem(14px);
+    &::before {
+      width: calc(100% - 20px);
+    }
+    &::after {
+      width: calc(100% - 36px);
+      display: block;
+      transform: skewX(25deg) rotate(-1.5deg);
+      transform-origin: 100% 100%;
+      z-index: -1;
+    }
+    span {
+      opacity: 1;
+      transition: all 0.35s;
+      white-space: nowrap;
+      &::before {
+        display: none;
+      }
+      &::after {
+        height: 0;
+        width: 0;
+        border-left: 17px solid #a59d06;
+        border-bottom: 5px solid transparent;
+        bottom: -15px;
+        right: -41px;
+        background: transparent;
+        opacity: 1;
+        transition: all 0.35s;
+      }
+    }
+    &:hover {
+      &::after {
+        transform: skewX(25deg) rotate(0deg);
+      }
+      span {
+        opacity: 0.7;
+        &::after {
+          opacity: 0;
+        }
+      }
     }
   }
 }

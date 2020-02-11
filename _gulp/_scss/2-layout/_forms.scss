@@ -1,100 +1,271 @@
 /* forms */
 
-// input, textarea {
-//   &::-webkit-input-placeholder {
-//     color: $color-gray;
-//   }
-//   &::-moz-placeholder {
-//     color: $color-gray;
-//   }
-//   &:-ms-input-placeholder {
-//     color: $color-gray;
-//   }
-//   &:-moz-placeholder {
-//     color: $color-gray;
-//   }
-// }
+input, textarea {
+  &::-webkit-input-placeholder {
+    color: $color-gray;
+  }
+  &::-moz-placeholder {
+    color: $color-gray;
+  }
+  &:-ms-input-placeholder {
+    color: $color-gray;
+  }
+  &:-moz-placeholder {
+    color: $color-gray;
+  }
+}
 
-// button, input, optgroup, select, textarea {
-//   margin: 0;
-//   font: inherit;
-//   color: inherit;
-//   outline: none;
-//   &:hover,   &:focus, &:active {
-//     outline: none;
-//   }
-// }
+button, input, optgroup, select, textarea {
+  margin: 0;
+  font: inherit;
+  color: inherit;
+  outline: none;
+  &:hover,   &:focus, &:active {
+    outline: none;
+  }
+}
 
-// button, input[type=button], input[type=reset], input[type=submit] {
-//   -webkit-appearance: button;
-//   cursor: pointer;
-//   outline: none;
-// }
+button, input[type=button], input[type=reset], input[type=submit] {
+  -webkit-appearance: button;
+  cursor: pointer;
+  outline: none;
+}
 
-// label {
-//   display: inline-block;
-//   max-width: 100%;
-//   margin-bottom: 5px;
-//   font-weight: 700;
-// }
+.form {
+  &-label, &__label {
+    color: $primary-color;
+    font-size: rem(15px);
+    line-height: 1.6;
+    cursor: text;
+    display: block;
+    margin-bottom: 11px;
+    font-weight: 400;
+    sup {
+      color: $color-red;
+      top: -3px;
+      margin-left: 2px;
+    }
+    &.j-label {
+      position: absolute;
+      top: 17px;
+      left: 40px;
+      font-size: rem(15px);
+      transition: all 0.2s;
+      z-index: 1;
+      margin: 0;
+      pointer-events: none;
+      color: $primary-color;
+      white-space: nowrap;
+    }
+    &--xl {
+      font-size: rem(21px);
+      margin-bottom: 11px;
+      &.j-label {
+        top: 24px;
+        font-size: rem(15px);
+      }
+    }
+    &--md {
+      font-size: rem(14px);
+      margin-bottom: 9px;
+      &.j-label {
+        top: 10px;
+        left: 10px;
+        font-size: rem(14px);
+      }
+    }
+    &--sm {
+      font-size: rem(12px);
+      margin-bottom: 6px;
+      &.j-label {
+        left: 10px;
+        top: 6px;
+        font-size: rem(12px);
+      }
+    }
+  }
+  &-control, &__control {
+    display: block;
+    width: 100%;
+    height: 50px;
+    padding: 6px 10px;
+    font-size: rem(24px);
+    line-height: 1.42857143;
+    color: $primary-color;
+    font-weight: 600;
+    background: {
+      color: $color-white;
+      repeat: no-repeat;
+      position: right calc(100% - 12px);
+    }
+    border: 0;
+    border-bottom: 1px solid #dfeaed;
+    border-radius: 0;
+    box-shadow: none;
+    transition: color 0.35s, border 0.35s, background 0.35s;
+    &:hover {
+      border-color: $primary-color;
+    }
+    &--xl {
+      height: 70px;
+      font-size: rem(24px);
+      &.j-input {
+        font-size: rem(15px);
+      }
+    }
+    &--md {
+      height: 40px;
+      font-size: rem(16px);
+      &.j-input {
+        font-size: rem(16px);
+      }
+    }
+    &--sm {
+      height: 30px;
+      font-size: rem(14px);
+      &.j-input {
+        font-size: rem(14px);
+        padding-top: 18px;
+      }
+    }
+    &.j-input {
+      padding-top: 14px;
+      font-size: rem(18px);
+    }
+  }
+  &-group, &__group {
+    margin-bottom: 20px;
+    position: relative;
+    display: block;
+    [class*="icon-"] {
+      display: none;
+    }
+    &.active, &.active-full {
+      .form__label {
+        color: #8D8D8D;
+      }
+      .j-label {
+        top: -1px;
+        font-size: rem(11px);
+        line-height: 1;
+        display: block;
+        opacity: 1;
+        z-index: 9;
+      }
+    }
+    &.form-group--select {
+      option {
+        font-size: rem(14px);
+      }
+      .j-label {
+        opacity: 0;
+        display: none;
+      }
+      .j-input {
+        padding-top: 6px;
+        transition: none;
+      }
+      .form__control, .form-control {
+        &--sm {
+          padding-top: 4px;
+        }
+      }
+      &.active, &.active-full {
+        .j-label {
+          display: block;
+          opacity: 1;
+        }
+        .j-input {
+          padding-top: 20px;
+        }
+        .form__control, .form-control {
+          &--md {
+            &.j-input {
+              padding-top: 16px;
+            }
+          }
+          &--sm {
+            &.j-input {
+              padding-top: 9px;
+            }
+          }
+        }
+      }
+    }
+    &.has-icon {
+      input {
+        padding-left: 41px;
+        &~[class*="icon-"] {
+          font-size: rem(20px);
+          position: absolute;
+          left: 10px;
+          margin-top: -30px;
+          color: $color-black;
+          pointer-events: none;
+          display: block;
+          width: 18px;
+          height: 17px;
+          object-fit: contain;
+        }
+        &[class*="--md"] {
+          &~[class*="icon-"] {
+            margin-top: -31px;
+          }
+        }
+        &[class*="--sm"] {
+          &~[class*="icon-"] {
+            // font-size: 21px;
+            margin-top: -24px;
+            font-size: rem(16px);
+            right: 12px;
+          }
+        }
+      }
+      &.has-success {
+        input {
+          background-image: none;
+        }
+      }
+    }
+  }
+  &__checkbox {
+    position: relative;
+    margin: 0;
+    padding-left: 41px;
+    cursor: pointer;
+    input[type="checkbox"] {
+      display: none;
+      &:checked {
+        &~[class*="-input"] {
+          background: #50acde;
+          box-shadow: 0 0 0 3px inset $color-white;
+        }
+      }
+    }
+    &-input {
+      height: 18px;
+      width: 18px;
+      background: $color-white;
+      border: 1px solid #b6d6e0;
+      position: absolute;
+      left: 10px;
+      top: 4px;
+      transition: all 0.35s;
+      box-shadow: 0 0 0 0 inset $color-white;
+    }
+    &-label {
+      font-size: rem(14px);
+      line-height: 1.45;
+    }
+  }
+}
 
-// .form {
-//   &-group, &__group {
-//     margin-bottom: 15px;
-//   }
-//   &-control, &__control {
-//     display: block;
-//     width: 100%;
-//     height: 34px;
-//     padding: 6px 12px;
-//     font-size: 14px;
-//     line-height: 1.42857143;
-//     color: #555;
-//     background-color: $color-white;
-//     background-image: none;
-//     border: 1px solid $color-gray;
-//     border-radius: 4px;
-//     box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
-//     transition: all .35s;
-//   }
-//   &-label, &__label {
-//     display: block;
-//   }
-// }
-
-// textarea {
-//   &.form-control, &.form__control {
-//     height: 150px;
-//     resize: none;
-//   }
-// }
-
-// .has {
-//   &-success {
-//     .form-control {
-//       border-color: #3c763d;
-//       box-shadow: inset 0 1px 1px rgba(#3c763d,.75);
-//     }
-//     .control-label {
-//       color: #3c763d;
-//     }
-//   }
-//   &-warning {
-//     .form-control {
-//       border-color: #8a6d3b;
-//       box-shadow: inset 0 1px 1px rgba(#8a6d3b, .75);
-//     }
-//     .control-label {
-//       color: #8a6d3b;
-//     }
-//   }
-//   &-error {
-//     .form-control {
-//       border-color: #a94442;
-//       box-shadow: inset 0 1px 1px rgba(#a94442, .75);
-//     }
-//     .control-label {
-//       color: #a94442;
-//     }
-//   }
-// }
+.has-error {
+  .form {
+    &-control, &__control {
+      border-bottom-color: $color-red;
+      color: $color-red;
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18.82' height='17.2' viewBox='0 0 18.82 17.2'%3E%3Cdefs%3E%3Cstyle%3E.cls-1{fill:%23ff6e4b}%3C/style%3E%3C/defs%3E%3Cg id='warning' transform='translate(0 -20.88)'%3E%3Cg id='Group_128' data-name='Group 128' transform='translate(0 20.88)'%3E%3Cpath id='Path_286' d='M219.2 333.38a.97.97 0 000 1.94.97.97 0 000-1.94z' class='cls-1' data-name='Path 286' transform='translate(-209.78 -321.3)'/%3E%3Cpath id='Path_287' d='M18.36 36.4a3.3 3.3 0 000-3.34l-6.05-10.5a3.34 3.34 0 00-5.8 0L.45 33.06a3.35 3.35 0 002.9 5.02h12.1a3.33 3.33 0 002.9-1.68zm-1.32-.76a1.83 1.83 0 01-1.6.93H3.34a1.8 1.8 0 01-1.57-.9 1.83 1.83 0 010-1.85l6.06-10.5a1.82 1.82 0 013.17 0l6.06 10.5a1.8 1.8 0 01-.02 1.82z' class='cls-1' data-name='Path 287' transform='translate(0 -20.88)'/%3E%3Cpath id='Path_288' d='M218.47 157.2a1.05 1.05 0 00-.74 1.06l.06.92.2 3.47a.7.7 0 00.72.68.72.72 0 00.73-.7c0-.24 0-.46.02-.7l.13-2.24.1-1.45a1.2 1.2 0 00-.1-.48.97.97 0 00-1.12-.56z' class='cls-1' data-name='Path 288' transform='translate(-209.3 -151.9)'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    }
+  }
+}

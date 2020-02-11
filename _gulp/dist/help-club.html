@@ -16,7 +16,9 @@
     </head>
     <body>
         <!-- Preloader-->
+        <!-- Base-->
         <div class="base">
+            <!-- Navigation-->
             <div class="navigation">
                 <div class="navigation__wrapper">
                     <div class="logo navigation__logo"><img src="./images/logo.svg" alt=""></div>
@@ -28,6 +30,9 @@
                             <li><a href="#!">КОНТАКТЫ</a></li>
                         </ul>
                     </nav>
+                    <div class="navigation__btn" id="navigation__btn">
+                        <p>Быстрая регистрация на</p><a class="btn btn--register" href="#!"><span>Регистрация на шаббат</span></a>
+                    </div>
                     <address class="navigation__address">Москва, 2й Вышеславцев пер., д. 5а, 7-ой этаж</address>
                     <div class="navigation__phones">
                         <div><a href="tel:">+7(495) <b>645-0-506</b></a></div>
@@ -39,6 +44,7 @@
                     <div class="development">Разработка и продвижение<a href="#!" target="_blank"><img src="./images/piarme.png" alt=""></a></div>
                 </div>
             </div>
+            <!-- Wrapper-->
             <div class="wrapper">
                 <!-- Header-->
                 <header class="header">
@@ -48,12 +54,14 @@
                     </div>
                 </header>
                 <div class="header-holder"></div>
+                <!-- Content-->
                 <div class="content">
                     <div class="container">
                         <div class="content__head">
                             <div class="small">важен каждый</div>
                             <h1>Помочь клубу</h1>
                         </div>
+                        <!-- Carousel-->
                         <div class="content__carousel">
                             <div class="content__carousel-wrapper">
                                 <div class="j-carousel">
@@ -66,6 +74,7 @@
                                 </div>
                             </div>
                         </div>
+                        <!-- Content document-->
                         <div class="content__document">
                             <div class="row content__row">
                                 <div class="col-lg-6">
@@ -79,6 +88,42 @@
                                         <p>Вдали от всех живут они в буквенных домах на берегу Семантика большого языкового океана. Маленький ручеек Даль журчит по всей стране и обеспечивает ее всеми необходимыми правилами. Эта парадигматическая страна, в которой жаренные предложения залетают прямо в рот. Даже всемогущая пунктуация не имеет власти над рыбными текстами, ведущими безорфографичный образ жизни. Однажды одна маленькая строчка рыбного текста по имени Lorem ipsum решила выйти в большой мир грамматики. </p>
                                     </div>
                                     <p><strong>Нам есть что тебе предложить</strong></p>
+                                </div>
+                            </div>
+                            <!-- Bottom form-->
+                            <div class="content__form">
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="content__form-title">Хочу пожертвовать клубу на развитие, обустройство и мероприятия</div>
+                                        <div class="content__form-content fs14">
+                                            <p>Если у вас есть банковская карта MasterCard/Maestro или VISA любого российского банка, вы можете отправить денежный перевод с карты через сервис онлайн-переводов ЮНИСТРИМ в любом месте, где есть интернет. </p>
+                                            <p>Отправка денежных переводов доступна 24 часа в сутки, 7 дней в неделю без перерывов и выходных. Оформление перевода займет всего несколько минут.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <form class="form" action="#!">
+                                            <label class="form__group has-icon">
+                                                <div class="form__label j-label">Фамилия и Имя<sup>*</sup></div>
+                                                <input class="form__control j-input" type="text" name="text" placeholder="" value=""><img class="icon-img" src="./images/icon-form-user.svg" alt="">
+                                            </label>
+                                            <label class="form__group has-icon">
+                                                <div class="form__label j-label">E-mail<sup>*</sup></div>
+                                                <input class="form__control j-input" type="text" name="text" placeholder="" value=""><img class="icon-img" src="./images/icon-form-mail.svg" alt="">
+                                            </label>
+                                            <label class="form__group has-icon">
+                                                <div class="form__label j-label">Телефон<sup>*</sup></div>
+                                                <input class="form__control j-input" type="text" name="text" placeholder="" value=""><img class="icon-img" src="./images/icon-form-phone.svg" alt="">
+                                            </label>
+                                            <div class="form__group">
+                                                <label class="form__checkbox">
+                                                    <input type="checkbox" checked><span class="form__checkbox-input"></span><span class="form__checkbox-label">Отправить анонимно и не присылать мне на почту отчеты использования денежных средств</span>
+                                                </label>
+                                            </div>
+                                            <div class="text-center text-lg-left">
+                                                <button class="btn btn--send" type="button"><span>отправить <span class="d-none d-md-inline-block">перевод</span></span></button>
+                                            </div>
+                                        </form>
+                                    </div>
                                 </div>
                             </div>
                         </div>

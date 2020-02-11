@@ -12,8 +12,10 @@ html(lang="ru")
     // Preloader
     include ./_include/_preloader
 
+    // Base
     .base
 
+      // Navigation
       .navigation
         .navigation__wrapper
           .logo.navigation__logo
@@ -24,6 +26,10 @@ html(lang="ru")
               li: a(href="#!") НАШИ ПРОЕКТЫ
               li: a(href="#!") МЕРОПРИЯТИЯ 
               li: a(href="#!") КОНТАКТЫ
+          #navigation__btn.navigation__btn
+            p Быстрая регистрация на
+            a(href="#!").btn.btn--register
+              span Регистрация на шаббат
           address.navigation__address Москва, 2й Вышеславцев пер., д. 5а, 7-ой этаж
           .navigation__phones
             div
@@ -47,15 +53,18 @@ html(lang="ru")
             a(href="#!" target="_blank")
               img(src="./images/piarme.png", alt="")
 
+      // Wrapper
       .wrapper
         include ./_include/_header
 
+        // Content
         .content
           .container
             .content__head
               .small важен каждый
               h1 Помочь клубу
 
+            // Carousel
             .content__carousel
               .content__carousel-wrapper
                 .j-carousel
@@ -64,6 +73,7 @@ html(lang="ru")
                     img(src="./tmp/img-tmp-1.jpg", alt="")
                   - }
 
+            // Content document
             .content__document
               
               .row.content__row
@@ -76,6 +86,42 @@ html(lang="ru")
                     p Вдали от всех живут они в буквенных домах на берегу Семантика большого языкового океана. Маленький ручеек Даль журчит по всей стране и обеспечивает ее всеми необходимыми правилами. Эта парадигматическая страна, в которой жаренные предложения залетают прямо в рот. Даже всемогущая пунктуация не имеет власти над рыбными текстами, ведущими безорфографичный образ жизни. Однажды одна маленькая строчка рыбного текста по имени Lorem ipsum решила выйти в большой мир грамматики. 
                   p
                     strong Нам есть что тебе предложить
+
+              // Bottom form
+              .content__form
+                .row
+                  .col-lg-6
+                    .content__form-title Хочу пожертвовать клубу на развитие, обустройство и мероприятия
+                    .content__form-content.fs14
+                      p Если у вас есть банковская карта MasterCard/Maestro или VISA любого российского банка, вы можете отправить денежный перевод с карты через сервис онлайн-переводов ЮНИСТРИМ в любом месте, где есть интернет. 
+                      p Отправка денежных переводов доступна 24 часа в сутки, 7 дней в неделю без перерывов и выходных. Оформление перевода займет всего несколько минут.
+                  .col-lg-6
+                    form(action="#!").form
+                      label.form__group.has-icon
+                        .form__label.j-label Фамилия и Имя
+                          sup *
+                        input.form__control.j-input(type="text" name="text" placeholder="" value="")
+                        img(src="./images/icon-form-user.svg", alt="").icon-img
+                      label.form__group.has-icon
+                        .form__label.j-label E-mail
+                          sup *
+                        input.form__control.j-input(type="text" name="text" placeholder="" value="")
+                        img(src="./images/icon-form-mail.svg", alt="").icon-img
+                      label.form__group.has-icon
+                        .form__label.j-label Телефон
+                          sup *
+                        input.form__control.j-input(type="text" name="text" placeholder="" value="")
+                        img(src="./images/icon-form-phone.svg", alt="").icon-img
+                      .form__group
+                        label.form__checkbox
+                          input(type="checkbox" checked)
+                          span.form__checkbox-input
+                          span.form__checkbox-label Отправить анонимно и не присылать мне на почту отчеты использования денежных средств
+
+                      .text-center.text-lg-left
+                        button(type="button").btn.btn--send
+                          span отправить 
+                            span.d-none.d-md-inline-block перевод
 
 
     // Load Scripts

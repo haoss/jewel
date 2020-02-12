@@ -36,6 +36,7 @@ button {
   &>span {
     position: relative;
     z-index: 5;
+    white-space: nowrap;
     &::after, &::before {
       content: '';
       position: absolute;
@@ -116,6 +117,27 @@ button {
     }
   }
 
+  &--only-arrow {
+    padding: 0;
+    width: 60px;
+    &::before {
+      width: 60px;
+    }
+    span {
+      &::after {
+        width: 18px;
+      }
+      &::after, &::before {
+        right: 4px;
+      }
+    }
+  }
+
+  &--small {
+    min-height: 42px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+  }
   &--big {
     min-height: 63px;
     padding-top: 19px;

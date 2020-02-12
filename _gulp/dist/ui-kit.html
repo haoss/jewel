@@ -63,7 +63,7 @@
                     <fieldset>
                         <div class="row">
                             <div class="col-lg-6">
-                                <div class="modal__title">Представься</div>
+                                <div class="modal__title fs28">Представься</div>
                                 <p>Все поля обязательны для заполнения.</p>
                             </div>
                             <div class="col-lg-6">
@@ -91,7 +91,7 @@
                         <div class="row">
                             <div class="col-lg-6">
                                 <div class="content__row-head content__row-head--question">
-                                    <div class="h3">Евреи в твоей семье?</div>
+                                    <div class="h2 fs22 mb20">Евреи в твоей семье?</div>
                                 </div>
                             </div>
                             <div class="col-lg-6">
@@ -128,15 +128,51 @@
                             </div>
                         </div>
                     </fieldset>
-                    <div class="form__group">
-                        <label class="form__checkbox">
-                            <input type="checkbox" checked><span class="form__checkbox-input"></span><span class="form__checkbox-label fs12">Заполняя эту анкету, Вы соглашаетесь с политикой конфиденциальности и даете разрешение на обработку персональных данных. <a href="#!" target="_blank">Политика конфиденциальности.</a></span>
-                        </label>
-                    </div>
-                    <div class="text-center">
-                        <button class="btn btn--big" type="button"> <span class="d-none d-md-inline-block">Забронировать</span><span class="d-md-none">Бронь</span></button>
-                    </div>
+                    <fieldset>
+                        <div class="form__group">
+                            <label class="form__checkbox">
+                                <input type="checkbox" checked><span class="form__checkbox-input"></span><span class="form__checkbox-label fs12">Заполняя эту анкету, Вы соглашаетесь с политикой конфиденциальности и даете разрешение на обработку персональных данных. <a href="#!" target="_blank">Политика конфиденциальности.</a></span>
+                            </label>
+                        </div>
+                        <div class="text-center">
+                            <button class="btn btn--big" type="button"> <span class="d-none d-md-inline-block">Забронировать</span><span class="d-md-none">Бронь</span></button>
+                        </div>
+                    </fieldset>
                 </form>
+                <div class="modal__wrapper-register">
+                    <div>
+                        <div class="h2 fs22">Уже зарегистрированные?</div>
+                        <p class="fs12 mb-lg-0">Можете войти через логин/пароль или социальные сети. Или можете <a href="#!">Восстановить пароль</a></p>
+                    </div>
+                    <div>
+                        <form class="form modal__wrapper-form" action="">
+                            <fieldset>
+                                <div class="row">
+                                    <div class="col-12 col-sm">
+                                        <label class="form__group form__group--sm has-icon">
+                                            <div class="form__label j-label">E-mail<sup>*</sup></div>
+                                            <input class="form__control j-input" type="text" name="text" placeholder="" value=""><img class="icon-img" src="./images/icon-form-mail.svg" alt="">
+                                        </label>
+                                    </div>
+                                    <div class="col-12 col-sm pr-sm-0">
+                                        <label class="form__group form__group--sm has-icon">
+                                            <div class="form__label j-label">Пароль<sup>*</sup></div>
+                                            <input class="form__control j-input" type="text" name="text" placeholder="" value=""><img class="icon-img" src="./images/icon-form-lock.svg" alt="">
+                                        </label>
+                                    </div>
+                                    <div class="col col-sm-auto text-center pl-sm-0">
+                                        <button class="btn btn--small btn--only-arrow" type="button"><span>&nbsp;</span></button>
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </form>
+                        <div class="social-enter modal__social-enter">
+                            <div><a class="social-enter__btn" href="#!"> <img src="./images/icon-facebook.svg" alt="" width="13" height="24"><span>Войти через<b>Facebook</b></span></a></div>
+                            <div><a class="social-enter__btn" href="#!"> <img src="./images/icon-vk.svg" alt="" width="29" height="17"><span>Войти через<b>Вконтакт</b></span></a></div>
+                            <div><a class="social-enter__btn" href="#!"> <img src="./images/icon-google.svg" alt="" width="28" height="28"><span>Войти через<b>Google</b></span></a></div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="clear30"></div>
@@ -148,7 +184,7 @@
                 <button class="btn btn--register" type="button"><span>Регистрация на шаббат</span></button>
                 <div class="clear70"></div><a class="open-popup-link" href="#senks">Спасибо за вашу заявку!</a><br><a class="open-popup-link" href="#senks2">Спасибо за проявленное сострадание!</a><br><a class="open-popup-link" href="#reservation">Забронировать</a><br><a class="open-popup-link" href="#confirm">Подтвердите бронь</a><br><a class="open-popup-link" href="#sure">Вы уверены, что хотите снять бронь?</a>
                 <div class="clear70"></div>
-                <div class="social"><a href="#!" target="_blank"><img src="./images/icon-facebook.svg" alt=""></a><a href="#!" target="_blank"><img src="./images/icon-vk.svg" alt=""></a><a href="#!" target="_blank"><img src="./images/icon-instagram.svg" alt=""></a></div>
+                <div class="social"><a href="#!" target="_blank"><img src="./images/icon-facebook.svg" alt="" width="12" height="21"></a><a href="#!" target="_blank"><img src="./images/icon-vk.svg" alt="" width="29" height="17"></a><a href="#!" target="_blank"><img src="./images/icon-instagram.svg" alt="" width="21" height="21"></a></div>
                 <div class="clear30"></div>
                 <div class="row">
                     <div class="col-lg-6">
@@ -230,6 +266,7 @@
         <script src="./js/libs/jquery/jquery-migrate-3.0.1.min.js"></script>
         <script src="./js/libs/magnific-popup/jquery.magnific-popup.min.js"></script>
         <script src="./js/libs/slick/slick.min.js"></script>
+        <script src="./js/libs/jquery.maskedinput/jquery.maskedinput.min.js"></script>
         <script src="./js/common.js"></script>
     </body>
 </html>

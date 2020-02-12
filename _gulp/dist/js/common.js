@@ -73,6 +73,7 @@ $(document).on('ready', function(){
   mobileNav();
   navBtnScroll();
   inputFocus();
+  inputMaskTest();
 
   // Chrome Smooth Scroll
   try {
@@ -225,4 +226,21 @@ function inputFocus(){
       }
     });
   })
+}
+
+function inputMaskTest() {
+  var intlMask = $('.j-mask-intl');
+  intlMask.each(function () {
+    $(this).mask("+9 999 999-99-99");
+  });
+
+  var localMask = $('.j-mask-local');
+  localMask.each(function () {
+    $(this).mask("+780 (99) 999-99-99");
+  });
+
+  var dateMask = $('.j-mask-date');
+  dateMask.each(function () {
+    $(this).mask("99.99.9999");
+  });
 }

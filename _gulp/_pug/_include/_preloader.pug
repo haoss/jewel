@@ -54,7 +54,7 @@
       fieldset
         .row
           .col-lg-6
-            .modal__title Представься
+            .modal__title.fs28 Представься
             p Все поля обязательны для заполнения.
           .col-lg-6
             label.form__group.has-icon
@@ -83,7 +83,7 @@
         .row
           .col-lg-6
             .content__row-head.content__row-head--question
-              .h3 Евреи в твоей семье?
+              .h2.fs22.mb20 Евреи в твоей семье?
           .col-lg-6
             .form__group.mb12
               label.form__checkbox
@@ -115,13 +115,54 @@
                 input(type="checkbox")
                 span.form__checkbox-input
                 span.form__checkbox-label Я прошел\а Гиюр
-      .form__group
-        label.form__checkbox
-          input(type="checkbox" checked)
-          span.form__checkbox-input
-          span.form__checkbox-label.fs12 Заполняя эту анкету, Вы соглашаетесь с политикой конфиденциальности и даете разрешение на обработку персональных данных. 
-            a(href="#!" target="_blank") Политика конфиденциальности.
-      .text-center
-        button(type="button").btn.btn--big 
-          span.d-none.d-md-inline-block Забронировать
-          span.d-md-none Бронь
+      fieldset
+        .form__group
+          label.form__checkbox
+            input(type="checkbox" checked)
+            span.form__checkbox-input
+            span.form__checkbox-label.fs12 Заполняя эту анкету, Вы соглашаетесь с политикой конфиденциальности и даете разрешение на обработку персональных данных. 
+              a(href="#!" target="_blank") Политика конфиденциальности.
+        .text-center
+          button(type="button").btn.btn--big 
+            span.d-none.d-md-inline-block Забронировать
+            span.d-md-none Бронь
+    .modal__wrapper-register
+      div
+        .h2.fs22 Уже зарегистрированные?
+        p.fs12.mb-lg-0 Можете войти через логин/пароль или социальные сети. Или можете 
+          a(href="#!") Восстановить пароль
+      div
+        form(action="").form.modal__wrapper-form
+          fieldset
+            .row
+              .col-12.col-sm
+                label.form__group.form__group--sm.has-icon
+                  .form__label.j-label E-mail
+                    sup *
+                  input.form__control.j-input(type="text" name="text" placeholder="" value="")
+                  img(src="./images/icon-form-mail.svg", alt="").icon-img
+              .col-12.col-sm.pr-sm-0
+                label.form__group.form__group--sm.has-icon
+                  .form__label.j-label Пароль
+                    sup *
+                  input.form__control.j-input(type="text" name="text" placeholder="" value="")
+                  img(src="./images/icon-form-lock.svg", alt="").icon-img
+              .col.col-sm-auto.text-center.pl-sm-0
+                button(type="button").btn.btn--small.btn--only-arrow
+                  span &nbsp;
+        .social-enter.modal__social-enter
+          div
+            a(href="#!").social-enter__btn 
+              img(src="./images/icon-facebook.svg", alt="", width="13", height="24")
+              span Войти через
+                b Facebook
+          div
+            a(href="#!").social-enter__btn 
+              img(src="./images/icon-vk.svg", alt="", width="29", height="17")
+              span Войти через
+                b Вконтакт
+          div
+            a(href="#!").social-enter__btn 
+              img(src="./images/icon-google.svg", alt="", width="28", height="28")
+              span Войти через
+                b Google

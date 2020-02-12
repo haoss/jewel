@@ -27,6 +27,10 @@ body {
   -webkit-text-size-adjust: 100%;
 }
 
+.base {
+  overflow: hidden;
+}
+
 //  Typography
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
   color: $primary-color;
@@ -92,11 +96,11 @@ strong, b, .strong, .b {
   font-weight: bold;
 }
 
-hr {
-  border: solid #ddd;
+.hr {
+  border: solid #f3f3f3;
   border-width: 1px 0 0;
   clear: both;
-  margin: 10px 0 30px;
+  margin: 0px 0 30px;
   height: 0;
 }
 
@@ -314,5 +318,36 @@ ol li {
   }
   .pr#{$i} {
     padding-right: #{$i}px !important;
+  }
+}
+
+.fs {
+  &14 {
+    font-size: rem(14px) !important;
+  }
+  &12 {
+    font-size: rem(12px) !important;
+  }
+  &18 {
+    font-size: rem(18px) !important;
+  }
+  &19 {
+    font-size: rem(19px) !important;
+  }
+  &22 {
+    font-size: rem(22px) !important;
+  }
+  &28 {
+    font-size: rem(28px) !important;
+    &-md {
+      @media (min-width: 768px) {
+        font-size: rem(28px) !important;
+      }
+    }
+    &-lg {
+      @media (min-width: 990px) {
+        font-size: rem(28px) !important;
+      }
+    }
   }
 }

@@ -60,32 +60,6 @@ button, input[type=button], input[type=reset], input[type=submit] {
       color: $primary-color;
       white-space: nowrap;
     }
-    &--xl {
-      font-size: rem(21px);
-      margin-bottom: 11px;
-      &.j-label {
-        top: 24px;
-        font-size: rem(15px);
-      }
-    }
-    &--md {
-      font-size: rem(14px);
-      margin-bottom: 9px;
-      &.j-label {
-        top: 10px;
-        left: 10px;
-        font-size: rem(14px);
-      }
-    }
-    &--sm {
-      font-size: rem(12px);
-      margin-bottom: 6px;
-      &.j-label {
-        left: 10px;
-        top: 6px;
-        font-size: rem(12px);
-      }
-    }
   }
   &-control, &__control {
     display: block;
@@ -97,7 +71,7 @@ button, input[type=button], input[type=reset], input[type=submit] {
     color: $primary-color;
     font-weight: 600;
     background: {
-      color: $color-white;
+      color: transparent;
       repeat: no-repeat;
       position: right calc(100% - 12px);
     }
@@ -109,28 +83,6 @@ button, input[type=button], input[type=reset], input[type=submit] {
     &:hover {
       border-color: $primary-color;
     }
-    &--xl {
-      height: 70px;
-      font-size: rem(24px);
-      &.j-input {
-        font-size: rem(15px);
-      }
-    }
-    &--md {
-      height: 40px;
-      font-size: rem(16px);
-      &.j-input {
-        font-size: rem(16px);
-      }
-    }
-    &--sm {
-      height: 30px;
-      font-size: rem(14px);
-      &.j-input {
-        font-size: rem(14px);
-        padding-top: 18px;
-      }
-    }
     &.j-input {
       padding-top: 14px;
       font-size: rem(18px);
@@ -140,6 +92,7 @@ button, input[type=button], input[type=reset], input[type=submit] {
     margin-bottom: 20px;
     position: relative;
     display: block;
+    z-index: 5;
     [class*="icon-"] {
       display: none;
     }
@@ -154,45 +107,6 @@ button, input[type=button], input[type=reset], input[type=submit] {
         display: block;
         opacity: 1;
         z-index: 9;
-      }
-    }
-    &.form-group--select {
-      option {
-        font-size: rem(14px);
-      }
-      .j-label {
-        opacity: 0;
-        display: none;
-      }
-      .j-input {
-        padding-top: 6px;
-        transition: none;
-      }
-      .form__control, .form-control {
-        &--sm {
-          padding-top: 4px;
-        }
-      }
-      &.active, &.active-full {
-        .j-label {
-          display: block;
-          opacity: 1;
-        }
-        .j-input {
-          padding-top: 20px;
-        }
-        .form__control, .form-control {
-          &--md {
-            &.j-input {
-              padding-top: 16px;
-            }
-          }
-          &--sm {
-            &.j-input {
-              padding-top: 9px;
-            }
-          }
-        }
       }
     }
     &.has-icon {
@@ -210,23 +124,31 @@ button, input[type=button], input[type=reset], input[type=submit] {
           height: 17px;
           object-fit: contain;
         }
-        &[class*="--md"] {
-          &~[class*="icon-"] {
-            margin-top: -31px;
-          }
-        }
-        &[class*="--sm"] {
-          &~[class*="icon-"] {
-            // font-size: 21px;
-            margin-top: -24px;
-            font-size: rem(16px);
-            right: 12px;
-          }
-        }
       }
       &.has-success {
         input, textarea {
           background-image: none;
+        }
+      }
+    }
+    &--sm {
+      .j-label {
+        top: 12px;
+      }
+      .j-input {
+        height: 42px;
+        padding-top: 12px;
+      }
+      &.has-icon {
+        input, textarea {
+          &~[class*=icon-] {
+            top: 15px;
+          }
+        }
+      }
+      &.active-full, &.active {
+        .j-label {
+          top: -3px;
         }
       }
     }

@@ -1,0 +1,43 @@
+doctype
+
+html(lang="ru")
+
+  -var active = '1 мероприятие' //активный пункт меню, список в header.jade
+  -var pageTitle = '1 мероприятие' + ' - Jewell' //title страницы для генерации верстки
+
+  include ./_include/_head
+
+  body
+
+    // Preloader
+    include ./_include/_preloader
+
+    // Base
+    .base
+
+      // Navigation
+      include ./_include/_navigation
+
+      // Wrapper
+      .wrapper
+        include ./_include/_header
+
+        // Content
+        .content
+          .container
+
+            .row
+              .col-lg-5.col-xl-6
+                .content__top
+                  .content__head
+                    .small 1 мероприятие
+                    h1 GIRLS STARS INTENSIV
+
+                  p Если ты хочешь и готова серьезно и углубленно учится , поднимая свой уровень еврейских знаний!
+
+        include ./_include/_footer
+
+    // Load Scripts
+    include ./_include/_footer-js
+    script(src="./js/common.js")
+

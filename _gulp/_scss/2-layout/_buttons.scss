@@ -77,13 +77,14 @@ button {
     font-size: rem(14px);
     &::before {
       width: calc(100% - 20px);
+      z-index: 2;
     }
     &::after {
       width: calc(100% - 36px);
       display: block;
       transform: skewX(25deg) rotate(-1.5deg);
       transform-origin: 100% 100%;
-      z-index: -1;
+      z-index: 1;
     }
     span {
       opacity: 1;

@@ -721,3 +721,71 @@
     }
   }
 }
+
+.our-programm {
+  &__title {
+    font-size: rem(29px);
+    font-weight: bold;
+    margin-bottom: 30px;
+    @media (min-width: 990px) {
+      font-size: rem(40px);
+      line-height: 1;
+    }
+  }
+  &__block {
+    margin-bottom: 30px;
+    text-align: center;
+    a {
+      display: inline-block;
+    }
+    img {
+      display: block;
+    }
+  }
+}
+
+.text-transform-normal {
+  text-transform: none;
+}
+
+.bill {
+  &__title {
+    font-size: rem(29px);
+    font-weight: bold;
+    margin-bottom: 30px;
+    @media (min-width: 990px) {
+      font-size: rem(40px);
+      line-height: 1;
+    }
+  }
+  &__block {
+    font-size: rem(14px);
+    max-width: 355px;
+    margin: 0 auto 20px;
+    &-thumb {
+      margin-bottom: 25px;
+      position: relative;
+      img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+      }
+      .btn {
+        position: absolute;
+        bottom: 14px;
+        right: -17px;
+      }
+    }
+    &-time {
+      font-size: rem(10px);
+      color: #969696;
+      margin-bottom: 4px;
+    }
+    &-title {
+      text-transform: uppercase;
+      font-size: rem(18px);
+      font-weight: bold;
+      margin-bottom: 13px;
+    }
+  }
+}

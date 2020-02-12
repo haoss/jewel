@@ -1,0 +1,100 @@
+doctype
+
+html(lang="ru")
+
+  -var active = 'Путешествия' //активный пункт меню, список в header.jade
+  -var pageTitle = 'Путешествия' + ' - Jewell' //title страницы для генерации верстки
+
+  include ./_include/_head
+
+  body
+
+    // Preloader
+    include ./_include/_preloader
+
+    // Base
+    .base
+
+      // Navigation
+      include ./_include/_navigation
+
+      // Wrapper
+      .wrapper
+        include ./_include/_header
+
+        // Content
+        .content
+          .container
+
+            .row
+              .col-lg-5.col-xl-6
+                .content__top
+                  .content__head
+                    .small только лучшее
+                    h1 JOURNEY | 
+                      br
+                      | ПУТЕШЕСТВИЯ
+
+                  p Дарим незабываемые поездки в  США, Израиль и Европу c уникальной программой. Узнавая мир, ты познаёшь себя!
+
+              .col-lg-7.col-xl-6
+                // Carousel
+                .content__carousel.content__carousel--col
+                  .content__carousel-wrapper
+                    .j-carousel
+                      - for (var i=0; i<6; i++) {
+                      .slick-slide
+                        img(src="./tmp/img-tmp-1.jpg", alt="")
+                      - }
+
+            // Content document
+            .content__document
+              
+              .row.content__row
+                .col-lg-6
+                  .content__row-head.content__row-head--xs-question
+                    h2.fs19.fs28-md.mb20 Кто может принять участие?
+                .col-lg-6
+                  .content__row-content.fs14
+                    p 
+                      strong Еврейская молодёжь 
+                      | в возрасте 18-28 лет, проживающая в Москве (для других городов — сразу выберите в поле регистрации другой город РФ).
+
+              .hr.content__hr
+
+              .row.content__row
+                .col-lg-6
+                  .content__row-head.content__row-head--xs-question
+                    h2.fs19.fs28-md.mb20 Сколько это стоит?
+                .col-lg-6
+                  .content__row-content.fs14
+                    p 
+                      strong Программа и поездка БЕСПЛАТНАЯ, да-да, вы не ослышались! 
+                      | Как и на проект «Таглит» попасть на «Евро Старс» невозможно заплатив деньги, проект преследует конкретные цели! Мы хотим сохранить еврейский народ, его уникальную культуру и традиции! 
+                    p Поэтому условием для участия в поездке является посещение увлекательных занятий! Всего 1 раз в неделю с середины сентября и до начала мая пройдут 35 встреч, посетив которые Вы отправитесь в долгожданную поездку по Европе.
+
+              .hr.content__hr
+
+
+              .our-programm
+                .our-programm__title Наши программы
+                .row
+                  .col-sm-6.col-md-4 
+                    .our-programm__block
+                      a(href="#!")
+                        img(src="./tmp/our-program-img-1.png", alt="").img-fluid
+                  .col-sm-6.col-md-4 
+                    .our-programm__block
+                      a(href="#!")
+                        img(src="./tmp/our-program-img-2.png", alt="").img-fluid
+                  .col-sm-6.col-md-4 
+                    .our-programm__block
+                      a(href="#!")
+                        img(src="./tmp/our-program-img-3.png", alt="").img-fluid
+
+        include ./_include/_footer
+
+    // Load Scripts
+    include ./_include/_footer-js
+    script(src="./js/common.js")
+

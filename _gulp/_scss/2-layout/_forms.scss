@@ -153,13 +153,13 @@ button, input[type=button], input[type=reset], input[type=submit] {
       }
     }
   }
-  &__checkbox {
+  &__checkbox, &__radio {
     position: relative;
     margin: 0;
     padding-left: 41px;
     cursor: pointer;
     font-size: 0;
-    input[type="checkbox"] {
+    input {
       display: none;
       &:checked {
         &~[class*="-input"] {

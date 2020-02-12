@@ -1,0 +1,64 @@
+doctype
+
+html(lang="ru")
+
+  -var active = 'Мероприятия' //активный пункт меню, список в header.jade
+  -var pageTitle = 'Мероприятия' + ' - Jewell' //title страницы для генерации верстки
+
+  include ./_include/_head
+
+  body
+
+    // Preloader
+    include ./_include/_preloader
+
+    // Base
+    .base
+
+      // Navigation
+      include ./_include/_navigation
+
+      // Wrapper
+      .wrapper
+        include ./_include/_header
+
+        // Content
+        .content
+          .container
+            .content__head
+              .small важен каждый
+              h1 Мероприятия
+
+            // Carousel
+            .content__carousel
+              .content__carousel-wrapper
+                .j-carousel
+                  - for (var i=0; i<6; i++) {
+                  .slick-slide
+                    img(src="./tmp/img-tmp-1.jpg", alt="")
+                  - }
+
+            // Bill
+            .bill
+              .bill__title Актуальные программы
+              .bill__row.row
+                - for (var i=1; i<7; i++) {
+                .col-12.col-sm-6.col-md-4
+                  .bill__block
+                    .bill__block-thumb
+                      a(href="#!")
+                        img(src="./tmp/bill-poster-img-" + i + ".png")
+                        span.btn.btn--register
+                          span Регистрация открыта
+                    .bill__block-content
+                      time.bill__block-time 01 января 2020
+                      .bill__block-title Ханука антифриз
+                      p Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вдали от всех живут они в буквенных домах на берегу Семантика большого языкового океана. Маленький ручеек Даль журчит по всей стране
+                - }
+
+        include ./_include/_footer
+
+    // Load Scripts
+    include ./_include/_footer-js
+    script(src="./js/common.js")
+

@@ -2,8 +2,8 @@ doctype
 
 html(lang="ru")
 
-  -var active = 'Главная' //активный пункт меню, список в header.jade
-  -var pageTitle = 'Главная' + ' - Jewell' //title страницы для генерации верстки
+  -var active = 'Наши проекты' //активный пункт меню, список в header.jade
+  -var pageTitle = 'Наши проекты' + ' - Jewell' //title страницы для генерации верстки
 
   include ./_include/_head
 
@@ -21,12 +21,18 @@ html(lang="ru")
       // Wrapper
       .wrapper
         include ./_include/_header
-        
+
         // Content
         .content
           .container
-            
-            p index
+            .content__head
+              .small важен каждый
+              h1 Наши проекты
+
+            // Content document
+            .content__document
+              
+              
 
         include ./_include/_footer
 

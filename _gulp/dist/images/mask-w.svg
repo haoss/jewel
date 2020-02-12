@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="218" height="178.001" viewBox="0 0 218 178.001">
+    <defs>
+        <style>
+            .cls-1,.cls-4{fill:none}.cls-2{clip-path:url(#clip-path)}.cls-3{fill:#fff}.cls-4{stroke:#fff;stroke-width:1.5px}
+        </style>
+        <clipPath id="clip-path">
+            <path id="Rectangle_65" d="M0 0h218v178.001H0z" class="cls-1" data-name="Rectangle 65"/>
+        </clipPath>
+    </defs>
+    <g id="w" class="cls-2">
+        <path id="Exclusion_1" d="M218 98H0V-80h218zM110.575.939l52.662 91.973 50.174-129.841L187.22-71.9 156.143 6.466 110.575-71.9 60.881 6.466 30.361-71.9 5.528-36.929 58.421 92.912 110.575.94z" class="cls-3" data-name="Exclusion 1" transform="translate(0 80)"/>
+        <path id="Line_106" d="M0 0l84 148" class="cls-4" data-name="Line 106" transform="translate(109.5 5.5)"/>
+        <path id="Line_105" d="M84 0L0 128" class="cls-4" data-name="Line 105" transform="translate(30.5 3.5)"/>
+    </g>
+</svg>

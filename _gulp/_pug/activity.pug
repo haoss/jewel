@@ -26,7 +26,7 @@ html(lang="ru")
         .content
           .container
             .content__head
-              .small важен каждый
+              .small только лучшее
               h1 Мероприятия
 
             // Carousel
@@ -54,6 +54,26 @@ html(lang="ru")
                       time.bill__block-time 01 января 2020
                       .bill__block-title Ханука антифриз
                       p Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вдали от всех живут они в буквенных домах на берегу Семантика большого языкового океана. Маленький ручеек Даль журчит по всей стране
+                - }
+              .bill__footer
+                a(href="#!").btn.btn--more
+                  span больше афиш
+
+            // Bill
+            .bill
+              .bill__title Прошедшие программы
+              .bill__row.row
+                - for (var i=1; i<4; i++) {
+                .col-12.col-sm-6.col-md-4
+                  .bill__block.bill__block--closed
+                    .bill__block-thumb
+                      a(href="#!")
+                        img(src="./tmp/bill-poster-img-" + i + ".png")
+                        span.btn.btn--register
+                          span Регистрация закрыта
+                    .bill__block-content
+                      time.bill__block-time 01 января 2020
+                      .bill__block-title Ханука антифриз
                 - }
 
         include ./_include/_footer

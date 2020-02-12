@@ -134,6 +134,25 @@ button {
     }
   }
 
+  &--more {
+    span {
+      &::after {
+        display: none;
+      }
+      &::before {
+        width: 25px;
+        height: 25px;
+        border: 0;
+        background-color: transparent;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24.9' height='24.9' viewBox='0 0 24.9 24.9'%3E%3Cg data-name='Group 21'%3E%3Cpath d='M24.1 9A12.2 12.2 0 002.2 5.6 3 3 0 001.8 7V2.6H.2v6.6h6.5V7.5H3a10.7 10.7 0 019.4-5.8 10.7 10.7 0 0110.7 10.7 10.7 10.7 0 01-10.7 10.7 10.7 10.7 0 01-10.1-7.7L.7 16a12.2 12.2 0 0023.4-7z' data-name='Path 149' fill='%23232323' stroke='%23232323' stroke-width='.4'/%3E%3C/g%3E%3C/svg%3E");
+        transform: none;
+        bottom: 1px;
+      }
+    }
+  }
+
   &--small {
     min-height: 42px;
     padding-top: 10px;

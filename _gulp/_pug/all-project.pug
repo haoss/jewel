@@ -25,14 +25,43 @@ html(lang="ru")
         // Content
         .content
           .container
-            .content__head
-              .small важен каждый
+            .content__head.content__head--all-project
+              .small только лучшее
               h1 Наши проекты
 
-            // Content document
-            .content__document
-              
-              
+            // Our projects
+            .our-projects
+              .row
+                .col-12.col-md-6.col-xl-4
+                  .our-projects__block
+                    img.our-projects__block-letter(src="./images/mask-j.svg" style="background-image: url('./tmp/bill-poster-img-4.png');")
+                    a(href="#!").our-projects__block-title JOURNEY | ПУТЕШЕСТВИЯ
+                    p Дарим незабываемые поездки в  США, Израиль и Европу c уникальной программой. Узнавая мир, ты познаёшь себя!
+                .col-12.col-md-6.col-xl-4
+                  .our-projects__block
+                    img.our-projects__block-letter(src="./images/mask-e.svg" style="background-image: url('./tmp/bill-poster-img-4.png');")
+                    a(href="#!").our-projects__block-title EDUCATION | ОБРАЗОВАНИЕ
+                    p Лекции, семинары и индивидуальные занятия. Многовековая мудрость еврейского народа: язык, традиции, тайны Торы, Талмуда, Хасидизма и Кабалы.
+                .col-12.col-md-6.col-xl-4
+                  .our-projects__block
+                    img.our-projects__block-letter(src="./images/mask-w.svg" style="background-image: url('./tmp/bill-poster-img-4.png');")
+                    a(href="#!").our-projects__block-title WORK | РАБОТА
+                    p Первый еврейский коворкинг, бизнес клуб и бизнес инкубатор. Помощь в трудоустройстве, гранты, новые бизнес контактов
+                .col-12.col-md-6.col-xl-4
+                  .our-projects__block
+                    img.our-projects__block-letter(src="./images/mask-e.svg" style="background-image: url('./tmp/bill-poster-img-4.png');")
+                    a(href="#!").our-projects__block-title EXPERIENCE | ОПЫТ
+                    p Мастер-классы, тренинги, интеллектуальные мероприятия. Главное: что мы делаем вклад в твою успешность, ты в процветание своего народа!
+                .col-12.col-md-6.col-xl-4
+                  .our-projects__block
+                    img.our-projects__block-letter(src="./images/mask-l.svg" style="background-image: url('./tmp/bill-poster-img-4.png');")
+                    a(href="#!").our-projects__block-title LEISURE | ДОСУГ
+                    p Арт-кафе с программами на любой вкус: концерты, кинопоказы, игротеки, вечеринки на еврейские и международные праздники.
+                .col-12.col-md-6.col-xl-4
+                  .our-projects__block
+                    img.our-projects__block-letter(src="./images/mask-l.svg" style="background-image: url('./tmp/bill-poster-img-4.png');")
+                    a(href="#!").our-projects__block-title LOVE | ШИДУХ
+                    p В «JEWELL»  много замечательных людей, среди которых можно найти друзей, а возможно и встретить своего человека, который станет твоей второй половинкой.
 
         include ./_include/_footer
 

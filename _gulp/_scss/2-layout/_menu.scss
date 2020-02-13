@@ -29,6 +29,9 @@
   }
   &.is-active {
     transform: translateX(276px);
+    @media (min-width: 1440px) {
+      transform: translateX(0);
+    }
   }
   &__close {
     display: none;

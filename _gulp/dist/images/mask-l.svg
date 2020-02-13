@@ -1,8 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="103" height="167" viewBox="0 0 103 167">
-    <defs>
-        <style>
-            .cls-1{fill:#fff}
-        </style>
-    </defs>
-    <path id="Exclusion_4" d="M2508 2258h-103v-167h103zm-55.905-49.619v35.328h49l-20.392-35.328zM2415 2100v143.71h35.349v-35.328h-.022v-83.972l-14.083-24.41z" class="cls-1" data-name="Exclusion 4" transform="translate(-2405 -2091)"/>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" id="svg7" width="86.1" height="143.8" version="1.1" viewBox="0 0 86.1 143.8"><path id="Exclusion_4" fill="#fff" d="M86 143.8H0V0h86.1zm-49-35.3v35.3h49l-20.3-35.3zM0 0v143.8h35.3V24.5L21.3 0z" data-name="Exclusion 4"/></svg>

@@ -35,6 +35,103 @@ html(lang="ru")
 
                   p Если ты хочешь и готова серьезно и углубленно учится , поднимая свой уровень еврейских знаний!
 
+                  a(href="#!").btn
+                    span заполнить анкету
+
+              .col-lg-7.col-xl-6
+                img(src="./tmp/1-activity-img.png", alt="").img-fluid
+
+            // Content document
+            .content__document
+              
+              .row.content__row
+                .col-lg-6
+                  .content__row-head.content__row-head--xs-exclamation
+                    h2.fs19.fs28-md.mb20 Мы открываем STARS INTENSIVE для девушек
+                .col-lg-6
+                  .content__row-content.fs14
+                    p.fs18 При этом не имеет значения ходила ли ты на STARS 4 года или только неделю назад начала посещать занятия 
+                      br
+                      | Важен твой настрой! И желание расти в своем “еврействе”.
+                    p Если ты хочешь и готова серьезно и углубленно учится , поднимая свой уровень еврейских знаний ✡
+                    p.fs18
+                      strong Нам есть что тебе предложить
+                    p.mb0
+                      strong GIRLS STARS INTENSIV 
+                      | это:
+                    ul
+                      li Увлекательные занятия 3 раза в неделю по 2 часа
+                      li Крутой преподавательский состав‍
+                      li Поездка в Англию в Августе 2020 для активных студенток
+                      li Ежемесячная стипендия 70$ (по результатам экзамена)
+                      li Заполняй анкету ✍ и выбери день и время для собеседования ‍
+
+              .row.content__row
+                .col-lg-6
+                  a(href="#!").btn
+                    span заполнить анкету
+                .col-lg-6
+                  .content__row-content.fs14
+                    p Торжественное открытие состоится 
+                      br
+                      strong.fs18 9 февраля в 20:00
+
+              // Carousel
+              .content__carousel.content__carousel--inside
+                .content__carousel-wrapper
+                  .j-carousel
+                    - for (var i=0; i<6; i++) {
+                    .slick-slide
+                      img(src="./tmp/img-tmp-2.jpg", alt="")
+                    - }
+
+              // Bottom form
+              .content__form
+                form(action="#!" autocomplete="off").form
+                  .row
+                    .col-lg-6
+                      .content__form-title Анкета для GIRLS STARS INTENSIVE
+                      .content__form-content.fs14
+                        p Все поля обязательны для заполнения.
+                    .col-lg-6
+                      p 1
+                  .row
+                    .col-lg-6
+                      .content__row-head.content__row-head--xs-question
+                        .h2.fs18.mb20 Евреи в твоей семье?
+                    .col-lg-6
+                      fieldset
+                        .form__group.mb12
+                          label.form__radio
+                            input(type="radio" name="education-radio" checked)
+                            span.form__radio-input
+                            span.form__radio-label Бабушка по материнской линии
+                        .form__group.mb12
+                          label.form__radio
+                            input(type="radio" name="education-radio")
+                            span.form__radio-input
+                            span.form__radio-label Дедушка по материнской линии
+                        .form__group.mb12
+                          label.form__radio
+                            input(type="radio" name="education-radio")
+                            span.form__radio-input
+                            span.form__radio-label Бабушка по отцовской линии
+                        .form__group.mb12
+                          label.form__radio
+                            input(type="radio" name="education-radio")
+                            span.form__radio-input
+                            span.form__radio-label Дедушка по отцовской линии
+                        .form__group.mb12
+                          label.form__radio
+                            input(type="radio" name="education-radio")
+                            span.form__radio-input
+                            span.form__radio-label Может кто-то и есть но я не знаю(  
+                        .form__group.mb35
+                          label.form__radio
+                            input(type="radio" name="education-radio")
+                            span.form__radio-input
+                            span.form__radio-label Я прошел\а Гиюр
+
         include ./_include/_footer
 
     // Load Scripts

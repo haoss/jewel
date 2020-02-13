@@ -1,15 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="218" height="178.001" viewBox="0 0 218 178.001">
-    <defs>
-        <style>
-            .cls-1,.cls-4{fill:none}.cls-2{clip-path:url(#clip-path)}.cls-3{fill:#fff}.cls-4{stroke:#fff;stroke-width:1.5px}
-        </style>
-        <clipPath id="clip-path">
-            <path id="Rectangle_65" d="M0 0h218v178.001H0z" class="cls-1" data-name="Rectangle 65"/>
-        </clipPath>
-    </defs>
-    <g id="w" class="cls-2">
-        <path id="Exclusion_1" d="M218 98H0V-80h218zM110.575.939l52.662 91.973 50.174-129.841L187.22-71.9 156.143 6.466 110.575-71.9 60.881 6.466 30.361-71.9 5.528-36.929 58.421 92.912 110.575.94z" class="cls-3" data-name="Exclusion 1" transform="translate(0 80)"/>
-        <path id="Line_106" d="M0 0l84 148" class="cls-4" data-name="Line 106" transform="translate(109.5 5.5)"/>
-        <path id="Line_105" d="M84 0L0 128" class="cls-4" data-name="Line 105" transform="translate(30.5 3.5)"/>
-    </g>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" id="svg12" width="208.2" height="164.9" version="1.1" viewBox="0 0 208.2 164.9"><defs id="defs6"><clipPath id="clip-path"><path id="Rectangle_65" fill="none" d="M0 0h218v178H0z" data-name="Rectangle 65"/></clipPath><style id="style2">.cls-4{fill:none;stroke:#fff;stroke-width:1.5px}</style></defs><g id="w" fill="#a00" clip-path="url(#clip-path)" transform="translate(-5.5 -8.1)"><path id="Exclusion_1" fill="#fff" d="M213.6 93H5.5V-72h208.1zm-103-92l52.6 92 50.2-130-26.2-34.9-31 78.4L110.5-72 60.9 6.5 30.4-72l-24.9 35 53 129.8 52-92z" data-name="Exclusion 1" transform="translate(0 80)"/><path id="Line_106" fill="#a00" stroke="#fff" stroke-width="1.5" d="M109.5 5.5l84 148" class="cls-4" data-name="Line 106"/><path id="Line_105" fill="#a00" stroke="#fff" stroke-width="1.5" d="M114.5 3.5l-84 128" class="cls-4" data-name="Line 105"/></g></svg>

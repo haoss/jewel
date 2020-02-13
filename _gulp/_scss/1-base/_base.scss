@@ -292,6 +292,9 @@ ol li {
   &--white {
     color: $color-white !important;
   }
+  &--blue {
+    color: #50acde !important;
+  }
 }
 
 @for $i from 0 through 100 {

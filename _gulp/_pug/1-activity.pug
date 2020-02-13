@@ -27,19 +27,32 @@ html(lang="ru")
           .container
 
             .row
-              .col-lg-5.col-xl-6
-                .content__top
+              .col-md-6.col-lg-6
+                .content__top.content__top--one-activite
                   .content__head
-                    .small 1 мероприятие
+                    .small только для девушек
                     h1 GIRLS STARS INTENSIV
+
+                  .one-activity__banner.d-md-none
+                    img(src="./tmp/1-activity-img.png", alt="").img-fluid
 
                   p Если ты хочешь и готова серьезно и углубленно учится , поднимая свой уровень еврейских знаний!
 
-                  a(href="#!").btn
+                  .one-activity__date
+                    .one-activity__date-wrapper
+                      .one-activity__date-counter
+                        div Осталось мест: 
+                          b 12
+                      p
+                        strong.fs22 9 февраля в 20:00
+                        | Москва, 2й Вышеславцев пер., д. 5а, 7-ой этаж
+
+                  a(href="#!").btn.ttX-18px
                     span заполнить анкету
 
-              .col-lg-7.col-xl-6
-                img(src="./tmp/1-activity-img.png", alt="").img-fluid
+              .d-none.d-md-block.col-md-6.col-lg-6
+                .one-activity__banner
+                  img(src="./tmp/1-activity-img.png", alt="").img-fluid
 
             // Content document
             .content__document
@@ -50,7 +63,7 @@ html(lang="ru")
                     h2.fs19.fs28-md.mb20 Мы открываем STARS INTENSIVE для девушек
                 .col-lg-6
                   .content__row-content.fs14
-                    p.fs18 При этом не имеет значения ходила ли ты на STARS 4 года или только неделю назад начала посещать занятия 
+                    h3 При этом не имеет значения ходила ли ты на STARS 4 года или только неделю назад начала посещать занятия 
                       br
                       | Важен твой настрой! И желание расти в своем “еврействе”.
                     p Если ты хочешь и готова серьезно и углубленно учится , поднимая свой уровень еврейских знаний ✡
@@ -68,9 +81,13 @@ html(lang="ru")
 
               .row.content__row
                 .col-lg-6
-                  a(href="#!").btn
+                  .content__row-content.fs14.mb25
+                    p Торжественное открытие состоится 
+                      br
+                      strong.fs18 9 февраля в 20:00
+                  a(href="#!").btn.ttX-18px
                     span заполнить анкету
-                .col-lg-6
+                .d-none.col-lg-6
                   .content__row-content.fs14
                     p Торжественное открытие состоится 
                       br
@@ -89,48 +106,166 @@ html(lang="ru")
               .content__form
                 form(action="#!" autocomplete="off").form
                   .row
-                    .col-lg-6
+                    .col-md-6
                       .content__form-title Анкета для GIRLS STARS INTENSIVE
                       .content__form-content.fs14
                         p Все поля обязательны для заполнения.
-                    .col-lg-6
-                      p 1
+                    .col-md-6
+                      a(href="#!").btn.mb45.ttX-18px
+                        span заполнить анкету
                   .row
-                    .col-lg-6
+                    .col-md-6
+                      p 1
+                    .col-md-6
+                      label.form__group.has-icon
+                        .form__label.j-label Фамилия и Имя
+                          sup *
+                        input.form__control.j-input(type="text" name="text" placeholder="" value="")
+                        img(src="./images/icon-form-user.svg", alt="").icon-img
+                      label.form__group.has-icon
+                        .form__label.j-label E-mail
+                          sup *
+                        input.form__control.j-input(type="text" name="text" placeholder="" value="")
+                        img(src="./images/icon-form-mail.svg", alt="").icon-img
+                      label.form__group.has-icon.mb60
+                        .form__label.j-label Телефон
+                          sup *
+                        input.form__control.j-input(type="text" name="text" placeholder="" value="")
+                        img(src="./images/icon-form-phone.svg", alt="").icon-img
+                  .row
+                    .col-md-6
                       .content__row-head.content__row-head--xs-question
-                        .h2.fs18.mb20 Евреи в твоей семье?
-                    .col-lg-6
+                        .h2.fs19.mb20 Евреи в твоей семье?
+                    .col-md-6
                       fieldset
-                        .form__group.mb12
+                        .form__group.mb10
                           label.form__radio
-                            input(type="radio" name="education-radio" checked)
+                            input(type="radio" name="1-activity-radio")
                             span.form__radio-input
                             span.form__radio-label Бабушка по материнской линии
-                        .form__group.mb12
+                        .form__group.mb10
                           label.form__radio
-                            input(type="radio" name="education-radio")
+                            input(type="radio" name="1-activity-radio")
                             span.form__radio-input
                             span.form__radio-label Дедушка по материнской линии
-                        .form__group.mb12
+                        .form__group.mb10
                           label.form__radio
-                            input(type="radio" name="education-radio")
+                            input(type="radio" name="1-activity-radio")
                             span.form__radio-input
                             span.form__radio-label Бабушка по отцовской линии
-                        .form__group.mb12
+                        .form__group.mb10
                           label.form__radio
-                            input(type="radio" name="education-radio")
+                            input(type="radio" name="1-activity-radio")
                             span.form__radio-input
                             span.form__radio-label Дедушка по отцовской линии
-                        .form__group.mb12
+                        .form__group.mb10
                           label.form__radio
-                            input(type="radio" name="education-radio")
-                            span.form__radio-input
-                            span.form__radio-label Может кто-то и есть но я не знаю(  
-                        .form__group.mb35
-                          label.form__radio
-                            input(type="radio" name="education-radio")
+                            input(type="radio" name="1-activity-radio")
                             span.form__radio-input
                             span.form__radio-label Я прошел\а Гиюр
+                        .form__group.mb60
+                          label.form__radio
+                            input(type="radio" name="1-activity-radio" checked)
+                            span.form__radio-input
+                            span.form__radio-label Может кто-то и есть но я не знаю(  
+                  .row
+                    .col-md-6
+                      .content__row-head.content__row-head--xs-question
+                        .h2.fs19.mb20 Сколько лет ты на програмее stars? 
+                    .col-md-6
+                      fieldset
+                        .form__group.mb10
+                          label.form__radio
+                            input(type="radio" name="1-activity-radio-2")
+                            span.form__radio-input
+                            span.form__radio-label Не состою в программе
+                        .form__group.mb10
+                          label.form__radio
+                            input(type="radio" name="1-activity-radio-2")
+                            span.form__radio-input
+                            span.form__radio-label 1 год
+                        .form__group.mb10
+                          label.form__radio
+                            input(type="radio" name="1-activity-radio-2")
+                            span.form__radio-input
+                            span.form__radio-label 2 года
+                        .form__group.mb10
+                          label.form__radio
+                            input(type="radio" name="1-activity-radio-2")
+                            span.form__radio-input
+                            span.form__radio-label 3 года
+                        .form__group.mb10
+                          label.form__radio
+                            input(type="radio" name="1-activity-radio-2")
+                            span.form__radio-input
+                            span.form__radio-label 4 года 
+                        .form__group.mb60
+                          label.form__radio
+                            input(type="radio" name="1-activity-radio-2" checked)
+                            span.form__radio-input
+                            span.form__radio-label Более 5 лет
+                  .row
+                    .col-md-6
+                      .content__row-head.content__row-head--xs-question
+                        .h2.fs19.mb20 Оцени уровень своих знаний:
+                    .col-md-6
+                      fieldset
+                        .form__group.mb10
+                          label.form__radio
+                            input(type="radio" name="1-activity-radio-3")
+                            span.form__radio-input
+                            span.form__radio-label Слышала про Мацу, Авраама и Шабат  
+                        .form__group.mb10
+                          label.form__radio
+                            input(type="radio" name="1-activity-radio-3")
+                            span.form__radio-input
+                            span.form__radio-label Слышала про Рош-аШона и Йом-киПур, но в чем отличие, не разбираюсь 
+                        .form__group.mb10
+                          label.form__radio
+                            input(type="radio" name="1-activity-radio-3")
+                            span.form__radio-input
+                            span.form__radio-label Уже давно хожу в еврейские организации, но систематических знаний нет
+                        .form__group.mb10
+                          label.form__radio
+                            input(type="radio" name="1-activity-radio-3")
+                            span.form__radio-input
+                            span.form__radio-label Знаю, что такое Тфилин, Амида, Шофар и могу объяснить другим
+                        .form__group.mb60
+                          label.form__radio
+                            input(type="radio" name="1-activity-radio-3" checked)
+                            span.form__radio-input
+                            span.form__radio-label Я очень хорошо разбираюсь в еврейской культуре и традиции 
+                  .row
+                    .col-md-6
+                      .content__row-head.content__row-head--xs-question
+                        .h2.fs19.mb20 Почему тебе интересен проект STARS
+                    .col-md-6
+                      fieldset
+                        label.form__group.has-icon
+                          .form__label.j-label Опиши в 4 предложениях
+                            sup *
+                          textarea.form__control.j-input(rows="5" name="message" placeholder="" value="")
+                          img(src="./images/icon-form-pencil.svg", alt="").icon-img
+
+                  .row
+                    .col-md-6
+                      .content__row-head.content__row-head--xs-question
+                        .h2.fs19.mb5 Дай оценку каждому направлению с учетом твоей заинтересованности в изучении.
+                      .content__form-content.fs14
+                        p Где 1- минимальный интерес, а 5 - максимальная заинтересованность.
+                    .col-md-6
+                      fieldset
+                        p text
+
+                  .row
+                    .col-md-6
+                      .content__row-head.content__row-head--xs-question
+                        .h2.fs19.mb5 Выбери дату и время удобное для прохождения личного собеседования с тобой
+                      .content__form-content.fs14
+                        p Продолжительность интервью 10-15 минут 
+                    .col-md-6
+                      fieldset
+                        p text
 
         include ./_include/_footer
 

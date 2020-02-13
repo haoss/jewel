@@ -166,6 +166,9 @@ button, input[type=button], input[type=reset], input[type=submit] {
           background: #50acde;
           box-shadow: 0 0 0 3px inset $color-white;
         }
+        &~[class*="-label"] {
+          font-weight: bold;
+        }
       }
     }
     &-input {

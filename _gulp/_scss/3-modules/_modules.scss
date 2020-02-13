@@ -43,7 +43,7 @@
       display: block;
       margin-bottom: 6px;
       font-weight: 500;
-      letter-spacing: 1.4px;
+      letter-spacing: 1.8px;
       @media (min-width: 990px) {
         font-size: rem(18px);
       }
@@ -166,6 +166,7 @@
           padding-left: 23px;
           list-style: none;
           position: relative;
+          margin-bottom: 5px;
           &::before {
             content: '';
             width: 0;
@@ -324,6 +325,8 @@
       margin-bottom: 16px;
     }
     &-content {
+      position: relative;
+      z-index: 5;
       &.fs14 {
         font-size: rem(14px);
       }
@@ -357,6 +360,12 @@
     margin-bottom: 45px;
     position: relative;
     z-index: 5;
+    &--one-activite {
+      margin-bottom: 60px;
+      @media (min-width: 990px) {
+        margin-bottom: 130px;
+      }
+    }
   }
   &__hr {
     position: relative;
@@ -991,4 +1000,92 @@
       position: absolute;
     }
   }
+}
+
+.one-activity {
+  &__banner {
+    margin-bottom: 55px;
+    img {
+      display: block;
+      margin: 0 auto;
+      @media (min-width: 990px) {
+        max-width: 450px;
+      }
+      @media (min-width: 1200px) {
+        max-width: 530px;
+      }
+    }
+  }
+  &__date {
+    position: relative;
+    font-size: rem(14px);
+    padding:  24px 15px;
+    margin: 60px -15px 25px -15px;
+    max-width: 476px;
+    @media (min-width: 768px) {
+      margin-bottom: 35px;
+    }
+    &::before {
+      background: #f5fbfd;
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      transform: skewX(0);
+      @media (min-width: 768px) {
+        transform: skewX(25deg);
+        left: -25px;
+      }
+    }
+    &-wrapper {
+      position: relative;
+      z-index: 5;
+    }
+    p {
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+    strong {
+      display: block;
+      line-height: 1;
+      margin-bottom: 13px;
+    }
+    &-counter {
+      position: absolute;
+      top: -55px;
+      right: -25px;
+      font-size: rem(14px);
+      text-align: right;
+      min-width: 212px;
+      padding: 0 25px 0 15px;
+      @media (min-width: 768px) {
+        width: 257px;
+        text-align: center;
+      }
+      &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background: #74c6f2;
+        transform: skewX(25deg);
+      }
+      div {
+        position: relative;
+        z-index: 5;
+        height: 45px;
+        line-height: 45px;
+        white-space: nowrap;
+      }
+    }
+  }
+}
+
+.ttX-18px {
+  transform: translateX(-18px);
 }

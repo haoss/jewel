@@ -4,24 +4,26 @@
   @media (min-width: 1440px) {
     padding-left: 290px;
   }
-  &::before, &::after {
-    @media (min-width: 1440px) {
-      content: '';
-      position: fixed;
-      width: 441px;
-      height: 592px;
-      background-repeat: no-repeat;
+  &:not([class*='-main']) {
+    &::before, &::after {
+      @media (min-width: 1440px) {
+        content: '';
+        position: fixed;
+        width: 441px;
+        height: 592px;
+        background-repeat: no-repeat;
+      }
     }
-  }
-  &::before {
-    background-image: url("../images/bg-l-compressor.png");
-    left: -30px;
-    top: -30px;
-  }
-  &::after {
-    right: -287px;
-    top: -15px;
-    background-image: url('../images/bg-r-compressor.png');
+    &::before {
+      background-image: url("../images/bg-l-compressor.png");
+      left: -30px;
+      top: -30px;
+    }
+    &::after {
+      right: -287px;
+      top: -15px;
+      background-image: url('../images/bg-r-compressor.png');
+    }
   }
 }
 

@@ -27,7 +27,7 @@ html(lang="ru")
           .container
 
             .row
-              .col-md-6.col-lg-6
+              .col-lg-6
                 .content__top.content__top--one-activite
                   .content__head
                     .small о нас
@@ -35,7 +35,7 @@ html(lang="ru")
 
                   p Это новый уникальный проект затрагивающий все сферы жизни современного молодого человека с активной жизненной позицией. Если ты собираешься к нам прийти в первый раз, то даже не раздумывая прямо сейчас выезжай! 
 
-              .col-lg-7.col-xl-6
+              .col-lg-6
                 // Carousel
                 .content__carousel.content__carousel--col
                   .content__carousel-wrapper
@@ -82,11 +82,11 @@ html(lang="ru")
               .content__form
                 form(action="#!" autocomplete="off").form
                   .row
-                    .col-auto
+                    .col-12.col-md
                       .content__form-title.fs28-lg Подать заявку на членство в клубе JEWELL!
                       .content__form-content.fs14
                         p Все поля обязательны для заполнения.
-                    .col
+                    .col.col-md-auto
                       a(href="#!").btn.mb45.ttX-18px.float-lg-right
                         span заполнить анкету
                   .row
@@ -207,10 +207,10 @@ html(lang="ru")
                             span.form__radio-input
                             span.form__radio-label не участвовал
                   .row
-                    .col-lg-6
+                    .col-md-6
                       .content__row-head.content__row-head--xs-question
                         .h2.fs18.mb20 Евреи в твоей семье?
-                    .col-lg-6
+                    .col-md-6
                       fieldset
                         .form__group.mb12
                           label.form__radio
@@ -243,10 +243,10 @@ html(lang="ru")
                             span.form__radio-input
                             span.form__radio-label Я прошел\а Гиюр
                   .row
-                    .col-lg-6
+                    .col-md-6
                       .content__row-head.content__row-head--xs-question
                         .h2.fs18.mb20 Не возражаешь ли ты получать смс - уведомления о наших мероприятиях (не чаше 1-2 раза в неделю), если ты не против - оставь свой мобильный номер?
-                    .col-lg-6
+                    .col-md-6
                       label.form__group.has-icon
                         .form__label.j-label Телефон
                           sup *
@@ -256,6 +256,56 @@ html(lang="ru")
                   .text-center
                     button(type="button").btn.btn--big.mb0.ttX-18px
                       span выслать анкету
+
+              // Our command
+              .our-command
+                .h1 Наша команда
+                .mb40
+                  p Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вдали от всех живут они в буквенных домах на берегу Семантика большого языкового океана. Маленький ручеек Даль журчит по всей стране и обеспечивает ее всеми необходимыми правилами. Эта парадигматическая страна, в которой жаренные предложения залетают прямо в рот. Даже всемогущая пунктуация не имеет власти над рыбными текстами, ведущими безорфографичный образ жизни.
+
+                .row.our-command__row
+                  .col-sm-6.col-lg-4
+                    .our-command__block
+                      .our-command__block-thumb
+                        img(src="./tmp/bill-poster-img-2.png", alt="")
+                      .our-command__content
+                        .our-command__block-title ААРОН
+                        p Скромная должность
+                  .col-sm-6.col-lg-4
+                    .our-command__block
+                      .our-command__block-thumb
+                        img(src="./tmp/bill-poster-img-3.png", alt="")
+                      .our-command__content
+                        .our-command__block-title агвидор
+                        p Бухгалтерская должность
+                  .col-sm-6.col-lg-4
+                    .our-command__block
+                      .our-command__block-thumb
+                        img(src="./tmp/bill-poster-img-2.png", alt="")
+                      .our-command__content
+                        .our-command__block-title ААРОН
+                        p Скромная должность
+                  .col-sm-6.col-lg-4
+                    .our-command__block
+                      .our-command__block-thumb
+                        img(src="./tmp/bill-poster-img-3.png", alt="")
+                      .our-command__content
+                        .our-command__block-title агвидор
+                        p Бухгалтерская должность
+                  .col-sm-6.col-lg-4
+                    .our-command__block
+                      .our-command__block-thumb
+                        img(src="./tmp/bill-poster-img-2.png", alt="")
+                      .our-command__content
+                        .our-command__block-title ААРОН
+                        p Скромная должность
+                  .col-sm-6.col-lg-4
+                    .our-command__block
+                      .our-command__block-thumb
+                        img(src="./tmp/bill-poster-img-3.png", alt="")
+                      .our-command__content
+                        .our-command__block-title агвидор
+                        p Бухгалтерская должность
 
         include ./_include/_footer
 

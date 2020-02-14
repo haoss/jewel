@@ -74,6 +74,7 @@ $(document).on('ready', function(){
   navBtnScroll();
   inputFocus();
   inputMaskTest();
+  rating();
 
   // Chrome Smooth Scroll
   try {
@@ -242,5 +243,20 @@ function inputMaskTest() {
   var dateMask = $('.j-mask-date');
   dateMask.each(function () {
     $(this).mask("99.99.9999");
+  });
+}
+
+function rating() {
+  var rating = $('.j-rating');
+  
+  rating.each(function(){
+    var _this = $(this);
+    var info = _this.find('.rating__info');
+    var input = _this.find('input[type="radio"]');
+
+    input.on('change', function(){
+      info.text($(this).val());
+      console.log(input.val());
+    });
   });
 }

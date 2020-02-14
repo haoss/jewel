@@ -1,0 +1,265 @@
+doctype
+
+html(lang="ru")
+
+  -var active = 'О нас' //активный пункт меню, список в header.jade
+  -var pageTitle = 'О нас' + ' - Jewell' //title страницы для генерации верстки
+
+  include ./_include/_head
+
+  body
+
+    // Preloader
+    include ./_include/_preloader
+
+    // Base
+    .base
+
+      // Navigation
+      include ./_include/_navigation
+
+      // Wrapper
+      .wrapper
+        include ./_include/_header
+
+        // Content
+        .content
+          .container
+
+            .row
+              .col-md-6.col-lg-6
+                .content__top.content__top--one-activite
+                  .content__head
+                    .small о нас
+                    h1 Что такое JeWell?
+
+                  p Это новый уникальный проект затрагивающий все сферы жизни современного молодого человека с активной жизненной позицией. Если ты собираешься к нам прийти в первый раз, то даже не раздумывая прямо сейчас выезжай! 
+
+              .col-lg-7.col-xl-6
+                // Carousel
+                .content__carousel.content__carousel--col
+                  .content__carousel-wrapper
+                    .j-carousel
+                      - for (var i=0; i<6; i++) {
+                      .slick-slide
+                        img(src="./tmp/img-tmp-1.jpg", alt="")
+                      - }
+
+            // Content document
+            .content__document
+              
+              .row.content__row
+                .col-lg-6
+                  .content__row-head.content__row-head--xs-exclamation
+                    h2.fs19.fs28-md.mb20 Уникальный проект затрагивающий все сферы жизни современного молодого человека
+                .col-lg-6
+                  .content__row-content.fs14
+                    p
+                      strong Еврейская молодёжь 
+                      | в возрасте 18-28 лет, проживающая в Москве (для других городов — сразу выберите в поле регистрации другой город РФ).
+                    p
+                      strong Если ты собираешься к нам прийти в первый раз, то даже не раздумывая прямо сейчас выезжай! 
+
+                    h3 Но на всякий случай мы расскажем, что ждет тебя в клубе JEWELL:
+                    ul
+                      li Еврейская молодёжь Москвы 18 — 30 лет. Отличная компания друзей, которая очень ждет новых участников и всегда радушно их встречает неповторимая атмосфера.
+                      li Кафе с доступными ценами.
+                      li Красивые девушки и умные парни, которые хотят найти свою вторую еврейскую половинку.
+                      li Коворкинг. Приходи с ноутбуком, пей чай, ешь печеньки, пользуйся Wi-Fi. В будние дни у нас царит рабочая атмосфера, но тебе всегда будет с кем поболтать в минуту отдыха. И это не считая того, что ты можешь здесь познакомится с потенциальными клиентом или работодателем.
+                      li Огромное количество мероприятий на любой вкус каждый вечер от просмотров фильмов до джазовых вечеров. От лекций по иудаизму до встреч с известными бизнесменами.
+                      li Путешествия. Нас хлебом не корми, только дай самолет и полететь в Израиль, США, Европу или еще куда-нибудь. Многие поездки полностью или частично оплачиваются общиной.
+
+              // Carousel
+              .content__carousel.content__carousel--inside
+                .content__carousel-wrapper
+                  .j-carousel
+                    - for (var i=0; i<6; i++) {
+                    .slick-slide
+                      img(src="./tmp/img-tmp-2.jpg", alt="")
+                    - }
+
+              // Bottom form
+              .content__form
+                form(action="#!" autocomplete="off").form
+                  .row
+                    .col-auto
+                      .content__form-title.fs28-lg Подать заявку на членство в клубе JEWELL!
+                      .content__form-content.fs14
+                        p Все поля обязательны для заполнения.
+                    .col
+                      a(href="#!").btn.mb45.ttX-18px.float-lg-right
+                        span заполнить анкету
+                  .row
+                    .col-md-6 &nbsp;
+                    .col-md-6
+                      fieldset
+                        label.form__group.has-icon
+                          .form__label.j-label Фамилия и Имя
+                            sup *
+                          input.form__control.j-input(type="text" name="text" placeholder="" value="")
+                          img(src="./images/icon-form-user.svg", alt="").icon-img
+                        label.form__group.has-icon
+                          .form__label.j-label Дата рождения
+                            sup *
+                          input.form__control.j-input.j-mask-date(type="text" name="text" placeholder="" value="")
+                          img(src="./images/icon-form-event.svg", alt="").icon-img
+                        label.form__group.has-icon
+                          .form__label.j-label E-mail
+                            sup *
+                          input.form__control.j-input(type="text" name="text" placeholder="" value="")
+                          img(src="./images/icon-form-mail.svg", alt="").icon-img
+                        label.form__group.has-icon.mb55
+                          .form__label.j-label Город проживания
+                            sup *
+                          input.form__control.j-input(type="text" name="text" placeholder="" value="")
+                          img(src="./images/icon-form-valentines-day.svg", alt="").icon-img
+                  .row
+                    .col-md-6
+                      .content__row-head.content__row-head--xs-question
+                        .h2.fs19.mb20 Что тебе мешает посещать JEWELL чаще?
+                    .col-md-6
+                      fieldset
+                        .form__group.mb10
+                          label.form__radio
+                            input(type="radio" name="about-radio-1")
+                            span.form__radio-input
+                            span.form__radio-label Работа/Учёба 
+                        .form__group.mb10
+                          label.form__radio
+                            input(type="radio" name="about-radio-1")
+                            span.form__radio-input
+                            span.form__radio-label Расстояние
+                        .form__group.mb10
+                          label.form__radio
+                            input(type="radio" name="about-radio-1")
+                            span.form__radio-input
+                            span.form__radio-label Нет знакомых (не с кем пойти)
+                        .form__group.mb10
+                          label.form__radio
+                            input(type="radio" name="about-radio-1")
+                            span.form__radio-input
+                            span.form__radio-label Неинформированность
+                        .form__group.mb60
+                          label.form__radio
+                            input(type="radio" name="about-radio-1")
+                            span.form__radio-input
+                            span.form__radio-label Незаинтересованность в проводимых мероприятиях
+                  .row
+                    .col-md-6
+                      .content__row-head.content__row-head--xs-question
+                        .h2.fs19.mb20 Какие мероприятия ты посещал бы с большим удовольствием: 
+                    .col-md-6
+                      fieldset
+                        .form__group.mb10
+                          label.form__radio
+                            input(type="radio" name="about-radio-2")
+                            span.form__radio-input
+                            span.form__radio-label Развлекательные
+                        .form__group.mb10
+                          label.form__radio
+                            input(type="radio" name="about-radio-2")
+                            span.form__radio-input
+                            span.form__radio-label Учебные
+                        .form__group.mb10
+                          label.form__radio
+                            input(type="radio" name="about-radio-2")
+                            span.form__radio-input
+                            span.form__radio-label Спортивные
+                        .form__group.mb10
+                          label.form__radio
+                            input(type="radio" name="about-radio-2")
+                            span.form__radio-input
+                            span.form__radio-label Знакомства
+                        .form__group.mb10
+                          label.form__radio
+                            input(type="radio" name="about-radio-2")
+                            span.form__radio-input
+                            span.form__radio-label Интеллектуальные
+                        .form__group.mb60
+                          label.form__radio
+                            input(type="radio" name="about-radio-2")
+                            span.form__radio-input
+                            span.form__radio-label Бизнес встречи 
+                  .row
+                    .col-md-6
+                      .content__row-head.content__row-head--xs-question
+                        .h2.fs19.mb20 В каких из перечисленных проектах ты участвовал ранее?
+                    .col-md-6
+                      fieldset
+                        .form__group.mb10
+                          label.form__radio
+                            input(type="radio" name="about-radio-3")
+                            span.form__radio-input
+                            span.form__radio-label TAGLIT 
+                        .form__group.mb10
+                          label.form__radio
+                            input(type="radio" name="about-radio-3")
+                            span.form__radio-input
+                            span.form__radio-label STARS
+                        .form__group.mb10
+                          label.form__radio
+                            input(type="radio" name="about-radio-3")
+                            span.form__radio-input
+                            span.form__radio-label MASA
+                        .form__group.mb60
+                          label.form__radio
+                            input(type="radio" name="about-radio-3")
+                            span.form__radio-input
+                            span.form__radio-label не участвовал
+                  .row
+                    .col-lg-6
+                      .content__row-head.content__row-head--xs-question
+                        .h2.fs18.mb20 Евреи в твоей семье?
+                    .col-lg-6
+                      fieldset
+                        .form__group.mb12
+                          label.form__radio
+                            input(type="radio" name="about-radio-4" checked)
+                            span.form__radio-input
+                            span.form__radio-label Бабушка по материнской линии
+                        .form__group.mb12
+                          label.form__radio
+                            input(type="radio" name="about-radio-4")
+                            span.form__radio-input
+                            span.form__radio-label Дедушка по материнской линии
+                        .form__group.mb12
+                          label.form__radio
+                            input(type="radio" name="about-radio-4")
+                            span.form__radio-input
+                            span.form__radio-label Бабушка по отцовской линии
+                        .form__group.mb12
+                          label.form__radio
+                            input(type="radio" name="about-radio-4")
+                            span.form__radio-input
+                            span.form__radio-label Дедушка по отцовской линии
+                        .form__group.mb12
+                          label.form__radio
+                            input(type="radio" name="about-radio-4")
+                            span.form__radio-input
+                            span.form__radio-label Может кто-то и есть но я не знаю(  
+                        .form__group.mb35
+                          label.form__radio
+                            input(type="radio" name="about-radio-4")
+                            span.form__radio-input
+                            span.form__radio-label Я прошел\а Гиюр
+                  .row
+                    .col-lg-6
+                      .content__row-head.content__row-head--xs-question
+                        .h2.fs18.mb20 Не возражаешь ли ты получать смс - уведомления о наших мероприятиях (не чаше 1-2 раза в неделю), если ты не против - оставь свой мобильный номер?
+                    .col-lg-6
+                      label.form__group.has-icon
+                        .form__label.j-label Телефон
+                          sup *
+                        input.form__control.j-input(type="text" name="text" placeholder="" value="")
+                        img(src="./images/icon-form-phone.svg", alt="").icon-img
+
+                  .text-center
+                    button(type="button").btn.btn--big.mb0.ttX-18px
+                      span выслать анкету
+
+        include ./_include/_footer
+
+    // Load Scripts
+    include ./_include/_footer-js
+    script(src="./js/common.js")
+

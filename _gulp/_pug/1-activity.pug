@@ -80,14 +80,14 @@ html(lang="ru")
                       li Заполняй анкету ✍ и выбери день и время для собеседования ‍
 
               .row.content__row
-                .col-lg-6
-                  .content__row-content.fs14.mb25
+                .col-md-6
+                  .content__row-content.fs14.mb25.d-md-none
                     p Торжественное открытие состоится 
                       br
                       strong.fs18 9 февраля в 20:00
                   a(href="#!").btn.ttX-18px
                     span заполнить анкету
-                .d-none.col-lg-6
+                .d-none.d-md-block.col-md-6
                   .content__row-content.fs14
                     p Торжественное открытие состоится 
                       br
@@ -107,15 +107,21 @@ html(lang="ru")
                 form(action="#!" autocomplete="off").form
                   .row
                     .col-md-6
-                      .content__form-title Анкета для GIRLS STARS INTENSIVE
+                      .content__form-title.fs28-lg Анкета для GIRLS STARS INTENSIVE
                       .content__form-content.fs14
                         p Все поля обязательны для заполнения.
                     .col-md-6
-                      a(href="#!").btn.mb45.ttX-18px
+                      a(href="#!").btn.mb45.ttX-18px.float-lg-right
                         span заполнить анкету
                   .row
                     .col-md-6
-                      p 1
+                      .content__whatsapp
+                        div
+                          p По вопросам пишите в Whatsapp
+                          a(href="https://msng.link/o/?79161533426=wa") 
+                            b.fs22.white-space-nowrap
+                              img(src="./images/icon-whatsapp-2.svg", alt="").icon 
+                              | Хуши  // +79161533426
                     .col-md-6
                       label.form__group.has-icon
                         .form__label.j-label Фамилия и Имя
@@ -241,7 +247,7 @@ html(lang="ru")
                         .h2.fs19.mb20 Почему тебе интересен проект STARS
                     .col-md-6
                       fieldset
-                        label.form__group.has-icon
+                        label.form__group.mb70.mt-15-lg.has-icon
                           .form__label.j-label Опиши в 4 предложениях
                             sup *
                           textarea.form__control.j-input(rows="5" name="message" placeholder="" value="")
@@ -252,20 +258,454 @@ html(lang="ru")
                       .content__row-head.content__row-head--xs-question
                         .h2.fs19.mb5 Дай оценку каждому направлению с учетом твоей заинтересованности в изучении.
                       .content__form-content.fs14
-                        p Где 1- минимальный интерес, а 5 - максимальная заинтересованность.
+                        p Где 1 - минимальный интерес, а 5 - максимальная заинтересованность.
                     .col-md-6
                       fieldset
-                        p text
+                        .form__group.mb40
+                          .rating.j-rating
+                            .rating__title Еврейская философия
+                            .rating__wrapper
+                              div
+                                .rating__body
+                                  label
+                                    input(type='radio' name='stars' value='Безразлично, хочу спать..')
+                                    span.icon
+                                      b 1
+                                  label
+                                    input(type='radio' name='stars' value='Включу ка музыку..')
+                                    span.icon
+                                      b 1
+                                    span.icon
+                                      b 2
+                                  label
+                                    input(type='radio' name='stars' value='Посижу послушаю..')
+                                    span.icon
+                                      b 1
+                                    span.icon
+                                      b 2
+                                    span.icon
+                                      b 3
+                                  label
+                                    input(type='radio' name='stars' value='С радостью послушаю!')
+                                    span.icon
+                                      b 1
+                                    span.icon
+                                      b 2
+                                    span.icon
+                                      b 3
+                                    span.icon
+                                      b 4
+                                  label
+                                    input(type='radio' name='stars' value='Максимальный интерес!')
+                                    span.icon
+                                      b 1
+                                    span.icon
+                                      b 2
+                                    span.icon
+                                      b 3
+                                    span.icon
+                                      b 4
+                                    span.icon
+                                      b 5
+                              div
+                                .rating__info Оцените Вашу заинтересованность
+
+                        .form__group.mb40
+                          .rating.j-rating
+                            .rating__title Талмудические мысли
+                            .rating__wrapper
+                              div
+                                .rating__body
+                                  label
+                                    input(type='radio' name='stars-2' value='Безразлично, хочу спать..')
+                                    span.icon
+                                      b 1
+                                  label
+                                    input(type='radio' name='stars-2' value='Включу ка музыку..')
+                                    span.icon
+                                      b 1
+                                    span.icon
+                                      b 2
+                                  label
+                                    input(type='radio' name='stars-2' value='Посижу послушаю..')
+                                    span.icon
+                                      b 1
+                                    span.icon
+                                      b 2
+                                    span.icon
+                                      b 3
+                                  label
+                                    input(type='radio' name='stars-2' value='С радостью послушаю!')
+                                    span.icon
+                                      b 1
+                                    span.icon
+                                      b 2
+                                    span.icon
+                                      b 3
+                                    span.icon
+                                      b 4
+                                  label
+                                    input(type='radio' name='stars-2' value='Максимальный интерес!')
+                                    span.icon
+                                      b 1
+                                    span.icon
+                                      b 2
+                                    span.icon
+                                      b 3
+                                    span.icon
+                                      b 4
+                                    span.icon
+                                      b 5
+                              div
+                                .rating__info Оцените Вашу заинтересованность
+
+                        .form__group.mb40
+                          .rating.j-rating
+                            .rating__title Недельная глава Торы 
+                            .rating__wrapper
+                              div
+                                .rating__body
+                                  label
+                                    input(type='radio' name='stars-3' value='Безразлично, хочу спать..')
+                                    span.icon
+                                      b 1
+                                  label
+                                    input(type='radio' name='stars-3' value='Включу ка музыку..')
+                                    span.icon
+                                      b 1
+                                    span.icon
+                                      b 2
+                                  label
+                                    input(type='radio' name='stars-3' value='Посижу послушаю..')
+                                    span.icon
+                                      b 1
+                                    span.icon
+                                      b 2
+                                    span.icon
+                                      b 3
+                                  label
+                                    input(type='radio' name='stars-3' value='С радостью послушаю!')
+                                    span.icon
+                                      b 1
+                                    span.icon
+                                      b 2
+                                    span.icon
+                                      b 3
+                                    span.icon
+                                      b 4
+                                  label
+                                    input(type='radio' name='stars-3' value='Максимальный интерес!')
+                                    span.icon
+                                      b 1
+                                    span.icon
+                                      b 2
+                                    span.icon
+                                      b 3
+                                    span.icon
+                                      b 4
+                                    span.icon
+                                      b 5
+                              div
+                                .rating__info Оцените Вашу заинтересованность
+
+                        .form__group.mb40
+                          .rating.j-rating
+                            .rating__title Каббала, хасидут
+                            .rating__wrapper
+                              div
+                                .rating__body
+                                  label
+                                    input(type='radio' name='stars-4' value='Безразлично, хочу спать..')
+                                    span.icon
+                                      b 1
+                                  label
+                                    input(type='radio' name='stars-4' value='Включу ка музыку..')
+                                    span.icon
+                                      b 1
+                                    span.icon
+                                      b 2
+                                  label
+                                    input(type='radio' name='stars-4' value='Посижу послушаю..')
+                                    span.icon
+                                      b 1
+                                    span.icon
+                                      b 2
+                                    span.icon
+                                      b 3
+                                  label
+                                    input(type='radio' name='stars-4' value='С радостью послушаю!')
+                                    span.icon
+                                      b 1
+                                    span.icon
+                                      b 2
+                                    span.icon
+                                      b 3
+                                    span.icon
+                                      b 4
+                                  label
+                                    input(type='radio' name='stars-4' value='Максимальный интерес!')
+                                    span.icon
+                                      b 1
+                                    span.icon
+                                      b 2
+                                    span.icon
+                                      b 3
+                                    span.icon
+                                      b 4
+                                    span.icon
+                                      b 5
+                              div
+                                .rating__info Оцените Вашу заинтересованность
+
+                        .form__group.mb40
+                          .rating.j-rating
+                            .rating__title Еврейская история 
+                            .rating__wrapper
+                              div
+                                .rating__body
+                                  label
+                                    input(type='radio' name='stars-5' value='Безразлично, хочу спать..')
+                                    span.icon
+                                      b 1
+                                  label
+                                    input(type='radio' name='stars-5' value='Включу ка музыку..')
+                                    span.icon
+                                      b 1
+                                    span.icon
+                                      b 2
+                                  label
+                                    input(type='radio' name='stars-5' value='Посижу послушаю..')
+                                    span.icon
+                                      b 1
+                                    span.icon
+                                      b 2
+                                    span.icon
+                                      b 3
+                                  label
+                                    input(type='radio' name='stars-5' value='С радостью послушаю!')
+                                    span.icon
+                                      b 1
+                                    span.icon
+                                      b 2
+                                    span.icon
+                                      b 3
+                                    span.icon
+                                      b 4
+                                  label
+                                    input(type='radio' name='stars-5' value='Максимальный интерес!')
+                                    span.icon
+                                      b 1
+                                    span.icon
+                                      b 2
+                                    span.icon
+                                      b 3
+                                    span.icon
+                                      b 4
+                                    span.icon
+                                      b 5
+                              div
+                                .rating__info Оцените Вашу заинтересованность
+
+                        .form__group.mb40
+                          .rating.j-rating
+                            .rating__title Законы шабата
+                            .rating__wrapper
+                              div
+                                .rating__body
+                                  label
+                                    input(type='radio' name='stars-6' value='Безразлично, хочу спать..')
+                                    span.icon
+                                      b 1
+                                  label
+                                    input(type='radio' name='stars-6' value='Включу ка музыку..')
+                                    span.icon
+                                      b 1
+                                    span.icon
+                                      b 2
+                                  label
+                                    input(type='radio' name='stars-6' value='Посижу послушаю..')
+                                    span.icon
+                                      b 1
+                                    span.icon
+                                      b 2
+                                    span.icon
+                                      b 3
+                                  label
+                                    input(type='radio' name='stars-6' value='С радостью послушаю!')
+                                    span.icon
+                                      b 1
+                                    span.icon
+                                      b 2
+                                    span.icon
+                                      b 3
+                                    span.icon
+                                      b 4
+                                  label
+                                    input(type='radio' name='stars-6' value='Максимальный интерес!')
+                                    span.icon
+                                      b 1
+                                    span.icon
+                                      b 2
+                                    span.icon
+                                      b 3
+                                    span.icon
+                                      b 4
+                                    span.icon
+                                      b 5
+                              div
+                                .rating__info Оцените Вашу заинтересованность
+
+                        .form__group.mb40
+                          .rating.j-rating
+                            .rating__title Законы кашрута
+                            .rating__wrapper
+                              div
+                                .rating__body
+                                  label
+                                    input(type='radio' name='stars-7' value='Безразлично, хочу спать..')
+                                    span.icon
+                                      b 1
+                                  label
+                                    input(type='radio' name='stars-7' value='Включу ка музыку..')
+                                    span.icon
+                                      b 1
+                                    span.icon
+                                      b 2
+                                  label
+                                    input(type='radio' name='stars-7' value='Посижу послушаю..')
+                                    span.icon
+                                      b 1
+                                    span.icon
+                                      b 2
+                                    span.icon
+                                      b 3
+                                  label
+                                    input(type='radio' name='stars-7' value='С радостью послушаю!')
+                                    span.icon
+                                      b 1
+                                    span.icon
+                                      b 2
+                                    span.icon
+                                      b 3
+                                    span.icon
+                                      b 4
+                                  label
+                                    input(type='radio' name='stars-7' value='Максимальный интерес!')
+                                    span.icon
+                                      b 1
+                                    span.icon
+                                      b 2
+                                    span.icon
+                                      b 3
+                                    span.icon
+                                      b 4
+                                    span.icon
+                                      b 5
+                              div
+                                .rating__info Оцените Вашу заинтересованность
+
+                        .form__group.mb40
+                          .rating.j-rating
+                            .rating__title Еврейский взгляд на семью
+                            .rating__wrapper
+                              div
+                                .rating__body
+                                  label
+                                    input(type='radio' name='stars-8' value='Безразлично, хочу спать..')
+                                    span.icon
+                                      b 1
+                                  label
+                                    input(type='radio' name='stars-8' value='Включу ка музыку..')
+                                    span.icon
+                                      b 1
+                                    span.icon
+                                      b 2
+                                  label
+                                    input(type='radio' name='stars-8' value='Посижу послушаю..')
+                                    span.icon
+                                      b 1
+                                    span.icon
+                                      b 2
+                                    span.icon
+                                      b 3
+                                  label
+                                    input(type='radio' name='stars-8' value='С радостью послушаю!')
+                                    span.icon
+                                      b 1
+                                    span.icon
+                                      b 2
+                                    span.icon
+                                      b 3
+                                    span.icon
+                                      b 4
+                                  label
+                                    input(type='radio' name='stars-8' value='Максимальный интерес!')
+                                    span.icon
+                                      b 1
+                                    span.icon
+                                      b 2
+                                    span.icon
+                                      b 3
+                                    span.icon
+                                      b 4
+                                    span.icon
+                                      b 5
+                              div
+                                .rating__info Оцените Вашу заинтересованность
 
                   .row
                     .col-md-6
+                      .d-none.d-md-block.content__whatsapp.content__whatsapp--2
+                        div
+                          p По вопросам пишите в Whatsapp
+                          a(href="https://msng.link/o/?79161533426=wa") 
+                            b.fs22.white-space-nowrap
+                              img(src="./images/icon-whatsapp-2.svg", alt="").icon 
+                              | Хуши  // +79161533426
+                              
                       .content__row-head.content__row-head--xs-question
                         .h2.fs19.mb5 Выбери дату и время удобное для прохождения личного собеседования с тобой
                       .content__form-content.fs14
                         p Продолжительность интервью 10-15 минут 
                     .col-md-6
                       fieldset
-                        p text
+                        .schedule
+                          .schedule__row
+                            div
+                              label.schedule__label
+                                input(type="radio" name="schedule" value="26 января, с 16:00 до 18:00" checked)
+                                span.schedule__label-span
+                                  span 26 января 
+                                  small с 16:00 до 18:00
+                            div
+                              label.schedule__label
+                                input(type="radio" name="schedule" value="27 января, с 16:00 до 18:00")
+                                span.schedule__label-span
+                                  span 27 января 
+                                  small с 16:00 до 18:00
+                            div
+                              label.schedule__label
+                                input(type="radio" name="schedule" value="28 января, с 16:00 до 18:00")
+                                span.schedule__label-span
+                                  span 28 января
+                                  small с 16:00 до 18:00
+
+                      .content__whatsapp.d-md-none
+                        div
+                          p По вопросам пишите в Whatsapp
+                          a(href="https://msng.link/o/?79161533426=wa") 
+                            b.fs22.white-space-nowrap
+                              img(src="./images/icon-whatsapp-2.svg", alt="").icon 
+                              | Хуши  // +79161533426
+                      
+                  .text-center
+                    .d-none.d-lg-block
+                      .clear50
+                    .one-activity__info
+                      div Высылая анкету - я подтверждаю, что настроена серьезно!
+
+                    button(type="button").btn.mb0.ttX-18px
+                      span выслать анкету
 
         include ./_include/_footer
 

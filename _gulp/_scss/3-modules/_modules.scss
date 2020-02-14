@@ -80,6 +80,7 @@
       margin-bottom: 45px;
     }
     &-head {
+      max-width: 495px;
       &--exclamation, &--xs-exclamation {
         &>.h2, &>h2 {
           display: inline-block;
@@ -366,6 +367,11 @@
         margin-bottom: 130px;
       }
     }
+    p {
+      @media (min-width: 1200px) {
+        max-width: 430px;
+      }
+    }
   }
   &__hr {
     position: relative;
@@ -397,6 +403,61 @@
           left: 7px;
           top: 6px;
         }
+      }
+    }
+  }
+  &__whatsapp {
+    position: relative;
+    font-size: rem(14px);
+    display: block;
+    padding: 24px 45px;
+    margin: 0 auto 25px;
+    width: 380px;
+    transform: translateX(-40px);
+    @media (min-width: 360px) {
+      transform: translateX(0px);
+    }
+    @media (min-width: 990px) {
+      margin: 20px auto 110px;
+    }
+    @media (min-width: 1200px) {
+      margin: 20px auto 110px 0;
+    }
+    &>div {
+      position: relative;
+      z-index: 5;
+    }
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      background: #f5fbfd;
+      transform: skewX(25deg);
+      @media (min-width: 990px) {
+      }
+    }
+    p {
+      margin-bottom: 8px;
+    }
+    a {
+      text-decoration: none;
+      color: $primary-color;
+    }
+    .icon {
+      display: inline-block;
+      vertical-align: -2px;
+      margin-right: 10px;
+    }
+    &--2 {
+      @media (min-width: 768px) {
+        position: absolute;
+        margin-top: -180px;
+      }
+      @media (min-width: 1200px) {
+        margin-top: -160px;
       }
     }
   }
@@ -488,6 +549,164 @@
       span {
         position: relative;
         z-index: 5;
+      }
+      .icon-rouble {
+        font-size: rem(14px);
+        vertical-align: middle;
+        margin-left: 4px;
+        font-weight: 400;
+      }
+    }
+  }
+  &__input {
+    display: flex;
+    align-items: center;
+    padding-top: 30px;
+    margin-bottom: 30px;
+    @media (min-width: 576px) {
+      padding-top: 0;
+    }
+    @media (min-width: 1650px) {
+      float: right;
+    }
+    &-span {
+      font-size: rem(12px);
+      font-weight: bold;
+      display: block;
+      width: 78px;
+      text-align: right;
+      line-height: 1.17;
+    }
+    &-input {
+      position: relative;
+      @media (min-width: 1650px) {
+        margin-left: 10px;
+      }
+      &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 10px;
+        bottom: 0;
+        width: calc(100% - 20px);
+        transform: skewX(25deg);
+        transition: ease-in-out .25s;
+        background: $color-yellow;
+        border: 1px solid $color-yellow;
+      }
+      input {
+        background: transparent !important;
+        padding: 0;
+        border: 0;
+        height: 48px;
+        position: relative;
+        z-index: 5;
+        font-size: rem(22px);
+        font-weight: bold;
+        width: 210px;
+        text-align: left;
+        padding-left: 42px;
+        padding-right: 51px;
+        @media (min-width: 576px) {
+          width: 300px;
+        }
+        @media (min-width: 1650px) {
+          width: 360px;
+        }
+      }
+      .icon-rouble {
+        position: absolute;
+        right: 40px;
+        bottom: 10px;
+        font-size: rem(14px);
+        vertical-align: middle;
+        margin-left: 4px;
+        font-weight: 400;
+      }
+    }
+  }
+}
+
+.schedule {
+  &__row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 40px;
+    @media (min-width: 576px) {
+      flex-direction: row;
+      flex-wrap: wrap;
+      max-width: 380px;
+      margin-left: auto;
+      margin-right: auto;
+      padding-bottom: 0;
+    }
+    @media (min-width: 990px) {
+      margin-left: 0;
+    }
+    @media (min-width: 1650px) {
+      max-width: inherit;
+      width: 560px;
+    }
+  }
+  &__label {
+    display: inline-block;
+    margin: 0 0 20px 0;
+    font-weight: bold;
+    font-size: rem(22px);
+    cursor: pointer;
+    @media (min-width: 576px) {
+      margin-bottom: 25px;
+    }
+    input[type="radio"] {
+      display: none;
+      &:checked {
+        &~[class*="-span"] {
+          width: 290px;
+          @media (min-width: 576px) {
+            width: 185px;
+          }
+          &::before {
+            background: $color-yellow;
+          }
+        }
+      }
+    }
+    &-span {
+      background: transparent;
+      height: 48px;
+      display: block;
+      width: 230px;
+      text-align: center;
+      position: relative;
+      transition: all 0.35s;
+      font-size: rem(16px);
+      padding-top: 5px;
+      @media (min-width: 576px) {
+        width: 185px;
+        transition: none;
+      }
+      &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 10px;
+        bottom: 0;
+        width: calc(100% - 20px);
+        transform: skewX(25deg);
+        transition: ease-in-out .25s;
+        background: $color-white;
+        border: 1px solid $color-yellow;
+      }
+      span, small {
+        position: relative;
+        z-index: 5;
+      }
+      small {
+        font-size: rem(12px);
+        font-weight: 400;
+        display: block;
+        line-height: 1;
       }
       .icon-rouble {
         font-size: rem(14px);
@@ -1084,8 +1303,144 @@
       }
     }
   }
+  &__info {
+    font-size: rem(18px);
+    text-align: left;
+    margin: 0 -45px 25px -45px;
+    position: relative;
+    font-weight: bold;
+    padding: 20px 45px;
+    max-width: 926px;
+    @media (min-width: 768px) {
+      font-size: rem(22px);
+      text-align: center;
+      margin: 0 auto 45px;
+    }
+    @media (min-width: 1200px) {
+      max-width: 1270px;
+    }
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      background: #74c6f2;
+      transform: skewX(25deg);
+    }
+    div {
+      position: relative;
+      z-index: 5;
+    }
+  }
 }
 
 .ttX-18px {
   transform: translateX(-18px);
+}
+
+/* rating */
+.rating {
+  &__title {
+    font-size: rem(18px);
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    @media (min-width: 1200px) {
+      flex-direction: row;
+      align-items: center;
+    }
+  }
+  &__info {
+    color: #50acde;
+    font-size: rem(14px);
+    @media (min-width: 1200px) {
+      margin-bottom: 10px;
+      margin-left: 10px;
+    }
+  }
+  &__body {
+    display: inline-block;
+    position: relative;
+    height: 30px;
+    line-height: 30px;
+    margin-bottom: 5px;  
+    label {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      cursor: pointer;
+      margin: 0;  
+      &:last-child {
+        position: static;
+      }  
+      &:nth-child(1) {
+        z-index: 5;
+      }  
+      &:nth-child(2) {
+        z-index: 4;
+      }  
+      &:nth-child(3) {
+        z-index: 3;
+      }  
+      &:nth-child(4) {
+        z-index: 2;
+      }  
+      &:nth-child(5) {
+        z-index: 1;
+      }  
+      input {
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+      }  
+      .icon {
+        float: left;
+        color: transparent;
+        width: 30px;
+        height: 30px;
+        font-size: 14px;
+        font-weight: bold;
+        line-height: 30px;
+        text-align: center;
+        position: relative;
+        margin-right: 10px;
+        b {
+          font-weight: bold;
+          position: relative;
+          z-index: 5;
+          pointer-events: none;
+        }
+        &::before {
+          content: '';
+          position: absolute;
+          border: 1px solid $color-yellow;
+          left: 0;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          transform: skewX(25deg);
+          background: transparent;
+        }
+      }  
+      &:last-child .icon {
+        color: $primary-color;
+      }
+    }  
+    &:not(:hover) label input:checked ~ .icon, &:hover label:hover input ~ .icon {
+      color: $primary-color;
+      &::before {
+        background: $color-yellow;
+      }
+    }  
+    label input:focus:not(:checked) ~ .icon:last-child {
+      color: $primary-color;
+    }
+  }
 }

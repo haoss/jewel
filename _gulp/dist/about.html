@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <title>О нас - Jewell</title>
+        <meta name="description" content="">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="format-detection" content="date=no">
+        <meta name="format-detection" content="address=no">
+        <meta name="format-detection" content="email=no">
+        <meta content="notranslate" name="google">
+        <link rel="stylesheet" href="./js/libs/magnific-popup/magnific-popup.css">
+        <link rel="stylesheet" href="./css/style.min.css">
+    </head>
+    <body>
+        <!-- Preloader-->
+        <div class="modal mfp-hide" id="confirm">
+            <button class="modal__close" type="button">Закрыть окно<i></i></button>
+            <div class="modal__wrapper">
+                <div class="modal__title">Подтвердите бронь места для %имя% %фамилия%</div>
+                <p>Дополнительный пояснительный текст для объяснения что происходит или дальнейшие действия</p>
+            </div>
+        </div>
+        <div class="modal mfp-hide" id="sure">
+            <button class="modal__close" type="button">Закрыть окно<i></i></button>
+            <div class="modal__wrapper">
+                <div class="modal__title">Вы уверены, что хотите снять бронь?</div>
+                <div class="clear10"></div>
+                <div class="div-table">
+                    <div class="div-table-cell"><a class="btn btn--very-thin" href="#!"> <span>НЕТ</span></a></div>
+                    <div class="div-table-cell"><a class="btn btn--very-thin btn--light" href="#!"><span>Да</span></a></div>
+                </div>
+                <div class="clear30"></div>
+            </div>
+        </div>
+        <div class="modal modal--biggest mfp-hide" id="senks">
+            <button class="modal__close" type="button">Закрыть окно<i></i></button>
+            <div class="modal__wrapper">
+                <div class="modal__title">Спасибо за вашу заявку!</div>
+                <p>На почту и телефон получите уведомление от нас с дальнейшей информацией.</p>
+            </div>
+        </div>
+        <div class="modal modal--biggest mfp-hide" id="senks2">
+            <button class="modal__close" type="button">Закрыть окно<i></i></button>
+            <div class="modal__wrapper">
+                <div class="modal__wrapper-payment">
+                    <div>
+                        <div class="modal__title">Спасибо за проявленное сострадание!</div>
+                        <p>Сейчас вы будете перенаправленные на сайт платежной системы</p>
+                    </div>
+                    <div>
+                        <div class="text-center text-lg-left"><a class="btn btn--big btn--thin" href="#!"><span>Оплатить</span></a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal modal--big mfp-hide" id="reservation">
+            <button class="modal__close" type="button">Закрыть окно<i></i></button>
+            <div class="modal__wrapper">
+                <form class="form" action="">
+                    <fieldset>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="modal__title fs28">Представься</div>
+                                <p>Все поля обязательны для заполнения.</p>
+                            </div>
+                            <div class="col-lg-6">
+                                <label class="form__group has-icon">
+                                    <div class="form__label j-label">Фамилия и Имя<sup>*</sup></div>
+                                    <input class="form__control j-input" type="text" name="text" placeholder="" value=""><img class="icon-img" src="./images/icon-form-user.svg" alt="">
+                                </label>
+                                <label class="form__group has-icon">
+                                    <div class="form__label j-label">E-mail<sup>*</sup></div>
+                                    <input class="form__control j-input" type="text" name="text" placeholder="" value=""><img class="icon-img" src="./images/icon-form-mail.svg" alt="">
+                                </label>
+                                <label class="form__group has-icon">
+                                    <div class="form__label j-label">Телефон<sup>*</sup></div>
+                                    <input class="form__control j-input" type="text" name="text" placeholder="" value=""><img class="icon-img" src="./images/icon-form-phone.svg" alt="">
+                                </label>
+                                <label class="form__group has-icon">
+                                    <div class="form__label j-label">Пароль<sup>*</sup></div>
+                                    <input class="form__control j-input" type="text" name="text" placeholder="" value=""><img class="icon-img" src="./images/icon-form-lock.svg" alt="">
+                                </label>
+                            </div>
+                        </div>
+                        <div class="clear30"></div>
+                    </fieldset>
+                    <fieldset>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="content__row-head content__row-head--question">
+                                    <div class="h2 fs22 mb20">Евреи в твоей семье?</div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="form__group mb12">
+                                    <label class="form__radio">
+                                        <input type="radio" name="modal-radio" checked><span class="form__radio-input"></span><span class="form__radio-label">Бабушка по материнской линии</span>
+                                    </label>
+                                </div>
+                                <div class="form__group mb12">
+                                    <label class="form__radio">
+                                        <input type="radio" name="modal-radio"><span class="form__radio-input"></span><span class="form__radio-label">Дедушка по материнской линии</span>
+                                    </label>
+                                </div>
+                                <div class="form__group mb12">
+                                    <label class="form__radio">
+                                        <input type="radio" name="modal-radio"><span class="form__radio-input"></span><span class="form__radio-label">Бабушка по отцовской линии</span>
+                                    </label>
+                                </div>
+                                <div class="form__group mb12">
+                                    <label class="form__radio">
+                                        <input type="radio" name="modal-radio"><span class="form__radio-input"></span><span class="form__radio-label">Дедушка по отцовской линии</span>
+                                    </label>
+                                </div>
+                                <div class="form__group mb12">
+                                    <label class="form__radio">
+                                        <input type="radio" name="modal-radio"><span class="form__radio-input"></span><span class="form__radio-label">Может кто-то и есть но я не знаю(  </span>
+                                    </label>
+                                </div>
+                                <div class="form__group mb35">
+                                    <label class="form__radio">
+                                        <input type="radio" name="modal-radio"><span class="form__radio-input"></span><span class="form__radio-label">Я прошел\а Гиюр</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <div class="form__group">
+                            <label class="form__checkbox">
+                                <input type="checkbox" checked><span class="form__checkbox-input"></span><span class="form__checkbox-label fs12 font-weight-normal">Заполняя эту анкету, Вы соглашаетесь с политикой конфиденциальности и даете разрешение на обработку персональных данных. <a href="#!" target="_blank">Политика конфиденциальности.</a></span>
+                            </label>
+                        </div>
+                        <div class="text-center">
+                            <button class="btn btn--big" type="button"> <span class="d-none d-md-inline-block">Забронировать</span><span class="d-md-none">Бронь</span></button>
+                        </div>
+                    </fieldset>
+                </form>
+                <div class="modal__wrapper-register">
+                    <div>
+                        <div class="h2 fs22">Уже зарегистрированные?</div>
+                        <p class="fs12 mb-lg-0">Можете войти через логин/пароль или социальные сети. Или можете <a href="#!">Восстановить пароль</a></p>
+                    </div>
+                    <div>
+                        <form class="form modal__wrapper-form" action="">
+                            <fieldset>
+                                <div class="row">
+                                    <div class="col-12 col-sm">
+                                        <label class="form__group form__group--sm has-icon">
+                                            <div class="form__label j-label">E-mail<sup>*</sup></div>
+                                            <input class="form__control j-input" type="text" name="text" placeholder="" value=""><img class="icon-img" src="./images/icon-form-mail.svg" alt="">
+                                        </label>
+                                    </div>
+                                    <div class="col-12 col-sm pr-sm-0">
+                                        <label class="form__group form__group--sm has-icon">
+                                            <div class="form__label j-label">Пароль<sup>*</sup></div>
+                                            <input class="form__control j-input" type="text" name="text" placeholder="" value=""><img class="icon-img" src="./images/icon-form-lock.svg" alt="">
+                                        </label>
+                                    </div>
+                                    <div class="col col-sm-auto text-center pl-sm-0">
+                                        <button class="btn btn--small btn--only-arrow" type="button"><span>&nbsp;</span></button>
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </form>
+                        <div class="social-enter modal__social-enter">
+                            <div><a class="social-enter__btn" href="#!"> <img src="./images/icon-facebook.svg" alt="" width="13" height="24"><span>Войти через<b>Facebook</b></span></a></div>
+                            <div><a class="social-enter__btn" href="#!"> <img src="./images/icon-vk.svg" alt="" width="29" height="17"><span>Войти через<b>Вконтакт</b></span></a></div>
+                            <div><a class="social-enter__btn" href="#!"> <img src="./images/icon-google.svg" alt="" width="28" height="28"><span>Войти через<b>Google</b></span></a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Base-->
+        <div class="base">
+            <!-- Navigation-->
+            <div class="navigation">
+                <div class="navigation__wrapper">
+                    <div class="logo navigation__logo"><img src="./images/logo.svg" alt=""></div>
+                    <nav class="navigation__nav" role="navigation">
+                        <ul>
+                            <li><a href="#!">О НАС </a></li>
+                            <li><a href="#!">НАШИ ПРОЕКТЫ</a></li>
+                            <li><a href="#!">МЕРОПРИЯТИЯ </a></li>
+                            <li><a href="#!">КОНТАКТЫ</a></li>
+                        </ul>
+                    </nav>
+                    <div class="navigation__btn" id="navigation__btn">
+                        <p>Быстрая регистрация на</p><a class="btn btn--register" href="#!"><span>Регистрация на шаббат</span></a>
+                    </div>
+                    <address class="navigation__address">Москва, 2й Вышеславцев пер., д. 5а, 7-ой этаж</address>
+                    <div class="navigation__phones">
+                        <div><a href="tel:">+7(495) <b>645-0-506</b></a></div>
+                        <div><a href="tel:">+7(999) <b>555-1-613</b></a></div>
+                    </div>
+                    <div class="social navigation__social"><a href="#!" target="_blank"><img src="./images/icon-facebook.svg" alt="" width="13" height="24"></a><a href="#!" target="_blank"><img src="./images/icon-vk.svg" alt="" width="29" height="17"></a><a href="#!" target="_blank"><img src="./images/icon-instagram.svg" alt="" width="21" height="21"></a></div>
+                    <div class="navigation__description">Религиозная организация ортодоксального иудаизма — Московская Марьинорощинская Еврейская Община </div>
+                    <div class="copyright">Jewell Club © 2019. <br>All Rights Reserved Jewellclub</div>
+                    <div class="development">Разработка и продвижение<a href="#!" target="_blank"><img src="./images/piarme.png" alt=""></a></div>
+                </div>
+            </div>
+            <!-- Wrapper-->
+            <div class="wrapper">
+                <!-- Header-->
+                <header class="header">
+                    <div class="header__wrapper">
+                        <div class="logo"><img src="./images/logo.svg" alt=""></div>
+                        <button class="header__btn" type="button"><span>меню сайта</span><i></i></button>
+                    </div>
+                </header>
+                <div class="header-holder"></div>
+                <!-- Content-->
+                <div class="content">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6 col-lg-6">
+                                <div class="content__top content__top--one-activite">
+                                    <div class="content__head">
+                                        <div class="small">о нас</div>
+                                        <h1>Что такое JeWell?</h1>
+                                    </div>
+                                    <p>Это новый уникальный проект затрагивающий все сферы жизни современного молодого человека с активной жизненной позицией. Если ты собираешься к нам прийти в первый раз, то даже не раздумывая прямо сейчас выезжай! </p>
+                                </div>
+                            </div>
+                            <div class="col-lg-7 col-xl-6">
+                                <!-- Carousel-->
+                                <div class="content__carousel content__carousel--col">
+                                    <div class="content__carousel-wrapper">
+                                        <div class="j-carousel">
+                                            <div class="slick-slide"><img src="./tmp/img-tmp-1.jpg" alt=""></div>
+                                            <div class="slick-slide"><img src="./tmp/img-tmp-1.jpg" alt=""></div>
+                                            <div class="slick-slide"><img src="./tmp/img-tmp-1.jpg" alt=""></div>
+                                            <div class="slick-slide"><img src="./tmp/img-tmp-1.jpg" alt=""></div>
+                                            <div class="slick-slide"><img src="./tmp/img-tmp-1.jpg" alt=""></div>
+                                            <div class="slick-slide"><img src="./tmp/img-tmp-1.jpg" alt=""></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Content document-->
+                        <div class="content__document">
+                            <div class="row content__row">
+                                <div class="col-lg-6">
+                                    <div class="content__row-head content__row-head--xs-exclamation">
+                                        <h2 class="fs19 fs28-md mb20">Уникальный проект затрагивающий все сферы жизни современного молодого человека</h2>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="content__row-content fs14">
+                                        <p><strong>Еврейская молодёжь </strong>в возрасте 18-28 лет, проживающая в Москве (для других городов — сразу выберите в поле регистрации другой город РФ).</p>
+                                        <p><strong>Если ты собираешься к нам прийти в первый раз, то даже не раздумывая прямо сейчас выезжай! </strong></p>
+                                        <h3>Но на всякий случай мы расскажем, что ждет тебя в клубе JEWELL:</h3>
+                                        <ul>
+                                            <li>Еврейская молодёжь Москвы 18 — 30 лет. Отличная компания друзей, которая очень ждет новых участников и всегда радушно их встречает неповторимая атмосфера.</li>
+                                            <li>Кафе с доступными ценами.</li>
+                                            <li>Красивые девушки и умные парни, которые хотят найти свою вторую еврейскую половинку.</li>
+                                            <li>Коворкинг. Приходи с ноутбуком, пей чай, ешь печеньки, пользуйся Wi-Fi. В будние дни у нас царит рабочая атмосфера, но тебе всегда будет с кем поболтать в минуту отдыха. И это не считая того, что ты можешь здесь познакомится с потенциальными клиентом или работодателем.</li>
+                                            <li>Огромное количество мероприятий на любой вкус каждый вечер от просмотров фильмов до джазовых вечеров. От лекций по иудаизму до встреч с известными бизнесменами.</li>
+                                            <li>Путешествия. Нас хлебом не корми, только дай самолет и полететь в Израиль, США, Европу или еще куда-нибудь. Многие поездки полностью или частично оплачиваются общиной.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Carousel-->
+                            <div class="content__carousel content__carousel--inside">
+                                <div class="content__carousel-wrapper">
+                                    <div class="j-carousel">
+                                        <div class="slick-slide"><img src="./tmp/img-tmp-2.jpg" alt=""></div>
+                                        <div class="slick-slide"><img src="./tmp/img-tmp-2.jpg" alt=""></div>
+                                        <div class="slick-slide"><img src="./tmp/img-tmp-2.jpg" alt=""></div>
+                                        <div class="slick-slide"><img src="./tmp/img-tmp-2.jpg" alt=""></div>
+                                        <div class="slick-slide"><img src="./tmp/img-tmp-2.jpg" alt=""></div>
+                                        <div class="slick-slide"><img src="./tmp/img-tmp-2.jpg" alt=""></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Bottom form-->
+                            <div class="content__form">
+                                <form class="form" action="#!" autocomplete="off">
+                                    <div class="row">
+                                        <div class="col-auto">
+                                            <div class="content__form-title fs28-lg">Подать заявку на членство в клубе JEWELL!</div>
+                                            <div class="content__form-content fs14">
+                                                <p>Все поля обязательны для заполнения.</p>
+                                            </div>
+                                        </div>
+                                        <div class="col"><a class="btn mb45 ttX-18px float-lg-right" href="#!"><span>заполнить анкету</span></a></div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6">&nbsp;</div>
+                                        <div class="col-md-6">
+                                            <fieldset>
+                                                <label class="form__group has-icon">
+                                                    <div class="form__label j-label">Фамилия и Имя<sup>*</sup></div>
+                                                    <input class="form__control j-input" type="text" name="text" placeholder="" value=""><img class="icon-img" src="./images/icon-form-user.svg" alt="">
+                                                </label>
+                                                <label class="form__group has-icon">
+                                                    <div class="form__label j-label">Дата рождения<sup>*</sup></div>
+                                                    <input class="form__control j-input j-mask-date" type="text" name="text" placeholder="" value=""><img class="icon-img" src="./images/icon-form-event.svg" alt="">
+                                                </label>
+                                                <label class="form__group has-icon">
+                                                    <div class="form__label j-label">E-mail<sup>*</sup></div>
+                                                    <input class="form__control j-input" type="text" name="text" placeholder="" value=""><img class="icon-img" src="./images/icon-form-mail.svg" alt="">
+                                                </label>
+                                                <label class="form__group has-icon mb55">
+                                                    <div class="form__label j-label">Город проживания<sup>*</sup></div>
+                                                    <input class="form__control j-input" type="text" name="text" placeholder="" value=""><img class="icon-img" src="./images/icon-form-valentines-day.svg" alt="">
+                                                </label>
+                                            </fieldset>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="content__row-head content__row-head--xs-question">
+                                                <div class="h2 fs19 mb20">Что тебе мешает посещать JEWELL чаще?</div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <fieldset>
+                                                <div class="form__group mb10">
+                                                    <label class="form__radio">
+                                                        <input type="radio" name="about-radio-1"><span class="form__radio-input"></span><span class="form__radio-label">Работа/Учёба </span>
+                                                    </label>
+                                                </div>
+                                                <div class="form__group mb10">
+                                                    <label class="form__radio">
+                                                        <input type="radio" name="about-radio-1"><span class="form__radio-input"></span><span class="form__radio-label">Расстояние</span>
+                                                    </label>
+                                                </div>
+                                                <div class="form__group mb10">
+                                                    <label class="form__radio">
+                                                        <input type="radio" name="about-radio-1"><span class="form__radio-input"></span><span class="form__radio-label">Нет знакомых (не с кем пойти)</span>
+                                                    </label>
+                                                </div>
+                                                <div class="form__group mb10">
+                                                    <label class="form__radio">
+                                                        <input type="radio" name="about-radio-1"><span class="form__radio-input"></span><span class="form__radio-label">Неинформированность</span>
+                                                    </label>
+                                                </div>
+                                                <div class="form__group mb60">
+                                                    <label class="form__radio">
+                                                        <input type="radio" name="about-radio-1"><span class="form__radio-input"></span><span class="form__radio-label">Незаинтересованность в проводимых мероприятиях</span>
+                                                    </label>
+                                                </div>
+                                            </fieldset>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="content__row-head content__row-head--xs-question">
+                                                <div class="h2 fs19 mb20">Какие мероприятия ты посещал бы с большим удовольствием: </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <fieldset>
+                                                <div class="form__group mb10">
+                                                    <label class="form__radio">
+                                                        <input type="radio" name="about-radio-2"><span class="form__radio-input"></span><span class="form__radio-label">Развлекательные</span>
+                                                    </label>
+                                                </div>
+                                                <div class="form__group mb10">
+                                                    <label class="form__radio">
+                                                        <input type="radio" name="about-radio-2"><span class="form__radio-input"></span><span class="form__radio-label">Учебные</span>
+                                                    </label>
+                                                </div>
+                                                <div class="form__group mb10">
+                                                    <label class="form__radio">
+                                                        <input type="radio" name="about-radio-2"><span class="form__radio-input"></span><span class="form__radio-label">Спортивные</span>
+                                                    </label>
+                                                </div>
+                                                <div class="form__group mb10">
+                                                    <label class="form__radio">
+                                                        <input type="radio" name="about-radio-2"><span class="form__radio-input"></span><span class="form__radio-label">Знакомства</span>
+                                                    </label>
+                                                </div>
+                                                <div class="form__group mb10">
+                                                    <label class="form__radio">
+                                                        <input type="radio" name="about-radio-2"><span class="form__radio-input"></span><span class="form__radio-label">Интеллектуальные</span>
+                                                    </label>
+                                                </div>
+                                                <div class="form__group mb60">
+                                                    <label class="form__radio">
+                                                        <input type="radio" name="about-radio-2"><span class="form__radio-input"></span><span class="form__radio-label">Бизнес встречи </span>
+                                                    </label>
+                                                </div>
+                                            </fieldset>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="content__row-head content__row-head--xs-question">
+                                                <div class="h2 fs19 mb20">В каких из перечисленных проектах ты участвовал ранее?</div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <fieldset>
+                                                <div class="form__group mb10">
+                                                    <label class="form__radio">
+                                                        <input type="radio" name="about-radio-3"><span class="form__radio-input"></span><span class="form__radio-label">TAGLIT </span>
+                                                    </label>
+                                                </div>
+                                                <div class="form__group mb10">
+                                                    <label class="form__radio">
+                                                        <input type="radio" name="about-radio-3"><span class="form__radio-input"></span><span class="form__radio-label">STARS</span>
+                                                    </label>
+                                                </div>
+                                                <div class="form__group mb10">
+                                                    <label class="form__radio">
+                                                        <input type="radio" name="about-radio-3"><span class="form__radio-input"></span><span class="form__radio-label">MASA</span>
+                                                    </label>
+                                                </div>
+                                                <div class="form__group mb60">
+                                                    <label class="form__radio">
+                                                        <input type="radio" name="about-radio-3"><span class="form__radio-input"></span><span class="form__radio-label">не участвовал</span>
+                                                    </label>
+                                                </div>
+                                            </fieldset>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <div class="content__row-head content__row-head--xs-question">
+                                                <div class="h2 fs18 mb20">Евреи в твоей семье?</div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <fieldset>
+                                                <div class="form__group mb12">
+                                                    <label class="form__radio">
+                                                        <input type="radio" name="about-radio-4" checked><span class="form__radio-input"></span><span class="form__radio-label">Бабушка по материнской линии</span>
+                                                    </label>
+                                                </div>
+                                                <div class="form__group mb12">
+                                                    <label class="form__radio">
+                                                        <input type="radio" name="about-radio-4"><span class="form__radio-input"></span><span class="form__radio-label">Дедушка по материнской линии</span>
+                                                    </label>
+                                                </div>
+                                                <div class="form__group mb12">
+                                                    <label class="form__radio">
+                                                        <input type="radio" name="about-radio-4"><span class="form__radio-input"></span><span class="form__radio-label">Бабушка по отцовской линии</span>
+                                                    </label>
+                                                </div>
+                                                <div class="form__group mb12">
+                                                    <label class="form__radio">
+                                                        <input type="radio" name="about-radio-4"><span class="form__radio-input"></span><span class="form__radio-label">Дедушка по отцовской линии</span>
+                                                    </label>
+                                                </div>
+                                                <div class="form__group mb12">
+                                                    <label class="form__radio">
+                                                        <input type="radio" name="about-radio-4"><span class="form__radio-input"></span><span class="form__radio-label">Может кто-то и есть но я не знаю(  </span>
+                                                    </label>
+                                                </div>
+                                                <div class="form__group mb35">
+                                                    <label class="form__radio">
+                                                        <input type="radio" name="about-radio-4"><span class="form__radio-input"></span><span class="form__radio-label">Я прошел\а Гиюр</span>
+                                                    </label>
+                                                </div>
+                                            </fieldset>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <div class="content__row-head content__row-head--xs-question">
+                                                <div class="h2 fs18 mb20">Не возражаешь ли ты получать смс - уведомления о наших мероприятиях (не чаше 1-2 раза в неделю), если ты не против - оставь свой мобильный номер?</div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <label class="form__group has-icon">
+                                                <div class="form__label j-label">Телефон<sup>*</sup></div>
+                                                <input class="form__control j-input" type="text" name="text" placeholder="" value=""><img class="icon-img" src="./images/icon-form-phone.svg" alt="">
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="text-center">
+                                        <button class="btn btn--big mb0 ttX-18px" type="button"><span>выслать анкету</span></button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Footer-->
+                <footer class="footer">
+                    <div class="container">
+                        <address class="footer__address">Москва, 2й Вышеславцев пер., д. 5а, 7-ой этаж</address>
+                        <div class="footer__phones">
+                            <div><a href="tel:">+7(495) <b>645-0-506</b></a></div>
+                            <div><a href="tel:">+7(999) <b>555-1-613</b></a></div>
+                        </div>
+                        <div class="footer__description">Религиозная организация ортодоксального иудаизма — Московская Марьинорощинская Еврейская Община </div>
+                        <div class="footer__copyright">Jewell Club © 2019. <br>All Rights Reserved Jewellclub</div>
+                        <div class="footer__development">Разработка и продвижение<a href="#!" target="_blank"><img src="./images/piarme-footer.png" alt=""></a></div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+        <!-- Load Scripts-->
+        <!-- Footer js-->
+        <script src="./js/libs/jquery/jquery-3.3.1.min.js"></script>
+        <script src="./js/libs/jquery/jquery-migrate-3.0.1.min.js"></script>
+        <script src="./js/libs/magnific-popup/jquery.magnific-popup.min.js"></script>
+        <script src="./js/libs/slick/slick.min.js"></script>
+        <script src="./js/libs/jquery.maskedinput/jquery.maskedinput.min.js"></script>
+        <script src="./js/common.js"></script>
+    </body>
+</html>

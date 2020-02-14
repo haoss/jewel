@@ -354,3 +354,13 @@ ol li {
     }
   }
 }
+
+.white-space-nowrap {
+  white-space: nowrap !important;
+}
+
+.mt-15-lg {
+  @media(min-width: 990px) {
+    margin-top: -15px;
+  }
+}

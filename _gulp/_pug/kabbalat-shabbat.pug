@@ -1,0 +1,113 @@
+doctype
+
+html(lang="ru")
+
+  -var active = 'Kabbalat Shabbat' //активный пункт меню, список в header.jade
+  -var pageTitle = 'Kabbalat Shabbat' + ' - Jewell' //title страницы для генерации верстки
+
+  include ./_include/_head
+
+  body
+
+    // Preloader
+    include ./_include/_preloader
+
+    // Base
+    .base
+
+      // Navigation
+      include ./_include/_navigation
+
+      // Wrapper
+      .wrapper
+        include ./_include/_header
+
+        // Content
+        .content
+          .container
+
+            .row
+              .col-md-6.col-lg-6
+                .content__top.content__top--one-activite
+                  .content__head
+                    .small только лучшее
+                    h1 Каббалат Шаббат
+
+                  .d-md-none
+                    // Carousel
+                    .content__carousel.content__carousel--col.mb80
+                      .content__carousel-wrapper
+                        .j-carousel
+                          - for (var i=0; i<6; i++) {
+                          .slick-slide
+                            img(src="./tmp/img-tmp-1.jpg", alt="")
+                          - }
+
+                  .one-activity__date
+                    .one-activity__date-wrapper
+                      .one-activity__date-counter
+                        div Осталось мест: 
+                          b 12
+                      p
+                        strong.fs22 9 февраля в 20:00
+                        | Москва, 2й Вышеславцев пер., д. 5а, 7-ой этаж
+
+                  a(href="#!").btn.ttX-18px
+                    span.d-md-none Регистрация
+                    span.d-none.d-md-inline-block Перейти к регистрации
+
+              .d-none.d-md-block.col-lg-6.col-xl-6
+                
+                // Carousel
+                .content__carousel.content__carousel--col.mt40
+                  .content__carousel-wrapper
+                    .j-carousel
+                      - for (var i=0; i<6; i++) {
+                      .slick-slide
+                        img(src="./tmp/img-tmp-1.jpg", alt="")
+                      - }
+
+            // Content document
+            .content__document
+              
+              .row.content__row
+                .col-lg-6
+                  .content__row-content.fs14
+                    p 
+                      strong За столом общение 
+                      | предлагаем обсудить интересные актуальные темы
+                    p 
+                      strong Стол ЕвроСтарс, 
+                      | мы будем рады встретить новичков которые хотят подробнее узнать об этой удивительной программе
+                    p 
+                      strong VIP 
+                      | — стол с улучшенным меню за вашу символическую цдаку
+                    p 
+                      strong За столом День рождения 
+                      | мы будем поздравлять самую веселую нашу студентку Евростарс, Евгению Шиликову (Идит, vk.com)
+                    p 
+                      strong Стол Игротека, 
+                      | за которым наши друзья Леви Ицхак vk.com и Михаил Гужов vk.com, проведут интересную игру Fluxx «Ктулху» (youtube.com)
+
+                .col-lg-6
+                  .content__row-content.fs14
+                    p 
+                      strong Наш гость 
+                      | будет рад познакомиться с еврейской молодежью Москвы и рассказать о себе
+                    p 
+                      strong За столом Кошер Сторис Давид Шапиро 
+                        a(href="#!") vk.com 
+                      | приготовил порцию хасидских историй и рассказов
+                    p 
+                      strong Стол Speaking English, 
+                      | для тех кто хочет попрактиковать и подтянуть свои английский с носителем языка
+                    p 
+                      strong Стол Juhuro 
+                      | для тех кто хочет познакомиться поближе с горскими традициями
+
+        include ./_include/_footer
+
+    // Load Scripts
+    include ./_include/_footer-js
+    script(src="./js/common.js")
+

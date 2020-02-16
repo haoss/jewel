@@ -68,7 +68,37 @@ $(document).on('ready', function(){
 
   $('.modal__close').on('click', function(){
     $.magnificPopup.close();
-  })
+  });
+
+  $('.main-slider__carousel').slick({
+    mobileFirst: true,
+    arrows: false,
+    dots: true,
+    infinite: true,
+    responsive: [
+      {
+        breakpoint: 576,
+        settings: {
+          arrows: false,
+          centerMode: false,
+          slidesToShow: 2
+        }
+      },
+      {
+        breakpoint: 989,
+        settings: {
+          arrows: true,
+          centerMode: true,
+          slidesToShow: 3,
+          centerPadding: '0px',
+          slidesToScroll: 1,
+          autoplay: true,
+          autoplaySpeed: 4500,
+          dots: false
+        }
+      }
+    ]
+  });
 
   mobileNav();
   navBtnScroll();

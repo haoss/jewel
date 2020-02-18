@@ -100,6 +100,39 @@ $(document).on('ready', function(){
     ]
   });
 
+  $('.social-share__carousel').slick({
+    mobileFirst: true,
+    arrows: true,
+    dots: false,
+    infinite: true,
+    slidesToShow: 1,
+    fade: true,
+    cssEase: 'linear',
+    nextArrow: '#social-share__next',
+    prevArrow: '#social-share__prev',
+    responsive: [
+      {
+        breakpoint: 767,
+        settings: {
+          centerMode: true,
+          slidesToShow: 2,
+          fade: false,
+          centerPadding: '100px',
+        }
+      },
+      {
+        breakpoint: 900,
+        settings: {
+          centerMode: false,
+          slidesToShow: 2,
+          fade: false,
+          centerPadding: '100px',
+          variableWidth: true
+        }
+      },
+    ]
+  });
+
   mobileNav();
   navBtnScroll();
   inputFocus();

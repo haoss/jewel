@@ -152,6 +152,7 @@ html(lang="ru")
             // About
             .about
               .d-none.d-lg-block.about__img
+                img(src="./images/about-bg-r-top.png", alt="").about__img-top
                 img(src="./tmp/index-about.png", alt="").about__img-center
                 img(src="./images/about-bg-r.png", alt="").about__img-bottom
 
@@ -165,6 +166,7 @@ html(lang="ru")
                     .h3 Это новый уникальный проект затрагивающий все сферы жизни современного молодого человека с активной жизненной позицией.
 
                   .about__img.d-lg-none
+                    img(src="./images/about-bg-r-top.png", alt="").about__img-top
                     img(src="./tmp/index-about.png", alt="").about__img-center
                     img(src="./images/about-bg-r.png", alt="").about__img-bottom
 
@@ -175,7 +177,7 @@ html(lang="ru")
                     a(href="#!").btn.ttX-18px
                       span Стать участником
 
-            div(style="height: 500px")
+        include ./_include/_social-share
 
         include ./_include/_footer
 

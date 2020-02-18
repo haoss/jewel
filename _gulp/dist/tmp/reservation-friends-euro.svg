@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="65"
+   height="64.979095"
+   viewBox="0 0 64.999998 64.979093"
+   version="1.1"
+   id="svg6"
+   sodipodi:docname="reservation-friends-euro.svg"
+   inkscape:version="0.92.4 (f8dce91, 2019-08-02)">
+  <metadata
+     id="metadata12">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs10" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1135"
+     id="namedview8"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:zoom="2.6973277"
+     inkscape:cx="43.761139"
+     inkscape:cy="43.747529"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg6" />
+  <g
+     id="prefix__Group_72"
+     data-name="Group 72"
+     transform="matrix(0.74266528,0,0,0.74266528,-503.1701,-1461.3217)">
+    <path
+       id="prefix__Path_235"
+       d="m 580.962,2067 64.259,15.942 -15.747,15.992 -43.742,-11.225 z"
+       data-name="Path 235"
+       transform="translate(112.048,-81.005)"
+       style="fill:none;stroke:#232323;stroke-width:8px"
+       inkscape:connector-curvature="0" />
+    <path
+       id="prefix__Path_233"
+       d="m 579.665,2103.16 16.913,-15.2 18.841,4.611 -17.819,-62.134 -44.687,46.308 19.736,6.1 z"
+       data-name="Path 233"
+       transform="translate(132,-55)"
+       style="fill:#fff648;stroke:#232323;stroke-width:8px"
+       inkscape:connector-curvature="0" />
+    <path
+       id="prefix__Path_234"
+       d="m 626.37,2126.5 8.952,-7.71 11.051,3.065 -9.863,-34.534 -24.26,25.646 10.343,2.7 z"
+       data-name="Path 234"
+       transform="translate(88.794,-95.455)"
+       style="fill:#232323"
+       inkscape:connector-curvature="0" />
+  </g>
+</svg>

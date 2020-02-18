@@ -114,63 +114,68 @@ html(lang="ru")
               .row
                 .col-12.col-md-6.col-xl-4
                   .our-projects__block
-                    .our-projects__block-letter(style="background-image: url('./tmp/bill-poster-img-4.png');")
-                      img(src="./images/mask-j.svg", alt="")
+                    img(src="./images/sp.gif" style="background-image: url('./tmp/bill-poster-img-4.png')", data-letter="j").our-projects__block-letter
                     a(href="#!").our-projects__block-title
                       span JOURNEY | ПУТЕШЕСТВИЯ
                     p Дарим незабываемые поездки в  США, Израиль и Европу c уникальной программой. Узнавая мир, ты познаёшь себя!
                 .col-12.col-md-6.col-xl-4
                   .our-projects__block
-                    .our-projects__block-letter(style="background-image: url('./tmp/bill-poster-img-4.png');")
-                      img(src="./images/mask-e.svg", alt="")
+                    img(src="./images/sp.gif" style="background-image: url('./tmp/bill-poster-img-4.png')", data-letter="e").our-projects__block-letter
                     a(href="#!").our-projects__block-title
                       span EDUCATION | ОБРАЗОВАНИЕ
                     p Лекции, семинары и индивидуальные занятия. Многовековая мудрость еврейского народа: язык, традиции, тайны Торы, Талмуда, Хасидизма и Кабалы.
                 .col-12.col-md-6.col-xl-4
                   .our-projects__block
-                    .our-projects__block-letter(style="background-image: url('./tmp/bill-poster-img-4.png');")
-                      img(src="./images/mask-w.svg", alt="")
+                    img(src="./images/sp.gif" style="background-image: url('./tmp/bill-poster-img-4.png')", data-letter="w").our-projects__block-letter
                     a(href="#!").our-projects__block-title
                       span WORK | РАБОТА
                     p Первый еврейский коворкинг, бизнес клуб и бизнес инкубатор. Помощь в трудоустройстве, гранты, новые бизнес контактов
                 .col-12.col-md-6.col-xl-4
                   .our-projects__block
-                    .our-projects__block-letter(style="background-image: url('./tmp/bill-poster-img-4.png');")
-                      img(src="./images/mask-e.svg", alt="")
+                    img(src="./images/sp.gif" style="background-image: url('./tmp/bill-poster-img-4.png')", data-letter="e").our-projects__block-letter
                     a(href="#!").our-projects__block-title
                       span EXPERIENCE | ОПЫТ
                     p Мастер-классы, тренинги, интеллектуальные мероприятия. Главное: что мы делаем вклад в твою успешность, ты в процветание своего народа!
                 .col-12.col-md-6.col-xl-4
                   .our-projects__block
-                    .our-projects__block-letter(style="background-image: url('./tmp/bill-poster-img-4.png');")
-                      img(src="./images/mask-l.svg", alt="")
+                    img(src="./images/sp.gif" style="background-image: url('./tmp/bill-poster-img-4.png')", data-letter="l").our-projects__block-letter
                     a(href="#!").our-projects__block-title
                       span LEISURE | ДОСУГ
                     p Арт-кафе с программами на любой вкус: концерты, кинопоказы, игротеки, вечеринки на еврейские и международные праздники.
                 .col-12.col-md-6.col-xl-4
                   .our-projects__block
-                    .our-projects__block-letter(style="background-image: url('./tmp/bill-poster-img-4.png');")
-                      img(src="./images/mask-l.svg", alt="")
+                    img(src="./images/sp.gif" style="background-image: url('./tmp/bill-poster-img-4.png')", data-letter="l").our-projects__block-letter
                     a(href="#!").our-projects__block-title
                       span LOVE | ШИДУХ
                     p В «JEWELL»  много замечательных людей, среди которых можно найти друзей, а возможно и встретить своего человека, который станет твоей второй половинкой.
 
             // About
             .about
+              .d-none.d-lg-block.about__img
+                img(src="./tmp/index-about.png", alt="").about__img-center
+                img(src="./images/about-bg-r.png", alt="").about__img-bottom
 
               .row
-                .col-12.col-lg-6
+                .col-12.col-lg-7
                   .content__head
                     .small JEWELL CLUB
                     h1 ЧТО ТАКОЕ JEWELL?
 
-                  .about___content.fs14
+                  .about__content.fs14
                     .h3 Это новый уникальный проект затрагивающий все сферы жизни современного молодого человека с активной жизненной позицией.
+
+                  .about__img.d-lg-none
+                    img(src="./tmp/index-about.png", alt="").about__img-center
+                    img(src="./images/about-bg-r.png", alt="").about__img-bottom
+
+                  .about__content.fs14
                     p Если ты собираешься к нам прийти не в первый раз, то ты и так все знаешь, но на всякий случай мы еще раз расскажем, что ждет тебя в клубе JEWELL:
                     p Молодежная еврейская община 18 — 30 лет. Компания старых друзей, которая очень ждет новых участников.Дружеская атмосфера. Кафе с доступными ценами.
                   .about__footer
                     a(href="#!").btn.ttX-18px
                       span Стать участником
+
+            div(style="height: 500px")
 
         include ./_include/_footer
 

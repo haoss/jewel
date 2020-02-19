@@ -12,7 +12,7 @@
         <meta name="format-detection" content="email=no">
         <meta content="notranslate" name="google">
         <link rel="stylesheet" href="./js/libs/magnific-popup/magnific-popup.css">
-        <link rel="stylesheet" href="./css/style.min.css">
+        <link rel="stylesheet" href="./css/style.min.css?v=20022020-0026">
     </head>
     <body>
         <!-- Preloader-->
@@ -183,10 +183,11 @@
                     <div class="logo navigation__logo"><img src="./images/logo.svg" alt=""></div>
                     <nav class="navigation__nav" role="navigation">
                         <ul>
-                            <li><a href="#!">О НАС </a></li>
-                            <li><a href="#!">НАШИ ПРОЕКТЫ</a></li>
-                            <li><a href="#!">МЕРОПРИЯТИЯ </a></li>
-                            <li><a href="#!">КОНТАКТЫ</a></li>
+                            <li><a href="#!">О нас </a></li>
+                            <li><a href="#!">Наши проекты</a></li>
+                            <li><a href="#!">Мероприятия</a></li>
+                            <li><a href="#!">Помочь клубу </a></li>
+                            <li><a href="#!">Контакты</a></li>
                         </ul>
                     </nav>
                     <div class="navigation__btn" id="navigation__btn">
@@ -298,461 +299,465 @@
                                                 <p>Все поля обязательны для заполнения.</p>
                                             </div>
                                         </div>
-                                        <div class="col-md-6"><a class="btn mb45 ttX-18px float-lg-right" href="#!"><span>заполнить анкету</span></a></div>
-                                    </div>
-                                    <div class="row">
                                         <div class="col-md-6">
-                                            <div class="content__whatsapp">
-                                                <div>
-                                                    <p>По вопросам пишите в Whatsapp</p><a href="https://msng.link/o/?79161533426=wa"> <b class="fs22 white-space-nowrap"><img class="icon" src="./images/icon-whatsapp-2.svg" alt="">Хуши  // +79161533426</b></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <label class="form__group has-icon">
-                                                <div class="form__label j-label">Фамилия и Имя<sup>*</sup></div>
-                                                <input class="form__control j-input" type="text" name="text" placeholder="" value=""><img class="icon-img" src="./images/icon-form-user.svg" alt="">
-                                            </label>
-                                            <label class="form__group has-icon">
-                                                <div class="form__label j-label">E-mail<sup>*</sup></div>
-                                                <input class="form__control j-input" type="text" name="text" placeholder="" value=""><img class="icon-img" src="./images/icon-form-mail.svg" alt="">
-                                            </label>
-                                            <label class="form__group has-icon mb60">
-                                                <div class="form__label j-label">Телефон<sup>*</sup></div>
-                                                <input class="form__control j-input" type="text" name="text" placeholder="" value=""><img class="icon-img" src="./images/icon-form-phone.svg" alt="">
-                                            </label>
+                                            <button class="btn float-right" id="active-form-button" type="button"><span>заполнить анкету</span></button>
                                         </div>
                                     </div>
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <div class="content__row-head content__row-head--xs-question">
-                                                <div class="h2 fs19 mb20">Евреи в твоей семье?</div>
+                                    <div class="d-none" id="active-form-block">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="content__whatsapp">
+                                                    <div>
+                                                        <p>По вопросам пишите в Whatsapp</p><a href="https://msng.link/o/?79161533426=wa"> <b class="fs22 white-space-nowrap"><img class="icon" src="./images/icon-whatsapp-2.svg" alt="">Хуши  // +79161533426</b></a>
+                                                    </div>
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <fieldset>
-                                                <div class="form__group mb10">
-                                                    <label class="form__radio">
-                                                        <input type="radio" name="1-activity-radio"><span class="form__radio-input"></span><span class="form__radio-label">Бабушка по материнской линии</span>
-                                                    </label>
-                                                </div>
-                                                <div class="form__group mb10">
-                                                    <label class="form__radio">
-                                                        <input type="radio" name="1-activity-radio"><span class="form__radio-input"></span><span class="form__radio-label">Дедушка по материнской линии</span>
-                                                    </label>
-                                                </div>
-                                                <div class="form__group mb10">
-                                                    <label class="form__radio">
-                                                        <input type="radio" name="1-activity-radio"><span class="form__radio-input"></span><span class="form__radio-label">Бабушка по отцовской линии</span>
-                                                    </label>
-                                                </div>
-                                                <div class="form__group mb10">
-                                                    <label class="form__radio">
-                                                        <input type="radio" name="1-activity-radio"><span class="form__radio-input"></span><span class="form__radio-label">Дедушка по отцовской линии</span>
-                                                    </label>
-                                                </div>
-                                                <div class="form__group mb10">
-                                                    <label class="form__radio">
-                                                        <input type="radio" name="1-activity-radio"><span class="form__radio-input"></span><span class="form__radio-label">Я прошел\а Гиюр</span>
-                                                    </label>
-                                                </div>
-                                                <div class="form__group mb60">
-                                                    <label class="form__radio">
-                                                        <input type="radio" name="1-activity-radio" checked><span class="form__radio-input"></span><span class="form__radio-label">Может кто-то и есть но я не знаю(  </span>
-                                                    </label>
-                                                </div>
-                                            </fieldset>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <div class="content__row-head content__row-head--xs-question">
-                                                <div class="h2 fs19 mb20">Сколько лет ты на програмее stars? </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <fieldset>
-                                                <div class="form__group mb10">
-                                                    <label class="form__radio">
-                                                        <input type="radio" name="1-activity-radio-2"><span class="form__radio-input"></span><span class="form__radio-label">Не состою в программе</span>
-                                                    </label>
-                                                </div>
-                                                <div class="form__group mb10">
-                                                    <label class="form__radio">
-                                                        <input type="radio" name="1-activity-radio-2"><span class="form__radio-input"></span><span class="form__radio-label">1 год</span>
-                                                    </label>
-                                                </div>
-                                                <div class="form__group mb10">
-                                                    <label class="form__radio">
-                                                        <input type="radio" name="1-activity-radio-2"><span class="form__radio-input"></span><span class="form__radio-label">2 года</span>
-                                                    </label>
-                                                </div>
-                                                <div class="form__group mb10">
-                                                    <label class="form__radio">
-                                                        <input type="radio" name="1-activity-radio-2"><span class="form__radio-input"></span><span class="form__radio-label">3 года</span>
-                                                    </label>
-                                                </div>
-                                                <div class="form__group mb10">
-                                                    <label class="form__radio">
-                                                        <input type="radio" name="1-activity-radio-2"><span class="form__radio-input"></span><span class="form__radio-label">4 года </span>
-                                                    </label>
-                                                </div>
-                                                <div class="form__group mb60">
-                                                    <label class="form__radio">
-                                                        <input type="radio" name="1-activity-radio-2" checked><span class="form__radio-input"></span><span class="form__radio-label">Более 5 лет</span>
-                                                    </label>
-                                                </div>
-                                            </fieldset>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <div class="content__row-head content__row-head--xs-question">
-                                                <div class="h2 fs19 mb20">Оцени уровень своих знаний:</div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <fieldset>
-                                                <div class="form__group mb10">
-                                                    <label class="form__radio">
-                                                        <input type="radio" name="1-activity-radio-3"><span class="form__radio-input"></span><span class="form__radio-label">Слышала про Мацу, Авраама и Шабат  </span>
-                                                    </label>
-                                                </div>
-                                                <div class="form__group mb10">
-                                                    <label class="form__radio">
-                                                        <input type="radio" name="1-activity-radio-3"><span class="form__radio-input"></span><span class="form__radio-label">Слышала про Рош-аШона и Йом-киПур, но в чем отличие, не разбираюсь </span>
-                                                    </label>
-                                                </div>
-                                                <div class="form__group mb10">
-                                                    <label class="form__radio">
-                                                        <input type="radio" name="1-activity-radio-3"><span class="form__radio-input"></span><span class="form__radio-label">Уже давно хожу в еврейские организации, но систематических знаний нет</span>
-                                                    </label>
-                                                </div>
-                                                <div class="form__group mb10">
-                                                    <label class="form__radio">
-                                                        <input type="radio" name="1-activity-radio-3"><span class="form__radio-input"></span><span class="form__radio-label">Знаю, что такое Тфилин, Амида, Шофар и могу объяснить другим</span>
-                                                    </label>
-                                                </div>
-                                                <div class="form__group mb60">
-                                                    <label class="form__radio">
-                                                        <input type="radio" name="1-activity-radio-3" checked><span class="form__radio-input"></span><span class="form__radio-label">Я очень хорошо разбираюсь в еврейской культуре и традиции </span>
-                                                    </label>
-                                                </div>
-                                            </fieldset>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <div class="content__row-head content__row-head--xs-question">
-                                                <div class="h2 fs19 mb20">Почему тебе интересен проект STARS</div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <fieldset>
-                                                <label class="form__group mb70 mt-15-lg has-icon">
-                                                    <div class="form__label j-label">Опиши в 4 предложениях<sup>*</sup></div>
-                                                    <textarea class="form__control j-input" rows="5" name="message" placeholder="" value=""></textarea><img class="icon-img" src="./images/icon-form-pencil.svg" alt="">
+                                            <div class="col-md-6">
+                                                <label class="form__group has-icon">
+                                                    <div class="form__label j-label">Фамилия и Имя<sup>*</sup></div>
+                                                    <input class="form__control j-input" type="text" name="text" placeholder="" value=""><img class="icon-img" src="./images/icon-form-user.svg" alt="">
                                                 </label>
-                                            </fieldset>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <div class="content__row-head content__row-head--xs-question">
-                                                <div class="h2 fs19 mb5">Дай оценку каждому направлению с учетом твоей заинтересованности в изучении.</div>
-                                            </div>
-                                            <div class="content__form-content fs14">
-                                                <p>Где 1 - минимальный интерес, а 5 - максимальная заинтересованность.</p>
+                                                <label class="form__group has-icon">
+                                                    <div class="form__label j-label">E-mail<sup>*</sup></div>
+                                                    <input class="form__control j-input" type="text" name="text" placeholder="" value=""><img class="icon-img" src="./images/icon-form-mail.svg" alt="">
+                                                </label>
+                                                <label class="form__group has-icon mb60">
+                                                    <div class="form__label j-label">Телефон<sup>*</sup></div>
+                                                    <input class="form__control j-input" type="text" name="text" placeholder="" value=""><img class="icon-img" src="./images/icon-form-phone.svg" alt="">
+                                                </label>
                                             </div>
                                         </div>
-                                        <div class="col-md-6">
-                                            <fieldset>
-                                                <div class="form__group mb40">
-                                                    <div class="rating j-rating">
-                                                        <div class="rating__title">Еврейская философия</div>
-                                                        <div class="rating__wrapper">
-                                                            <div>
-                                                                <div class="rating__body">
-                                                                    <label>
-                                                                        <input type="radio" name="stars" value="Безразлично, хочу спать.."><span class="icon"><b>1</b></span>
-                                                                    </label>
-                                                                    <label>
-                                                                        <input type="radio" name="stars" value="Включу ка музыку.."><span class="icon"><b>1</b></span><span class="icon"><b>2</b></span>
-                                                                    </label>
-                                                                    <label>
-                                                                        <input type="radio" name="stars" value="Посижу послушаю.."><span class="icon"><b>1</b></span><span class="icon"><b>2</b></span><span class="icon"><b>3</b></span>
-                                                                    </label>
-                                                                    <label>
-                                                                        <input type="radio" name="stars" value="С радостью послушаю!"><span class="icon"><b>1</b></span><span class="icon"><b>2</b></span><span class="icon"><b>3</b></span><span class="icon"><b>4</b></span>
-                                                                    </label>
-                                                                    <label>
-                                                                        <input type="radio" name="stars" value="Максимальный интерес!"><span class="icon"><b>1</b></span><span class="icon"><b>2</b></span><span class="icon"><b>3</b></span><span class="icon"><b>4</b></span><span class="icon"><b>5</b></span>
-                                                                    </label>
-                                                                </div>
-                                                            </div>
-                                                            <div>
-                                                                <div class="rating__info">Оцените Вашу заинтересованность</div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="form__group mb40">
-                                                    <div class="rating j-rating">
-                                                        <div class="rating__title">Талмудические мысли</div>
-                                                        <div class="rating__wrapper">
-                                                            <div>
-                                                                <div class="rating__body">
-                                                                    <label>
-                                                                        <input type="radio" name="stars-2" value="Безразлично, хочу спать.."><span class="icon"><b>1</b></span>
-                                                                    </label>
-                                                                    <label>
-                                                                        <input type="radio" name="stars-2" value="Включу ка музыку.."><span class="icon"><b>1</b></span><span class="icon"><b>2</b></span>
-                                                                    </label>
-                                                                    <label>
-                                                                        <input type="radio" name="stars-2" value="Посижу послушаю.."><span class="icon"><b>1</b></span><span class="icon"><b>2</b></span><span class="icon"><b>3</b></span>
-                                                                    </label>
-                                                                    <label>
-                                                                        <input type="radio" name="stars-2" value="С радостью послушаю!"><span class="icon"><b>1</b></span><span class="icon"><b>2</b></span><span class="icon"><b>3</b></span><span class="icon"><b>4</b></span>
-                                                                    </label>
-                                                                    <label>
-                                                                        <input type="radio" name="stars-2" value="Максимальный интерес!"><span class="icon"><b>1</b></span><span class="icon"><b>2</b></span><span class="icon"><b>3</b></span><span class="icon"><b>4</b></span><span class="icon"><b>5</b></span>
-                                                                    </label>
-                                                                </div>
-                                                            </div>
-                                                            <div>
-                                                                <div class="rating__info">Оцените Вашу заинтересованность</div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="form__group mb40">
-                                                    <div class="rating j-rating">
-                                                        <div class="rating__title">Недельная глава Торы </div>
-                                                        <div class="rating__wrapper">
-                                                            <div>
-                                                                <div class="rating__body">
-                                                                    <label>
-                                                                        <input type="radio" name="stars-3" value="Безразлично, хочу спать.."><span class="icon"><b>1</b></span>
-                                                                    </label>
-                                                                    <label>
-                                                                        <input type="radio" name="stars-3" value="Включу ка музыку.."><span class="icon"><b>1</b></span><span class="icon"><b>2</b></span>
-                                                                    </label>
-                                                                    <label>
-                                                                        <input type="radio" name="stars-3" value="Посижу послушаю.."><span class="icon"><b>1</b></span><span class="icon"><b>2</b></span><span class="icon"><b>3</b></span>
-                                                                    </label>
-                                                                    <label>
-                                                                        <input type="radio" name="stars-3" value="С радостью послушаю!"><span class="icon"><b>1</b></span><span class="icon"><b>2</b></span><span class="icon"><b>3</b></span><span class="icon"><b>4</b></span>
-                                                                    </label>
-                                                                    <label>
-                                                                        <input type="radio" name="stars-3" value="Максимальный интерес!"><span class="icon"><b>1</b></span><span class="icon"><b>2</b></span><span class="icon"><b>3</b></span><span class="icon"><b>4</b></span><span class="icon"><b>5</b></span>
-                                                                    </label>
-                                                                </div>
-                                                            </div>
-                                                            <div>
-                                                                <div class="rating__info">Оцените Вашу заинтересованность</div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="form__group mb40">
-                                                    <div class="rating j-rating">
-                                                        <div class="rating__title">Каббала, хасидут</div>
-                                                        <div class="rating__wrapper">
-                                                            <div>
-                                                                <div class="rating__body">
-                                                                    <label>
-                                                                        <input type="radio" name="stars-4" value="Безразлично, хочу спать.."><span class="icon"><b>1</b></span>
-                                                                    </label>
-                                                                    <label>
-                                                                        <input type="radio" name="stars-4" value="Включу ка музыку.."><span class="icon"><b>1</b></span><span class="icon"><b>2</b></span>
-                                                                    </label>
-                                                                    <label>
-                                                                        <input type="radio" name="stars-4" value="Посижу послушаю.."><span class="icon"><b>1</b></span><span class="icon"><b>2</b></span><span class="icon"><b>3</b></span>
-                                                                    </label>
-                                                                    <label>
-                                                                        <input type="radio" name="stars-4" value="С радостью послушаю!"><span class="icon"><b>1</b></span><span class="icon"><b>2</b></span><span class="icon"><b>3</b></span><span class="icon"><b>4</b></span>
-                                                                    </label>
-                                                                    <label>
-                                                                        <input type="radio" name="stars-4" value="Максимальный интерес!"><span class="icon"><b>1</b></span><span class="icon"><b>2</b></span><span class="icon"><b>3</b></span><span class="icon"><b>4</b></span><span class="icon"><b>5</b></span>
-                                                                    </label>
-                                                                </div>
-                                                            </div>
-                                                            <div>
-                                                                <div class="rating__info">Оцените Вашу заинтересованность</div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="form__group mb40">
-                                                    <div class="rating j-rating">
-                                                        <div class="rating__title">Еврейская история </div>
-                                                        <div class="rating__wrapper">
-                                                            <div>
-                                                                <div class="rating__body">
-                                                                    <label>
-                                                                        <input type="radio" name="stars-5" value="Безразлично, хочу спать.."><span class="icon"><b>1</b></span>
-                                                                    </label>
-                                                                    <label>
-                                                                        <input type="radio" name="stars-5" value="Включу ка музыку.."><span class="icon"><b>1</b></span><span class="icon"><b>2</b></span>
-                                                                    </label>
-                                                                    <label>
-                                                                        <input type="radio" name="stars-5" value="Посижу послушаю.."><span class="icon"><b>1</b></span><span class="icon"><b>2</b></span><span class="icon"><b>3</b></span>
-                                                                    </label>
-                                                                    <label>
-                                                                        <input type="radio" name="stars-5" value="С радостью послушаю!"><span class="icon"><b>1</b></span><span class="icon"><b>2</b></span><span class="icon"><b>3</b></span><span class="icon"><b>4</b></span>
-                                                                    </label>
-                                                                    <label>
-                                                                        <input type="radio" name="stars-5" value="Максимальный интерес!"><span class="icon"><b>1</b></span><span class="icon"><b>2</b></span><span class="icon"><b>3</b></span><span class="icon"><b>4</b></span><span class="icon"><b>5</b></span>
-                                                                    </label>
-                                                                </div>
-                                                            </div>
-                                                            <div>
-                                                                <div class="rating__info">Оцените Вашу заинтересованность</div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="form__group mb40">
-                                                    <div class="rating j-rating">
-                                                        <div class="rating__title">Законы шабата</div>
-                                                        <div class="rating__wrapper">
-                                                            <div>
-                                                                <div class="rating__body">
-                                                                    <label>
-                                                                        <input type="radio" name="stars-6" value="Безразлично, хочу спать.."><span class="icon"><b>1</b></span>
-                                                                    </label>
-                                                                    <label>
-                                                                        <input type="radio" name="stars-6" value="Включу ка музыку.."><span class="icon"><b>1</b></span><span class="icon"><b>2</b></span>
-                                                                    </label>
-                                                                    <label>
-                                                                        <input type="radio" name="stars-6" value="Посижу послушаю.."><span class="icon"><b>1</b></span><span class="icon"><b>2</b></span><span class="icon"><b>3</b></span>
-                                                                    </label>
-                                                                    <label>
-                                                                        <input type="radio" name="stars-6" value="С радостью послушаю!"><span class="icon"><b>1</b></span><span class="icon"><b>2</b></span><span class="icon"><b>3</b></span><span class="icon"><b>4</b></span>
-                                                                    </label>
-                                                                    <label>
-                                                                        <input type="radio" name="stars-6" value="Максимальный интерес!"><span class="icon"><b>1</b></span><span class="icon"><b>2</b></span><span class="icon"><b>3</b></span><span class="icon"><b>4</b></span><span class="icon"><b>5</b></span>
-                                                                    </label>
-                                                                </div>
-                                                            </div>
-                                                            <div>
-                                                                <div class="rating__info">Оцените Вашу заинтересованность</div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="form__group mb40">
-                                                    <div class="rating j-rating">
-                                                        <div class="rating__title">Законы кашрута</div>
-                                                        <div class="rating__wrapper">
-                                                            <div>
-                                                                <div class="rating__body">
-                                                                    <label>
-                                                                        <input type="radio" name="stars-7" value="Безразлично, хочу спать.."><span class="icon"><b>1</b></span>
-                                                                    </label>
-                                                                    <label>
-                                                                        <input type="radio" name="stars-7" value="Включу ка музыку.."><span class="icon"><b>1</b></span><span class="icon"><b>2</b></span>
-                                                                    </label>
-                                                                    <label>
-                                                                        <input type="radio" name="stars-7" value="Посижу послушаю.."><span class="icon"><b>1</b></span><span class="icon"><b>2</b></span><span class="icon"><b>3</b></span>
-                                                                    </label>
-                                                                    <label>
-                                                                        <input type="radio" name="stars-7" value="С радостью послушаю!"><span class="icon"><b>1</b></span><span class="icon"><b>2</b></span><span class="icon"><b>3</b></span><span class="icon"><b>4</b></span>
-                                                                    </label>
-                                                                    <label>
-                                                                        <input type="radio" name="stars-7" value="Максимальный интерес!"><span class="icon"><b>1</b></span><span class="icon"><b>2</b></span><span class="icon"><b>3</b></span><span class="icon"><b>4</b></span><span class="icon"><b>5</b></span>
-                                                                    </label>
-                                                                </div>
-                                                            </div>
-                                                            <div>
-                                                                <div class="rating__info">Оцените Вашу заинтересованность</div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="form__group mb40">
-                                                    <div class="rating j-rating">
-                                                        <div class="rating__title">Еврейский взгляд на семью</div>
-                                                        <div class="rating__wrapper">
-                                                            <div>
-                                                                <div class="rating__body">
-                                                                    <label>
-                                                                        <input type="radio" name="stars-8" value="Безразлично, хочу спать.."><span class="icon"><b>1</b></span>
-                                                                    </label>
-                                                                    <label>
-                                                                        <input type="radio" name="stars-8" value="Включу ка музыку.."><span class="icon"><b>1</b></span><span class="icon"><b>2</b></span>
-                                                                    </label>
-                                                                    <label>
-                                                                        <input type="radio" name="stars-8" value="Посижу послушаю.."><span class="icon"><b>1</b></span><span class="icon"><b>2</b></span><span class="icon"><b>3</b></span>
-                                                                    </label>
-                                                                    <label>
-                                                                        <input type="radio" name="stars-8" value="С радостью послушаю!"><span class="icon"><b>1</b></span><span class="icon"><b>2</b></span><span class="icon"><b>3</b></span><span class="icon"><b>4</b></span>
-                                                                    </label>
-                                                                    <label>
-                                                                        <input type="radio" name="stars-8" value="Максимальный интерес!"><span class="icon"><b>1</b></span><span class="icon"><b>2</b></span><span class="icon"><b>3</b></span><span class="icon"><b>4</b></span><span class="icon"><b>5</b></span>
-                                                                    </label>
-                                                                </div>
-                                                            </div>
-                                                            <div>
-                                                                <div class="rating__info">Оцените Вашу заинтересованность</div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </fieldset>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <div class="d-none d-md-block content__whatsapp content__whatsapp--2">
-                                                <div>
-                                                    <p>По вопросам пишите в Whatsapp</p><a href="https://msng.link/o/?79161533426=wa"> <b class="fs22 white-space-nowrap"><img class="icon" src="./images/icon-whatsapp-2.svg" alt="">Хуши  // +79161533426</b></a>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="content__row-head content__row-head--xs-question">
+                                                    <div class="h2 fs19 mb20">Евреи в твоей семье?</div>
                                                 </div>
                                             </div>
-                                            <div class="content__row-head content__row-head--xs-question">
-                                                <div class="h2 fs19 mb5">Выбери дату и время удобное для прохождения личного собеседования с тобой</div>
-                                            </div>
-                                            <div class="content__form-content fs14">
-                                                <p>Продолжительность интервью 10-15 минут </p>
+                                            <div class="col-md-6">
+                                                <fieldset>
+                                                    <div class="form__group mb10">
+                                                        <label class="form__radio">
+                                                            <input type="radio" name="1-activity-radio"><span class="form__radio-input"></span><span class="form__radio-label">Бабушка по материнской линии</span>
+                                                        </label>
+                                                    </div>
+                                                    <div class="form__group mb10">
+                                                        <label class="form__radio">
+                                                            <input type="radio" name="1-activity-radio"><span class="form__radio-input"></span><span class="form__radio-label">Дедушка по материнской линии</span>
+                                                        </label>
+                                                    </div>
+                                                    <div class="form__group mb10">
+                                                        <label class="form__radio">
+                                                            <input type="radio" name="1-activity-radio"><span class="form__radio-input"></span><span class="form__radio-label">Бабушка по отцовской линии</span>
+                                                        </label>
+                                                    </div>
+                                                    <div class="form__group mb10">
+                                                        <label class="form__radio">
+                                                            <input type="radio" name="1-activity-radio"><span class="form__radio-input"></span><span class="form__radio-label">Дедушка по отцовской линии</span>
+                                                        </label>
+                                                    </div>
+                                                    <div class="form__group mb10">
+                                                        <label class="form__radio">
+                                                            <input type="radio" name="1-activity-radio"><span class="form__radio-input"></span><span class="form__radio-label">Я прошел\а Гиюр</span>
+                                                        </label>
+                                                    </div>
+                                                    <div class="form__group mb60">
+                                                        <label class="form__radio">
+                                                            <input type="radio" name="1-activity-radio" checked><span class="form__radio-input"></span><span class="form__radio-label">Может кто-то и есть но я не знаю(  </span>
+                                                        </label>
+                                                    </div>
+                                                </fieldset>
                                             </div>
                                         </div>
-                                        <div class="col-md-6">
-                                            <fieldset>
-                                                <div class="schedule">
-                                                    <div class="schedule__row">
-                                                        <div>
-                                                            <label class="schedule__label">
-                                                                <input type="radio" name="schedule" value="26 января, с 16:00 до 18:00" checked><span class="schedule__label-span"><span>26 января </span><small>с 16:00 до 18:00</small></span>
-                                                            </label>
-                                                        </div>
-                                                        <div>
-                                                            <label class="schedule__label">
-                                                                <input type="radio" name="schedule" value="27 января, с 16:00 до 18:00"><span class="schedule__label-span"><span>27 января </span><small>с 16:00 до 18:00</small></span>
-                                                            </label>
-                                                        </div>
-                                                        <div>
-                                                            <label class="schedule__label">
-                                                                <input type="radio" name="schedule" value="28 января, с 16:00 до 18:00"><span class="schedule__label-span"><span>28 января</span><small>с 16:00 до 18:00</small></span>
-                                                            </label>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="content__row-head content__row-head--xs-question">
+                                                    <div class="h2 fs19 mb20">Сколько лет ты на програмее stars? </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <fieldset>
+                                                    <div class="form__group mb10">
+                                                        <label class="form__radio">
+                                                            <input type="radio" name="1-activity-radio-2"><span class="form__radio-input"></span><span class="form__radio-label">Не состою в программе</span>
+                                                        </label>
+                                                    </div>
+                                                    <div class="form__group mb10">
+                                                        <label class="form__radio">
+                                                            <input type="radio" name="1-activity-radio-2"><span class="form__radio-input"></span><span class="form__radio-label">1 год</span>
+                                                        </label>
+                                                    </div>
+                                                    <div class="form__group mb10">
+                                                        <label class="form__radio">
+                                                            <input type="radio" name="1-activity-radio-2"><span class="form__radio-input"></span><span class="form__radio-label">2 года</span>
+                                                        </label>
+                                                    </div>
+                                                    <div class="form__group mb10">
+                                                        <label class="form__radio">
+                                                            <input type="radio" name="1-activity-radio-2"><span class="form__radio-input"></span><span class="form__radio-label">3 года</span>
+                                                        </label>
+                                                    </div>
+                                                    <div class="form__group mb10">
+                                                        <label class="form__radio">
+                                                            <input type="radio" name="1-activity-radio-2"><span class="form__radio-input"></span><span class="form__radio-label">4 года </span>
+                                                        </label>
+                                                    </div>
+                                                    <div class="form__group mb60">
+                                                        <label class="form__radio">
+                                                            <input type="radio" name="1-activity-radio-2" checked><span class="form__radio-input"></span><span class="form__radio-label">Более 5 лет</span>
+                                                        </label>
+                                                    </div>
+                                                </fieldset>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="content__row-head content__row-head--xs-question">
+                                                    <div class="h2 fs19 mb20">Оцени уровень своих знаний:</div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <fieldset>
+                                                    <div class="form__group mb10">
+                                                        <label class="form__radio">
+                                                            <input type="radio" name="1-activity-radio-3"><span class="form__radio-input"></span><span class="form__radio-label">Слышала про Мацу, Авраама и Шабат  </span>
+                                                        </label>
+                                                    </div>
+                                                    <div class="form__group mb10">
+                                                        <label class="form__radio">
+                                                            <input type="radio" name="1-activity-radio-3"><span class="form__radio-input"></span><span class="form__radio-label">Слышала про Рош-аШона и Йом-киПур, но в чем отличие, не разбираюсь </span>
+                                                        </label>
+                                                    </div>
+                                                    <div class="form__group mb10">
+                                                        <label class="form__radio">
+                                                            <input type="radio" name="1-activity-radio-3"><span class="form__radio-input"></span><span class="form__radio-label">Уже давно хожу в еврейские организации, но систематических знаний нет</span>
+                                                        </label>
+                                                    </div>
+                                                    <div class="form__group mb10">
+                                                        <label class="form__radio">
+                                                            <input type="radio" name="1-activity-radio-3"><span class="form__radio-input"></span><span class="form__radio-label">Знаю, что такое Тфилин, Амида, Шофар и могу объяснить другим</span>
+                                                        </label>
+                                                    </div>
+                                                    <div class="form__group mb60">
+                                                        <label class="form__radio">
+                                                            <input type="radio" name="1-activity-radio-3" checked><span class="form__radio-input"></span><span class="form__radio-label">Я очень хорошо разбираюсь в еврейской культуре и традиции </span>
+                                                        </label>
+                                                    </div>
+                                                </fieldset>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="content__row-head content__row-head--xs-question">
+                                                    <div class="h2 fs19 mb20">Почему тебе интересен проект STARS</div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <fieldset>
+                                                    <label class="form__group mb70 mt-15-lg has-icon">
+                                                        <div class="form__label j-label">Опиши в 4 предложениях<sup>*</sup></div>
+                                                        <textarea class="form__control j-input" rows="5" name="message" placeholder="" value=""></textarea><img class="icon-img" src="./images/icon-form-pencil.svg" alt="">
+                                                    </label>
+                                                </fieldset>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="content__row-head content__row-head--xs-question">
+                                                    <div class="h2 fs19 mb5">Дай оценку каждому направлению с учетом твоей заинтересованности в изучении.</div>
+                                                </div>
+                                                <div class="content__form-content fs14">
+                                                    <p>Где 1 - минимальный интерес, а 5 - максимальная заинтересованность.</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <fieldset>
+                                                    <div class="form__group mb40">
+                                                        <div class="rating j-rating">
+                                                            <div class="rating__title">Еврейская философия</div>
+                                                            <div class="rating__wrapper">
+                                                                <div>
+                                                                    <div class="rating__body">
+                                                                        <label>
+                                                                            <input type="radio" name="stars" value="Безразлично, хочу спать.."><span class="icon"><b>1</b></span>
+                                                                        </label>
+                                                                        <label>
+                                                                            <input type="radio" name="stars" value="Включу ка музыку.."><span class="icon"><b>1</b></span><span class="icon"><b>2</b></span>
+                                                                        </label>
+                                                                        <label>
+                                                                            <input type="radio" name="stars" value="Посижу послушаю.."><span class="icon"><b>1</b></span><span class="icon"><b>2</b></span><span class="icon"><b>3</b></span>
+                                                                        </label>
+                                                                        <label>
+                                                                            <input type="radio" name="stars" value="С радостью послушаю!"><span class="icon"><b>1</b></span><span class="icon"><b>2</b></span><span class="icon"><b>3</b></span><span class="icon"><b>4</b></span>
+                                                                        </label>
+                                                                        <label>
+                                                                            <input type="radio" name="stars" value="Максимальный интерес!"><span class="icon"><b>1</b></span><span class="icon"><b>2</b></span><span class="icon"><b>3</b></span><span class="icon"><b>4</b></span><span class="icon"><b>5</b></span>
+                                                                        </label>
+                                                                    </div>
+                                                                </div>
+                                                                <div>
+                                                                    <div class="rating__info">Оцените Вашу заинтересованность</div>
+                                                                </div>
+                                                            </div>
                                                         </div>
                                                     </div>
+                                                    <div class="form__group mb40">
+                                                        <div class="rating j-rating">
+                                                            <div class="rating__title">Талмудические мысли</div>
+                                                            <div class="rating__wrapper">
+                                                                <div>
+                                                                    <div class="rating__body">
+                                                                        <label>
+                                                                            <input type="radio" name="stars-2" value="Безразлично, хочу спать.."><span class="icon"><b>1</b></span>
+                                                                        </label>
+                                                                        <label>
+                                                                            <input type="radio" name="stars-2" value="Включу ка музыку.."><span class="icon"><b>1</b></span><span class="icon"><b>2</b></span>
+                                                                        </label>
+                                                                        <label>
+                                                                            <input type="radio" name="stars-2" value="Посижу послушаю.."><span class="icon"><b>1</b></span><span class="icon"><b>2</b></span><span class="icon"><b>3</b></span>
+                                                                        </label>
+                                                                        <label>
+                                                                            <input type="radio" name="stars-2" value="С радостью послушаю!"><span class="icon"><b>1</b></span><span class="icon"><b>2</b></span><span class="icon"><b>3</b></span><span class="icon"><b>4</b></span>
+                                                                        </label>
+                                                                        <label>
+                                                                            <input type="radio" name="stars-2" value="Максимальный интерес!"><span class="icon"><b>1</b></span><span class="icon"><b>2</b></span><span class="icon"><b>3</b></span><span class="icon"><b>4</b></span><span class="icon"><b>5</b></span>
+                                                                        </label>
+                                                                    </div>
+                                                                </div>
+                                                                <div>
+                                                                    <div class="rating__info">Оцените Вашу заинтересованность</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form__group mb40">
+                                                        <div class="rating j-rating">
+                                                            <div class="rating__title">Недельная глава Торы </div>
+                                                            <div class="rating__wrapper">
+                                                                <div>
+                                                                    <div class="rating__body">
+                                                                        <label>
+                                                                            <input type="radio" name="stars-3" value="Безразлично, хочу спать.."><span class="icon"><b>1</b></span>
+                                                                        </label>
+                                                                        <label>
+                                                                            <input type="radio" name="stars-3" value="Включу ка музыку.."><span class="icon"><b>1</b></span><span class="icon"><b>2</b></span>
+                                                                        </label>
+                                                                        <label>
+                                                                            <input type="radio" name="stars-3" value="Посижу послушаю.."><span class="icon"><b>1</b></span><span class="icon"><b>2</b></span><span class="icon"><b>3</b></span>
+                                                                        </label>
+                                                                        <label>
+                                                                            <input type="radio" name="stars-3" value="С радостью послушаю!"><span class="icon"><b>1</b></span><span class="icon"><b>2</b></span><span class="icon"><b>3</b></span><span class="icon"><b>4</b></span>
+                                                                        </label>
+                                                                        <label>
+                                                                            <input type="radio" name="stars-3" value="Максимальный интерес!"><span class="icon"><b>1</b></span><span class="icon"><b>2</b></span><span class="icon"><b>3</b></span><span class="icon"><b>4</b></span><span class="icon"><b>5</b></span>
+                                                                        </label>
+                                                                    </div>
+                                                                </div>
+                                                                <div>
+                                                                    <div class="rating__info">Оцените Вашу заинтересованность</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form__group mb40">
+                                                        <div class="rating j-rating">
+                                                            <div class="rating__title">Каббала, хасидут</div>
+                                                            <div class="rating__wrapper">
+                                                                <div>
+                                                                    <div class="rating__body">
+                                                                        <label>
+                                                                            <input type="radio" name="stars-4" value="Безразлично, хочу спать.."><span class="icon"><b>1</b></span>
+                                                                        </label>
+                                                                        <label>
+                                                                            <input type="radio" name="stars-4" value="Включу ка музыку.."><span class="icon"><b>1</b></span><span class="icon"><b>2</b></span>
+                                                                        </label>
+                                                                        <label>
+                                                                            <input type="radio" name="stars-4" value="Посижу послушаю.."><span class="icon"><b>1</b></span><span class="icon"><b>2</b></span><span class="icon"><b>3</b></span>
+                                                                        </label>
+                                                                        <label>
+                                                                            <input type="radio" name="stars-4" value="С радостью послушаю!"><span class="icon"><b>1</b></span><span class="icon"><b>2</b></span><span class="icon"><b>3</b></span><span class="icon"><b>4</b></span>
+                                                                        </label>
+                                                                        <label>
+                                                                            <input type="radio" name="stars-4" value="Максимальный интерес!"><span class="icon"><b>1</b></span><span class="icon"><b>2</b></span><span class="icon"><b>3</b></span><span class="icon"><b>4</b></span><span class="icon"><b>5</b></span>
+                                                                        </label>
+                                                                    </div>
+                                                                </div>
+                                                                <div>
+                                                                    <div class="rating__info">Оцените Вашу заинтересованность</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form__group mb40">
+                                                        <div class="rating j-rating">
+                                                            <div class="rating__title">Еврейская история </div>
+                                                            <div class="rating__wrapper">
+                                                                <div>
+                                                                    <div class="rating__body">
+                                                                        <label>
+                                                                            <input type="radio" name="stars-5" value="Безразлично, хочу спать.."><span class="icon"><b>1</b></span>
+                                                                        </label>
+                                                                        <label>
+                                                                            <input type="radio" name="stars-5" value="Включу ка музыку.."><span class="icon"><b>1</b></span><span class="icon"><b>2</b></span>
+                                                                        </label>
+                                                                        <label>
+                                                                            <input type="radio" name="stars-5" value="Посижу послушаю.."><span class="icon"><b>1</b></span><span class="icon"><b>2</b></span><span class="icon"><b>3</b></span>
+                                                                        </label>
+                                                                        <label>
+                                                                            <input type="radio" name="stars-5" value="С радостью послушаю!"><span class="icon"><b>1</b></span><span class="icon"><b>2</b></span><span class="icon"><b>3</b></span><span class="icon"><b>4</b></span>
+                                                                        </label>
+                                                                        <label>
+                                                                            <input type="radio" name="stars-5" value="Максимальный интерес!"><span class="icon"><b>1</b></span><span class="icon"><b>2</b></span><span class="icon"><b>3</b></span><span class="icon"><b>4</b></span><span class="icon"><b>5</b></span>
+                                                                        </label>
+                                                                    </div>
+                                                                </div>
+                                                                <div>
+                                                                    <div class="rating__info">Оцените Вашу заинтересованность</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form__group mb40">
+                                                        <div class="rating j-rating">
+                                                            <div class="rating__title">Законы шабата</div>
+                                                            <div class="rating__wrapper">
+                                                                <div>
+                                                                    <div class="rating__body">
+                                                                        <label>
+                                                                            <input type="radio" name="stars-6" value="Безразлично, хочу спать.."><span class="icon"><b>1</b></span>
+                                                                        </label>
+                                                                        <label>
+                                                                            <input type="radio" name="stars-6" value="Включу ка музыку.."><span class="icon"><b>1</b></span><span class="icon"><b>2</b></span>
+                                                                        </label>
+                                                                        <label>
+                                                                            <input type="radio" name="stars-6" value="Посижу послушаю.."><span class="icon"><b>1</b></span><span class="icon"><b>2</b></span><span class="icon"><b>3</b></span>
+                                                                        </label>
+                                                                        <label>
+                                                                            <input type="radio" name="stars-6" value="С радостью послушаю!"><span class="icon"><b>1</b></span><span class="icon"><b>2</b></span><span class="icon"><b>3</b></span><span class="icon"><b>4</b></span>
+                                                                        </label>
+                                                                        <label>
+                                                                            <input type="radio" name="stars-6" value="Максимальный интерес!"><span class="icon"><b>1</b></span><span class="icon"><b>2</b></span><span class="icon"><b>3</b></span><span class="icon"><b>4</b></span><span class="icon"><b>5</b></span>
+                                                                        </label>
+                                                                    </div>
+                                                                </div>
+                                                                <div>
+                                                                    <div class="rating__info">Оцените Вашу заинтересованность</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form__group mb40">
+                                                        <div class="rating j-rating">
+                                                            <div class="rating__title">Законы кашрута</div>
+                                                            <div class="rating__wrapper">
+                                                                <div>
+                                                                    <div class="rating__body">
+                                                                        <label>
+                                                                            <input type="radio" name="stars-7" value="Безразлично, хочу спать.."><span class="icon"><b>1</b></span>
+                                                                        </label>
+                                                                        <label>
+                                                                            <input type="radio" name="stars-7" value="Включу ка музыку.."><span class="icon"><b>1</b></span><span class="icon"><b>2</b></span>
+                                                                        </label>
+                                                                        <label>
+                                                                            <input type="radio" name="stars-7" value="Посижу послушаю.."><span class="icon"><b>1</b></span><span class="icon"><b>2</b></span><span class="icon"><b>3</b></span>
+                                                                        </label>
+                                                                        <label>
+                                                                            <input type="radio" name="stars-7" value="С радостью послушаю!"><span class="icon"><b>1</b></span><span class="icon"><b>2</b></span><span class="icon"><b>3</b></span><span class="icon"><b>4</b></span>
+                                                                        </label>
+                                                                        <label>
+                                                                            <input type="radio" name="stars-7" value="Максимальный интерес!"><span class="icon"><b>1</b></span><span class="icon"><b>2</b></span><span class="icon"><b>3</b></span><span class="icon"><b>4</b></span><span class="icon"><b>5</b></span>
+                                                                        </label>
+                                                                    </div>
+                                                                </div>
+                                                                <div>
+                                                                    <div class="rating__info">Оцените Вашу заинтересованность</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form__group mb40">
+                                                        <div class="rating j-rating">
+                                                            <div class="rating__title">Еврейский взгляд на семью</div>
+                                                            <div class="rating__wrapper">
+                                                                <div>
+                                                                    <div class="rating__body">
+                                                                        <label>
+                                                                            <input type="radio" name="stars-8" value="Безразлично, хочу спать.."><span class="icon"><b>1</b></span>
+                                                                        </label>
+                                                                        <label>
+                                                                            <input type="radio" name="stars-8" value="Включу ка музыку.."><span class="icon"><b>1</b></span><span class="icon"><b>2</b></span>
+                                                                        </label>
+                                                                        <label>
+                                                                            <input type="radio" name="stars-8" value="Посижу послушаю.."><span class="icon"><b>1</b></span><span class="icon"><b>2</b></span><span class="icon"><b>3</b></span>
+                                                                        </label>
+                                                                        <label>
+                                                                            <input type="radio" name="stars-8" value="С радостью послушаю!"><span class="icon"><b>1</b></span><span class="icon"><b>2</b></span><span class="icon"><b>3</b></span><span class="icon"><b>4</b></span>
+                                                                        </label>
+                                                                        <label>
+                                                                            <input type="radio" name="stars-8" value="Максимальный интерес!"><span class="icon"><b>1</b></span><span class="icon"><b>2</b></span><span class="icon"><b>3</b></span><span class="icon"><b>4</b></span><span class="icon"><b>5</b></span>
+                                                                        </label>
+                                                                    </div>
+                                                                </div>
+                                                                <div>
+                                                                    <div class="rating__info">Оцените Вашу заинтересованность</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </fieldset>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="d-none d-md-block content__whatsapp content__whatsapp--2">
+                                                    <div>
+                                                        <p>По вопросам пишите в Whatsapp</p><a href="https://msng.link/o/?79161533426=wa"> <b class="fs22 white-space-nowrap"><img class="icon" src="./images/icon-whatsapp-2.svg" alt="">Хуши  // +79161533426</b></a>
+                                                    </div>
                                                 </div>
-                                            </fieldset>
-                                            <div class="content__whatsapp d-md-none">
-                                                <div>
-                                                    <p>По вопросам пишите в Whatsapp</p><a href="https://msng.link/o/?79161533426=wa"> <b class="fs22 white-space-nowrap"><img class="icon" src="./images/icon-whatsapp-2.svg" alt="">Хуши  // +79161533426</b></a>
+                                                <div class="content__row-head content__row-head--xs-question">
+                                                    <div class="h2 fs19 mb5">Выбери дату и время удобное для прохождения личного собеседования с тобой</div>
+                                                </div>
+                                                <div class="content__form-content fs14">
+                                                    <p>Продолжительность интервью 10-15 минут </p>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <fieldset>
+                                                    <div class="schedule">
+                                                        <div class="schedule__row">
+                                                            <div>
+                                                                <label class="schedule__label">
+                                                                    <input type="radio" name="schedule" value="26 января, с 16:00 до 18:00" checked><span class="schedule__label-span"><span>26 января </span><small>с 16:00 до 18:00</small></span>
+                                                                </label>
+                                                            </div>
+                                                            <div>
+                                                                <label class="schedule__label">
+                                                                    <input type="radio" name="schedule" value="27 января, с 16:00 до 18:00"><span class="schedule__label-span"><span>27 января </span><small>с 16:00 до 18:00</small></span>
+                                                                </label>
+                                                            </div>
+                                                            <div>
+                                                                <label class="schedule__label">
+                                                                    <input type="radio" name="schedule" value="28 января, с 16:00 до 18:00"><span class="schedule__label-span"><span>28 января</span><small>с 16:00 до 18:00</small></span>
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </fieldset>
+                                                <div class="content__whatsapp d-md-none">
+                                                    <div>
+                                                        <p>По вопросам пишите в Whatsapp</p><a href="https://msng.link/o/?79161533426=wa"> <b class="fs22 white-space-nowrap"><img class="icon" src="./images/icon-whatsapp-2.svg" alt="">Хуши  // +79161533426</b></a>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="text-center">
-                                        <div class="d-none d-lg-block">
-                                            <div class="clear50"></div>
+                                        <div class="text-center">
+                                            <div class="d-none d-lg-block">
+                                                <div class="clear50"></div>
+                                            </div>
+                                            <div class="one-activity__info">
+                                                <div>Высылая анкету - я подтверждаю, что настроена серьезно!</div>
+                                            </div>
+                                            <button class="btn mb0 ttX-18px" type="button"><span>выслать анкету</span></button>
                                         </div>
-                                        <div class="one-activity__info">
-                                            <div>Высылая анкету - я подтверждаю, что настроена серьезно!</div>
-                                        </div>
-                                        <button class="btn mb0 ttX-18px" type="button"><span>выслать анкету</span></button>
                                     </div>
                                 </form>
                             </div>

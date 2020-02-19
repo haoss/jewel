@@ -12,7 +12,7 @@
         <meta name="format-detection" content="email=no">
         <meta content="notranslate" name="google">
         <link rel="stylesheet" href="./js/libs/magnific-popup/magnific-popup.css">
-        <link rel="stylesheet" href="./css/style.min.css">
+        <link rel="stylesheet" href="./css/style.min.css?v=20022020-0026">
     </head>
     <body>
         <!-- Preloader-->
@@ -183,10 +183,11 @@
                     <div class="logo navigation__logo"><img src="./images/logo.svg" alt=""></div>
                     <nav class="navigation__nav" role="navigation">
                         <ul>
-                            <li><a href="#!">О НАС </a></li>
-                            <li><a href="#!">НАШИ ПРОЕКТЫ</a></li>
-                            <li><a href="#!">МЕРОПРИЯТИЯ </a></li>
-                            <li><a href="#!">КОНТАКТЫ</a></li>
+                            <li><a href="#!">О нас </a></li>
+                            <li><a href="#!">Наши проекты</a></li>
+                            <li><a href="#!">Мероприятия</a></li>
+                            <li><a href="#!">Помочь клубу </a></li>
+                            <li><a href="#!">Контакты</a></li>
                         </ul>
                     </nav>
                     <div class="navigation__btn" id="navigation__btn">
@@ -289,195 +290,199 @@
                                                 <p>Все поля обязательны для заполнения.</p>
                                             </div>
                                         </div>
-                                        <div class="col col-md-auto"><a class="btn mb45 ttX-18px float-lg-right" href="#!"><span>заполнить анкету</span></a></div>
+                                        <div class="col col-md-auto">
+                                            <button class="btn float-right" id="active-form-button" type="button"><span>заполнить анкету</span></button>
+                                        </div>
                                     </div>
-                                    <div class="row">
-                                        <div class="col-md-6">&nbsp;</div>
-                                        <div class="col-md-6">
-                                            <fieldset>
+                                    <div class="d-none" id="active-form-block">
+                                        <div class="row">
+                                            <div class="col-md-6">&nbsp;</div>
+                                            <div class="col-md-6">
+                                                <fieldset>
+                                                    <label class="form__group has-icon">
+                                                        <div class="form__label j-label">Фамилия и Имя<sup>*</sup></div>
+                                                        <input class="form__control j-input" type="text" name="text" placeholder="" value=""><img class="icon-img" src="./images/icon-form-user.svg" alt="">
+                                                    </label>
+                                                    <label class="form__group has-icon">
+                                                        <div class="form__label j-label">Дата рождения<sup>*</sup></div>
+                                                        <input class="form__control j-input j-mask-date" type="text" name="text" placeholder="" value=""><img class="icon-img" src="./images/icon-form-event.svg" alt="">
+                                                    </label>
+                                                    <label class="form__group has-icon">
+                                                        <div class="form__label j-label">E-mail<sup>*</sup></div>
+                                                        <input class="form__control j-input" type="text" name="text" placeholder="" value=""><img class="icon-img" src="./images/icon-form-mail.svg" alt="">
+                                                    </label>
+                                                    <label class="form__group has-icon mb55">
+                                                        <div class="form__label j-label">Город проживания<sup>*</sup></div>
+                                                        <input class="form__control j-input" type="text" name="text" placeholder="" value=""><img class="icon-img" src="./images/icon-form-valentines-day.svg" alt="">
+                                                    </label>
+                                                </fieldset>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="content__row-head content__row-head--xs-question">
+                                                    <div class="h2 fs19 mb20">Что тебе мешает посещать JEWELL чаще?</div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <fieldset>
+                                                    <div class="form__group mb10">
+                                                        <label class="form__checkbox">
+                                                            <input type="checkbox" checked><span class="form__checkbox-input"></span><span class="form__checkbox-label">Работа/Учёба </span>
+                                                        </label>
+                                                    </div>
+                                                    <div class="form__group mb10">
+                                                        <label class="form__checkbox">
+                                                            <input type="checkbox"><span class="form__checkbox-input"></span><span class="form__checkbox-label">Расстояние</span>
+                                                        </label>
+                                                    </div>
+                                                    <div class="form__group mb10">
+                                                        <label class="form__checkbox">
+                                                            <input type="checkbox"><span class="form__checkbox-input"></span><span class="form__checkbox-label">Нет знакомых (не с кем пойти)</span>
+                                                        </label>
+                                                    </div>
+                                                    <div class="form__group mb10">
+                                                        <label class="form__checkbox">
+                                                            <input type="checkbox"><span class="form__checkbox-input"></span><span class="form__checkbox-label">Неинформированность</span>
+                                                        </label>
+                                                    </div>
+                                                    <div class="form__group mb60">
+                                                        <label class="form__checkbox">
+                                                            <input type="checkbox"><span class="form__checkbox-input"></span><span class="form__checkbox-label">Незаинтересованность в проводимых мероприятиях</span>
+                                                        </label>
+                                                    </div>
+                                                </fieldset>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="content__row-head content__row-head--xs-question">
+                                                    <div class="h2 fs19 mb20">Какие мероприятия ты посещал бы с большим удовольствием: </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <fieldset>
+                                                    <div class="form__group mb10">
+                                                        <label class="form__checkbox">
+                                                            <input type="checkbox" checked><span class="form__checkbox-input"></span><span class="form__checkbox-label">Развлекательные</span>
+                                                        </label>
+                                                    </div>
+                                                    <div class="form__group mb10">
+                                                        <label class="form__checkbox">
+                                                            <input type="checkbox"><span class="form__checkbox-input"></span><span class="form__checkbox-label">Учебные</span>
+                                                        </label>
+                                                    </div>
+                                                    <div class="form__group mb10">
+                                                        <label class="form__checkbox">
+                                                            <input type="checkbox"><span class="form__checkbox-input"></span><span class="form__checkbox-label">Спортивные</span>
+                                                        </label>
+                                                    </div>
+                                                    <div class="form__group mb10">
+                                                        <label class="form__checkbox">
+                                                            <input type="checkbox"><span class="form__checkbox-input"></span><span class="form__checkbox-label">Знакомства</span>
+                                                        </label>
+                                                    </div>
+                                                    <div class="form__group mb10">
+                                                        <label class="form__checkbox">
+                                                            <input type="checkbox"><span class="form__checkbox-input"></span><span class="form__checkbox-label">Интеллектуальные</span>
+                                                        </label>
+                                                    </div>
+                                                    <div class="form__group mb60">
+                                                        <label class="form__checkbox">
+                                                            <input type="checkbox"><span class="form__checkbox-input"></span><span class="form__checkbox-label">Бизнес встречи </span>
+                                                        </label>
+                                                    </div>
+                                                </fieldset>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="content__row-head content__row-head--xs-question">
+                                                    <div class="h2 fs19 mb20">В каких из перечисленных проектах ты участвовал ранее?</div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <fieldset>
+                                                    <div class="form__group mb10">
+                                                        <label class="form__checkbox">
+                                                            <input type="checkbox" checked><span class="form__checkbox-input"></span><span class="form__checkbox-label">TAGLIT </span>
+                                                        </label>
+                                                    </div>
+                                                    <div class="form__group mb10">
+                                                        <label class="form__checkbox">
+                                                            <input type="checkbox"><span class="form__checkbox-input"></span><span class="form__checkbox-label">STARS</span>
+                                                        </label>
+                                                    </div>
+                                                    <div class="form__group mb10">
+                                                        <label class="form__checkbox">
+                                                            <input type="checkbox"><span class="form__checkbox-input"></span><span class="form__checkbox-label">MASA</span>
+                                                        </label>
+                                                    </div>
+                                                    <div class="form__group mb60">
+                                                        <label class="form__checkbox">
+                                                            <input type="checkbox"><span class="form__checkbox-input"></span><span class="form__checkbox-label">не участвовал</span>
+                                                        </label>
+                                                    </div>
+                                                </fieldset>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="content__row-head content__row-head--xs-question">
+                                                    <div class="h2 fs18 mb20">Евреи в твоей семье?</div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <fieldset>
+                                                    <div class="form__group mb12">
+                                                        <label class="form__checkbox">
+                                                            <input type="checkbox" checked><span class="form__checkbox-input"></span><span class="form__checkbox-label">Бабушка по материнской линии</span>
+                                                        </label>
+                                                    </div>
+                                                    <div class="form__group mb12">
+                                                        <label class="form__checkbox">
+                                                            <input type="checkbox"><span class="form__checkbox-input"></span><span class="form__checkbox-label">Дедушка по материнской линии</span>
+                                                        </label>
+                                                    </div>
+                                                    <div class="form__group mb12">
+                                                        <label class="form__checkbox">
+                                                            <input type="checkbox"><span class="form__checkbox-input"></span><span class="form__checkbox-label">Бабушка по отцовской линии</span>
+                                                        </label>
+                                                    </div>
+                                                    <div class="form__group mb12">
+                                                        <label class="form__checkbox">
+                                                            <input type="checkbox"><span class="form__checkbox-input"></span><span class="form__checkbox-label">Дедушка по отцовской линии</span>
+                                                        </label>
+                                                    </div>
+                                                    <div class="form__group mb12">
+                                                        <label class="form__checkbox">
+                                                            <input type="checkbox"><span class="form__checkbox-input"></span><span class="form__checkbox-label">Может кто-то и есть но я не знаю(  </span>
+                                                        </label>
+                                                    </div>
+                                                    <div class="form__group mb35">
+                                                        <label class="form__checkbox">
+                                                            <input type="checkbox"><span class="form__checkbox-input"></span><span class="form__checkbox-label">Я прошел\а Гиюр</span>
+                                                        </label>
+                                                    </div>
+                                                </fieldset>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="content__row-head content__row-head--xs-question">
+                                                    <div class="h2 fs18 mb20">Не возражаешь ли ты получать смс - уведомления о наших мероприятиях (не чаше 1-2 раза в неделю), если ты не против - оставь свой мобильный номер?</div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
                                                 <label class="form__group has-icon">
-                                                    <div class="form__label j-label">Фамилия и Имя<sup>*</sup></div>
-                                                    <input class="form__control j-input" type="text" name="text" placeholder="" value=""><img class="icon-img" src="./images/icon-form-user.svg" alt="">
+                                                    <div class="form__label j-label">Телефон<sup>*</sup></div>
+                                                    <input class="form__control j-input" type="text" name="text" placeholder="" value=""><img class="icon-img" src="./images/icon-form-phone.svg" alt="">
                                                 </label>
-                                                <label class="form__group has-icon">
-                                                    <div class="form__label j-label">Дата рождения<sup>*</sup></div>
-                                                    <input class="form__control j-input j-mask-date" type="text" name="text" placeholder="" value=""><img class="icon-img" src="./images/icon-form-event.svg" alt="">
-                                                </label>
-                                                <label class="form__group has-icon">
-                                                    <div class="form__label j-label">E-mail<sup>*</sup></div>
-                                                    <input class="form__control j-input" type="text" name="text" placeholder="" value=""><img class="icon-img" src="./images/icon-form-mail.svg" alt="">
-                                                </label>
-                                                <label class="form__group has-icon mb55">
-                                                    <div class="form__label j-label">Город проживания<sup>*</sup></div>
-                                                    <input class="form__control j-input" type="text" name="text" placeholder="" value=""><img class="icon-img" src="./images/icon-form-valentines-day.svg" alt="">
-                                                </label>
-                                            </fieldset>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <div class="content__row-head content__row-head--xs-question">
-                                                <div class="h2 fs19 mb20">Что тебе мешает посещать JEWELL чаще?</div>
                                             </div>
                                         </div>
-                                        <div class="col-md-6">
-                                            <fieldset>
-                                                <div class="form__group mb10">
-                                                    <label class="form__radio">
-                                                        <input type="radio" name="about-radio-1"><span class="form__radio-input"></span><span class="form__radio-label">Работа/Учёба </span>
-                                                    </label>
-                                                </div>
-                                                <div class="form__group mb10">
-                                                    <label class="form__radio">
-                                                        <input type="radio" name="about-radio-1"><span class="form__radio-input"></span><span class="form__radio-label">Расстояние</span>
-                                                    </label>
-                                                </div>
-                                                <div class="form__group mb10">
-                                                    <label class="form__radio">
-                                                        <input type="radio" name="about-radio-1"><span class="form__radio-input"></span><span class="form__radio-label">Нет знакомых (не с кем пойти)</span>
-                                                    </label>
-                                                </div>
-                                                <div class="form__group mb10">
-                                                    <label class="form__radio">
-                                                        <input type="radio" name="about-radio-1"><span class="form__radio-input"></span><span class="form__radio-label">Неинформированность</span>
-                                                    </label>
-                                                </div>
-                                                <div class="form__group mb60">
-                                                    <label class="form__radio">
-                                                        <input type="radio" name="about-radio-1"><span class="form__radio-input"></span><span class="form__radio-label">Незаинтересованность в проводимых мероприятиях</span>
-                                                    </label>
-                                                </div>
-                                            </fieldset>
+                                        <div class="text-center">
+                                            <button class="btn btn--big mb0 ttX-18px" type="button"><span>выслать анкету</span></button>
                                         </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <div class="content__row-head content__row-head--xs-question">
-                                                <div class="h2 fs19 mb20">Какие мероприятия ты посещал бы с большим удовольствием: </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <fieldset>
-                                                <div class="form__group mb10">
-                                                    <label class="form__radio">
-                                                        <input type="radio" name="about-radio-2"><span class="form__radio-input"></span><span class="form__radio-label">Развлекательные</span>
-                                                    </label>
-                                                </div>
-                                                <div class="form__group mb10">
-                                                    <label class="form__radio">
-                                                        <input type="radio" name="about-radio-2"><span class="form__radio-input"></span><span class="form__radio-label">Учебные</span>
-                                                    </label>
-                                                </div>
-                                                <div class="form__group mb10">
-                                                    <label class="form__radio">
-                                                        <input type="radio" name="about-radio-2"><span class="form__radio-input"></span><span class="form__radio-label">Спортивные</span>
-                                                    </label>
-                                                </div>
-                                                <div class="form__group mb10">
-                                                    <label class="form__radio">
-                                                        <input type="radio" name="about-radio-2"><span class="form__radio-input"></span><span class="form__radio-label">Знакомства</span>
-                                                    </label>
-                                                </div>
-                                                <div class="form__group mb10">
-                                                    <label class="form__radio">
-                                                        <input type="radio" name="about-radio-2"><span class="form__radio-input"></span><span class="form__radio-label">Интеллектуальные</span>
-                                                    </label>
-                                                </div>
-                                                <div class="form__group mb60">
-                                                    <label class="form__radio">
-                                                        <input type="radio" name="about-radio-2"><span class="form__radio-input"></span><span class="form__radio-label">Бизнес встречи </span>
-                                                    </label>
-                                                </div>
-                                            </fieldset>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <div class="content__row-head content__row-head--xs-question">
-                                                <div class="h2 fs19 mb20">В каких из перечисленных проектах ты участвовал ранее?</div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <fieldset>
-                                                <div class="form__group mb10">
-                                                    <label class="form__radio">
-                                                        <input type="radio" name="about-radio-3"><span class="form__radio-input"></span><span class="form__radio-label">TAGLIT </span>
-                                                    </label>
-                                                </div>
-                                                <div class="form__group mb10">
-                                                    <label class="form__radio">
-                                                        <input type="radio" name="about-radio-3"><span class="form__radio-input"></span><span class="form__radio-label">STARS</span>
-                                                    </label>
-                                                </div>
-                                                <div class="form__group mb10">
-                                                    <label class="form__radio">
-                                                        <input type="radio" name="about-radio-3"><span class="form__radio-input"></span><span class="form__radio-label">MASA</span>
-                                                    </label>
-                                                </div>
-                                                <div class="form__group mb60">
-                                                    <label class="form__radio">
-                                                        <input type="radio" name="about-radio-3"><span class="form__radio-input"></span><span class="form__radio-label">не участвовал</span>
-                                                    </label>
-                                                </div>
-                                            </fieldset>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <div class="content__row-head content__row-head--xs-question">
-                                                <div class="h2 fs18 mb20">Евреи в твоей семье?</div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <fieldset>
-                                                <div class="form__group mb12">
-                                                    <label class="form__radio">
-                                                        <input type="radio" name="about-radio-4" checked><span class="form__radio-input"></span><span class="form__radio-label">Бабушка по материнской линии</span>
-                                                    </label>
-                                                </div>
-                                                <div class="form__group mb12">
-                                                    <label class="form__radio">
-                                                        <input type="radio" name="about-radio-4"><span class="form__radio-input"></span><span class="form__radio-label">Дедушка по материнской линии</span>
-                                                    </label>
-                                                </div>
-                                                <div class="form__group mb12">
-                                                    <label class="form__radio">
-                                                        <input type="radio" name="about-radio-4"><span class="form__radio-input"></span><span class="form__radio-label">Бабушка по отцовской линии</span>
-                                                    </label>
-                                                </div>
-                                                <div class="form__group mb12">
-                                                    <label class="form__radio">
-                                                        <input type="radio" name="about-radio-4"><span class="form__radio-input"></span><span class="form__radio-label">Дедушка по отцовской линии</span>
-                                                    </label>
-                                                </div>
-                                                <div class="form__group mb12">
-                                                    <label class="form__radio">
-                                                        <input type="radio" name="about-radio-4"><span class="form__radio-input"></span><span class="form__radio-label">Может кто-то и есть но я не знаю(  </span>
-                                                    </label>
-                                                </div>
-                                                <div class="form__group mb35">
-                                                    <label class="form__radio">
-                                                        <input type="radio" name="about-radio-4"><span class="form__radio-input"></span><span class="form__radio-label">Я прошел\а Гиюр</span>
-                                                    </label>
-                                                </div>
-                                            </fieldset>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <div class="content__row-head content__row-head--xs-question">
-                                                <div class="h2 fs18 mb20">Не возражаешь ли ты получать смс - уведомления о наших мероприятиях (не чаше 1-2 раза в неделю), если ты не против - оставь свой мобильный номер?</div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <label class="form__group has-icon">
-                                                <div class="form__label j-label">Телефон<sup>*</sup></div>
-                                                <input class="form__control j-input" type="text" name="text" placeholder="" value=""><img class="icon-img" src="./images/icon-form-phone.svg" alt="">
-                                            </label>
-                                        </div>
-                                    </div>
-                                    <div class="text-center">
-                                        <button class="btn btn--big mb0 ttX-18px" type="button"><span>выслать анкету</span></button>
                                     </div>
                                 </form>
                             </div>

@@ -59,10 +59,10 @@ $(document).on('ready', function(){
     arrows: false,
     dots: true,
     autoplay: true,
-    autoplaySpeed: 5000,
+    autoplaySpeed: 3000,
     slidesToShow: 1,
     slidesToScroll: 1,
-    pauseOnHover: false,
+    pauseOnHover: true,
     pauseOnDotsHover: false
   });
 
@@ -75,6 +75,10 @@ $(document).on('ready', function(){
     arrows: false,
     dots: true,
     infinite: true,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    pauseOnHover: true,
+    pauseOnDotsHover: false,
     responsive: [
       {
         breakpoint: 576,
@@ -106,8 +110,9 @@ $(document).on('ready', function(){
     dots: false,
     infinite: true,
     slidesToShow: 1,
-    fade: true,
+    fade: false,
     cssEase: 'linear',
+    speed: 100,
     nextArrow: '#social-share__next',
     prevArrow: '#social-share__prev',
     responsive: [
@@ -132,6 +137,70 @@ $(document).on('ready', function(){
       },
     ]
   });
+
+  $('.journey-carousel').slick({
+    mobileFirst: true,
+    arrows: false,
+    dots: true,
+    slidesToShow: 1,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    responsive: [
+      {
+        breakpoint: 576,
+        settings: {
+          slidesToShow: 2
+        }
+      },
+      {
+        breakpoint: 900,
+        settings: {
+          slidesToShow: 3
+        }
+      },
+      {
+        breakpoint: 1200,
+        settings: {
+          arrows: false,
+          dots: false,
+          slidesToShow: 3
+        }
+      }
+    ]
+  });
+
+  // Form
+  $('#donations__input').on('click', function(){
+    var _this = $(this);
+    $('#donations__row input:checked').prop('checked', false);
+    _this.val('');
+  })
+  $('#donations__input').on('blur', function(){
+    var _this = $(this);
+    _this.val('2 000 000')
+  });
+
+  // Form 
+  $('#active-form-button').on('click', function(){
+    $(this).hide();
+    $('#active-form-block').removeClass('d-none');
+  });
+
+  // Reservation
+  $('.reserv-block__block img').on('click', function(e){
+    if (!$(this).parent().hasClass('is-leading')) {
+      $.magnificPopup.open({
+        items: {
+          src: '#reservation'
+        },
+        type: 'inline',
+        showCloseBtn: false
+      });
+      
+      $(this).parent().addClass('is-busy');
+      $(this).parent().find('.reserv-block__block-title span').text('Наталья К.');
+    }
+  })
 
   mobileNav();
   navBtnScroll();
@@ -230,7 +299,8 @@ function mobileNav() {
   var nav = $('.navigation');
   var body = $('body');
 
-  btn.on('click', function() {
+  btn.on('click', function(e) {
+    e.stopPropagation();
     var _this = $(this);
     if (nav.hasClass('is-active')) {
       nav.removeClass('is-active');
@@ -240,6 +310,18 @@ function mobileNav() {
       nav.addClass('is-active');
       _this.addClass('is-active');
       body.attr('style', 'overflow: hidden')
+    }
+  });
+
+  nav.on('click', function(e){
+    e.stopPropagation();
+  });
+
+  $(document).on('click', function(){
+    if (nav.hasClass('is-active') && width <= 1439) {
+      nav.removeClass('is-active');
+      btn.removeClass('is-active');
+      body.removeAttr('style');
     }
   })
 }

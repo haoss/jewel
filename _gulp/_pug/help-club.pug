@@ -63,7 +63,7 @@ html(lang="ru")
                   .col-lg-6
                     form(action="#!" autocomplete="off").form
                       .donations
-                        .donations__row
+                        .donations__row#donations__row
                           div
                             label.donations__label
                               input(type="radio" name="donations" value="500" checked)
@@ -106,7 +106,7 @@ html(lang="ru")
                                 span.donations__input-span Введите свою сумму
                               div
                                 .donations__input-input
-                                  input(type="text" value="2 000 000")
+                                  input#donations__input(type="text" value="2 000 000")
                                   i.icon-rouble
 
                       label.form__group.has-icon

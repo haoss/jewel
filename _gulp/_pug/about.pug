@@ -87,175 +87,177 @@ html(lang="ru")
                       .content__form-content.fs14
                         p Все поля обязательны для заполнения.
                     .col.col-md-auto
-                      a(href="#!").btn.mb45.ttX-18px.float-lg-right
+                      button#active-form-button(type="button").btn.float-right
                         span заполнить анкету
-                  .row
-                    .col-md-6 &nbsp;
-                    .col-md-6
-                      fieldset
-                        label.form__group.has-icon
-                          .form__label.j-label Фамилия и Имя
-                            sup *
-                          input.form__control.j-input(type="text" name="text" placeholder="" value="")
-                          img(src="./images/icon-form-user.svg", alt="").icon-img
-                        label.form__group.has-icon
-                          .form__label.j-label Дата рождения
-                            sup *
-                          input.form__control.j-input.j-mask-date(type="text" name="text" placeholder="" value="")
-                          img(src="./images/icon-form-event.svg", alt="").icon-img
-                        label.form__group.has-icon
-                          .form__label.j-label E-mail
-                            sup *
-                          input.form__control.j-input(type="text" name="text" placeholder="" value="")
-                          img(src="./images/icon-form-mail.svg", alt="").icon-img
-                        label.form__group.has-icon.mb55
-                          .form__label.j-label Город проживания
-                            sup *
-                          input.form__control.j-input(type="text" name="text" placeholder="" value="")
-                          img(src="./images/icon-form-valentines-day.svg", alt="").icon-img
-                  .row
-                    .col-md-6
-                      .content__row-head.content__row-head--xs-question
-                        .h2.fs19.mb20 Что тебе мешает посещать JEWELL чаще?
-                    .col-md-6
-                      fieldset
-                        .form__group.mb10
-                          label.form__radio
-                            input(type="radio" name="about-radio-1")
-                            span.form__radio-input
-                            span.form__radio-label Работа/Учёба 
-                        .form__group.mb10
-                          label.form__radio
-                            input(type="radio" name="about-radio-1")
-                            span.form__radio-input
-                            span.form__radio-label Расстояние
-                        .form__group.mb10
-                          label.form__radio
-                            input(type="radio" name="about-radio-1")
-                            span.form__radio-input
-                            span.form__radio-label Нет знакомых (не с кем пойти)
-                        .form__group.mb10
-                          label.form__radio
-                            input(type="radio" name="about-radio-1")
-                            span.form__radio-input
-                            span.form__radio-label Неинформированность
-                        .form__group.mb60
-                          label.form__radio
-                            input(type="radio" name="about-radio-1")
-                            span.form__radio-input
-                            span.form__radio-label Незаинтересованность в проводимых мероприятиях
-                  .row
-                    .col-md-6
-                      .content__row-head.content__row-head--xs-question
-                        .h2.fs19.mb20 Какие мероприятия ты посещал бы с большим удовольствием: 
-                    .col-md-6
-                      fieldset
-                        .form__group.mb10
-                          label.form__radio
-                            input(type="radio" name="about-radio-2")
-                            span.form__radio-input
-                            span.form__radio-label Развлекательные
-                        .form__group.mb10
-                          label.form__radio
-                            input(type="radio" name="about-radio-2")
-                            span.form__radio-input
-                            span.form__radio-label Учебные
-                        .form__group.mb10
-                          label.form__radio
-                            input(type="radio" name="about-radio-2")
-                            span.form__radio-input
-                            span.form__radio-label Спортивные
-                        .form__group.mb10
-                          label.form__radio
-                            input(type="radio" name="about-radio-2")
-                            span.form__radio-input
-                            span.form__radio-label Знакомства
-                        .form__group.mb10
-                          label.form__radio
-                            input(type="radio" name="about-radio-2")
-                            span.form__radio-input
-                            span.form__radio-label Интеллектуальные
-                        .form__group.mb60
-                          label.form__radio
-                            input(type="radio" name="about-radio-2")
-                            span.form__radio-input
-                            span.form__radio-label Бизнес встречи 
-                  .row
-                    .col-md-6
-                      .content__row-head.content__row-head--xs-question
-                        .h2.fs19.mb20 В каких из перечисленных проектах ты участвовал ранее?
-                    .col-md-6
-                      fieldset
-                        .form__group.mb10
-                          label.form__radio
-                            input(type="radio" name="about-radio-3")
-                            span.form__radio-input
-                            span.form__radio-label TAGLIT 
-                        .form__group.mb10
-                          label.form__radio
-                            input(type="radio" name="about-radio-3")
-                            span.form__radio-input
-                            span.form__radio-label STARS
-                        .form__group.mb10
-                          label.form__radio
-                            input(type="radio" name="about-radio-3")
-                            span.form__radio-input
-                            span.form__radio-label MASA
-                        .form__group.mb60
-                          label.form__radio
-                            input(type="radio" name="about-radio-3")
-                            span.form__radio-input
-                            span.form__radio-label не участвовал
-                  .row
-                    .col-md-6
-                      .content__row-head.content__row-head--xs-question
-                        .h2.fs18.mb20 Евреи в твоей семье?
-                    .col-md-6
-                      fieldset
-                        .form__group.mb12
-                          label.form__radio
-                            input(type="radio" name="about-radio-4" checked)
-                            span.form__radio-input
-                            span.form__radio-label Бабушка по материнской линии
-                        .form__group.mb12
-                          label.form__radio
-                            input(type="radio" name="about-radio-4")
-                            span.form__radio-input
-                            span.form__radio-label Дедушка по материнской линии
-                        .form__group.mb12
-                          label.form__radio
-                            input(type="radio" name="about-radio-4")
-                            span.form__radio-input
-                            span.form__radio-label Бабушка по отцовской линии
-                        .form__group.mb12
-                          label.form__radio
-                            input(type="radio" name="about-radio-4")
-                            span.form__radio-input
-                            span.form__radio-label Дедушка по отцовской линии
-                        .form__group.mb12
-                          label.form__radio
-                            input(type="radio" name="about-radio-4")
-                            span.form__radio-input
-                            span.form__radio-label Может кто-то и есть но я не знаю(  
-                        .form__group.mb35
-                          label.form__radio
-                            input(type="radio" name="about-radio-4")
-                            span.form__radio-input
-                            span.form__radio-label Я прошел\а Гиюр
-                  .row
-                    .col-md-6
-                      .content__row-head.content__row-head--xs-question
-                        .h2.fs18.mb20 Не возражаешь ли ты получать смс - уведомления о наших мероприятиях (не чаше 1-2 раза в неделю), если ты не против - оставь свой мобильный номер?
-                    .col-md-6
-                      label.form__group.has-icon
-                        .form__label.j-label Телефон
-                          sup *
-                        input.form__control.j-input(type="text" name="text" placeholder="" value="")
-                        img(src="./images/icon-form-phone.svg", alt="").icon-img
 
-                  .text-center
-                    button(type="button").btn.btn--big.mb0.ttX-18px
-                      span выслать анкету
+                  div#active-form-block.d-none
+                    .row
+                      .col-md-6 &nbsp;
+                      .col-md-6
+                        fieldset
+                          label.form__group.has-icon
+                            .form__label.j-label Фамилия и Имя
+                              sup *
+                            input.form__control.j-input(type="text" name="text" placeholder="" value="")
+                            img(src="./images/icon-form-user.svg", alt="").icon-img
+                          label.form__group.has-icon
+                            .form__label.j-label Дата рождения
+                              sup *
+                            input.form__control.j-input.j-mask-date(type="text" name="text" placeholder="" value="")
+                            img(src="./images/icon-form-event.svg", alt="").icon-img
+                          label.form__group.has-icon
+                            .form__label.j-label E-mail
+                              sup *
+                            input.form__control.j-input(type="text" name="text" placeholder="" value="")
+                            img(src="./images/icon-form-mail.svg", alt="").icon-img
+                          label.form__group.has-icon.mb55
+                            .form__label.j-label Город проживания
+                              sup *
+                            input.form__control.j-input(type="text" name="text" placeholder="" value="")
+                            img(src="./images/icon-form-valentines-day.svg", alt="").icon-img
+                    .row
+                      .col-md-6
+                        .content__row-head.content__row-head--xs-question
+                          .h2.fs19.mb20 Что тебе мешает посещать JEWELL чаще?
+                      .col-md-6
+                        fieldset
+                          .form__group.mb10
+                            label.form__checkbox
+                              input(type="checkbox" checked)
+                              span.form__checkbox-input
+                              span.form__checkbox-label Работа/Учёба 
+                          .form__group.mb10
+                            label.form__checkbox
+                              input(type="checkbox")
+                              span.form__checkbox-input
+                              span.form__checkbox-label Расстояние
+                          .form__group.mb10
+                            label.form__checkbox
+                              input(type="checkbox")
+                              span.form__checkbox-input
+                              span.form__checkbox-label Нет знакомых (не с кем пойти)
+                          .form__group.mb10
+                            label.form__checkbox
+                              input(type="checkbox")
+                              span.form__checkbox-input
+                              span.form__checkbox-label Неинформированность
+                          .form__group.mb60
+                            label.form__checkbox
+                              input(type="checkbox")
+                              span.form__checkbox-input
+                              span.form__checkbox-label Незаинтересованность в проводимых мероприятиях
+                    .row
+                      .col-md-6
+                        .content__row-head.content__row-head--xs-question
+                          .h2.fs19.mb20 Какие мероприятия ты посещал бы с большим удовольствием: 
+                      .col-md-6
+                        fieldset
+                          .form__group.mb10
+                            label.form__checkbox
+                              input(type="checkbox" checked)
+                              span.form__checkbox-input
+                              span.form__checkbox-label Развлекательные
+                          .form__group.mb10
+                            label.form__checkbox
+                              input(type="checkbox")
+                              span.form__checkbox-input
+                              span.form__checkbox-label Учебные
+                          .form__group.mb10
+                            label.form__checkbox
+                              input(type="checkbox")
+                              span.form__checkbox-input
+                              span.form__checkbox-label Спортивные
+                          .form__group.mb10
+                            label.form__checkbox
+                              input(type="checkbox")
+                              span.form__checkbox-input
+                              span.form__checkbox-label Знакомства
+                          .form__group.mb10
+                            label.form__checkbox
+                              input(type="checkbox")
+                              span.form__checkbox-input
+                              span.form__checkbox-label Интеллектуальные
+                          .form__group.mb60
+                            label.form__checkbox
+                              input(type="checkbox")
+                              span.form__checkbox-input
+                              span.form__checkbox-label Бизнес встречи 
+                    .row
+                      .col-md-6
+                        .content__row-head.content__row-head--xs-question
+                          .h2.fs19.mb20 В каких из перечисленных проектах ты участвовал ранее?
+                      .col-md-6
+                        fieldset
+                          .form__group.mb10
+                            label.form__checkbox
+                              input(type="checkbox" checked)
+                              span.form__checkbox-input
+                              span.form__checkbox-label TAGLIT 
+                          .form__group.mb10
+                            label.form__checkbox
+                              input(type="checkbox")
+                              span.form__checkbox-input
+                              span.form__checkbox-label STARS
+                          .form__group.mb10
+                            label.form__checkbox
+                              input(type="checkbox")
+                              span.form__checkbox-input
+                              span.form__checkbox-label MASA
+                          .form__group.mb60
+                            label.form__checkbox
+                              input(type="checkbox")
+                              span.form__checkbox-input
+                              span.form__checkbox-label не участвовал
+                    .row
+                      .col-md-6
+                        .content__row-head.content__row-head--xs-question
+                          .h2.fs18.mb20 Евреи в твоей семье?
+                      .col-md-6
+                        fieldset
+                          .form__group.mb12
+                            label.form__checkbox
+                              input(type="checkbox" checked)
+                              span.form__checkbox-input
+                              span.form__checkbox-label Бабушка по материнской линии
+                          .form__group.mb12
+                            label.form__checkbox
+                              input(type="checkbox")
+                              span.form__checkbox-input
+                              span.form__checkbox-label Дедушка по материнской линии
+                          .form__group.mb12
+                            label.form__checkbox
+                              input(type="checkbox")
+                              span.form__checkbox-input
+                              span.form__checkbox-label Бабушка по отцовской линии
+                          .form__group.mb12
+                            label.form__checkbox
+                              input(type="checkbox")
+                              span.form__checkbox-input
+                              span.form__checkbox-label Дедушка по отцовской линии
+                          .form__group.mb12
+                            label.form__checkbox
+                              input(type="checkbox")
+                              span.form__checkbox-input
+                              span.form__checkbox-label Может кто-то и есть но я не знаю(  
+                          .form__group.mb35
+                            label.form__checkbox
+                              input(type="checkbox")
+                              span.form__checkbox-input
+                              span.form__checkbox-label Я прошел\а Гиюр
+                    .row
+                      .col-md-6
+                        .content__row-head.content__row-head--xs-question
+                          .h2.fs18.mb20 Не возражаешь ли ты получать смс - уведомления о наших мероприятиях (не чаше 1-2 раза в неделю), если ты не против - оставь свой мобильный номер?
+                      .col-md-6
+                        label.form__group.has-icon
+                          .form__label.j-label Телефон
+                            sup *
+                          input.form__control.j-input(type="text" name="text" placeholder="" value="")
+                          img(src="./images/icon-form-phone.svg", alt="").icon-img
+
+                    .text-center
+                      button(type="button").btn.btn--big.mb0.ttX-18px
+                        span выслать анкету
 
               // Our command
               .our-command

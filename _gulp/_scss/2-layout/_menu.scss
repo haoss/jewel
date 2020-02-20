@@ -148,7 +148,7 @@
     margin-left: -10px;
     transform: translateY(0);
     @media (min-width: 1440px) {
-      margin-left: 21px;
+      margin-left: 21px !important;
     }
     p {
       margin-bottom: 8px;

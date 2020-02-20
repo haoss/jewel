@@ -1,166 +1,24 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg
-   xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="65"
-   height="44.051529"
-   viewBox="0 0 64.999998 44.051529"
-   version="1.1"
-   id="svg44"
-   sodipodi:docname="reservation-speaking.svg"
-   inkscape:version="0.92.4 (f8dce91, 2019-08-02)">
-  <metadata
-     id="metadata50">
-    <rdf:RDF>
-      <cc:Work
-         rdf:about="">
-        <dc:format>image/svg+xml</dc:format>
-        <dc:type
-           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
-      </cc:Work>
-    </rdf:RDF>
-  </metadata>
-  <defs
-     id="defs48" />
-  <sodipodi:namedview
-     pagecolor="#ffffff"
-     bordercolor="#666666"
-     borderopacity="1"
-     objecttolerance="10"
-     gridtolerance="10"
-     guidetolerance="10"
-     inkscape:pageopacity="0"
-     inkscape:pageshadow="2"
-     inkscape:window-width="1920"
-     inkscape:window-height="1135"
-     id="namedview46"
-     showgrid="false"
-     fit-margin-top="0"
-     fit-margin-left="0"
-     fit-margin-right="0"
-     fit-margin-bottom="0"
-     inkscape:zoom="3.8688525"
-     inkscape:cx="45.004002"
-     inkscape:cy="30.499844"
-     inkscape:window-x="0"
-     inkscape:window-y="0"
-     inkscape:window-maximized="1"
-     inkscape:current-layer="svg44" />
-  <g
-     data-name="Group 129"
-     id="g42"
-     transform="matrix(0.72215803,0,0,0.72215803,0,2.4001776e-6)">
-    <g
-       id="g20">
-      <path
-         d="m 34.483,18.939 a 1.74,1.74 0 0 1 -1.74,-1.74 V 0 h -6.088 v 17.2 a 1.74,1.74 0 0 1 -1.74,1.74 H 0 v 6.089 h 24.914 a 1.74,1.74 0 0 1 1.74,1.74 v 17.193 h 6.089 V 26.768 a 1.74,1.74 0 0 1 1.74,-1.74 H 59.4 v -6.089 z m 0,0"
-         data-name="Path 248"
-         id="path2"
-         inkscape:connector-curvature="0" />
-      <path
-         d="M 36.223,13 49.081,0.142 A 12.2,12.2 0 0 0 47.216,0 H 36.223 Z m 0,0"
-         data-name="Path 249"
-         id="path4"
-         inkscape:connector-curvature="0" />
-      <path
-         d="M 38.684,15.459 H 59.397 V 12.181 A 12.194,12.194 0 0 0 52.79,1.352 Z m 0,0"
-         data-name="Path 250"
-         id="path6"
-         inkscape:connector-curvature="0" />
-      <path
-         d="M 38.678,28.508 52.753,42.63 a 12.2,12.2 0 0 0 6.646,-10.849 v -3.273 z m 0,0"
-         data-name="Path 251"
-         id="path8"
-         inkscape:connector-curvature="0" />
-      <path
-         d="M 23.173,13 V 0 H 12.181 a 12.2,12.2 0 0 0 -1.863,0.142 z m 0,0"
-         data-name="Path 252"
-         id="path10"
-         inkscape:connector-curvature="0" />
-      <path
-         d="m 36.223,30.976 v 12.986 h 10.993 a 12.225,12.225 0 0 0 1.816,-0.135 z m 0,0"
-         data-name="Path 253"
-         id="path12"
-         inkscape:connector-curvature="0" />
-      <path
-         d="M 20.713,15.459 6.607,1.352 A 12.194,12.194 0 0 0 0,12.181 v 3.277 z m 0,0"
-         data-name="Path 254"
-         id="path14"
-         inkscape:connector-curvature="0" />
-      <path
-         d="M 20.713,28.508 H 0 v 3.273 a 12.194,12.194 0 0 0 6.61,10.831 z m 0,0"
-         data-name="Path 255"
-         id="path16"
-         inkscape:connector-curvature="0" />
-      <path
-         d="M 23.174,30.969 10.322,43.82 a 12.26,12.26 0 0 0 1.858,0.141 h 1.808 l 4.237,5.375 a 1.74,1.74 0 0 0 2.734,0 l 2.215,-2.81 z m 0,0"
-         data-name="Path 256"
-         id="path18"
-         inkscape:connector-curvature="0" />
-    </g>
-    <g
-       data-name="english-language"
-       id="g40">
-      <path
-         d="m 15.1,11.481 a 1.055,1.055 0 0 0 1.055,-1.055 V 0 h 3.691 V 10.426 A 1.055,1.055 0 0 0 20.9,11.481 H 36 v 3.691 H 20.9 a 1.055,1.055 0 0 0 -1.055,1.055 V 26.65 H 16.158 V 16.227 A 1.055,1.055 0 0 0 15.1,15.172 H 0 v -3.691 z m 0,0"
-         data-name="Path 248"
-         transform="translate(54,30.689)"
-         id="path22"
-         inkscape:connector-curvature="0" />
-      <path
-         d="M 14.048,7.879 6.255,0.086 A 7.394,7.394 0 0 1 7.384,0 h 6.664 z m 0,0"
-         data-name="Path 249"
-         transform="translate(54,30.689)"
-         id="path24"
-         inkscape:connector-curvature="0" />
-      <path
-         d="M 12.557,9.372 H 0 V 7.385 A 7.392,7.392 0 0 1 4.005,0.82 Z m 0,0"
-         data-name="Path 250"
-         transform="translate(54,30.689)"
-         id="path26"
-         inkscape:connector-curvature="0" />
-      <path
-         d="m 12.56,17.281 -8.532,8.561 a 7.393,7.393 0 0 1 -4.029,-6.577 v -1.984 z m 0,0"
-         data-name="Path 251"
-         transform="translate(54,30.689)"
-         id="path28"
-         inkscape:connector-curvature="0" />
-      <path
-         d="M 21.959,7.879 V 0 h 6.664 a 7.393,7.393 0 0 1 1.129,0.086 z m 0,0"
-         data-name="Path 252"
-         transform="translate(54,30.689)"
-         id="path30"
-         inkscape:connector-curvature="0" />
-      <path
-         d="M 14.048,18.778 V 26.65 H 7.384 a 7.408,7.408 0 0 1 -1.1,-0.082 z m 0,0"
-         data-name="Path 253"
-         transform="translate(54,30.689)"
-         id="path32"
-         inkscape:connector-curvature="0" />
-      <path
-         d="m 23.451,9.372 8.552,-8.551 a 7.392,7.392 0 0 1 4.005,6.565 v 1.987 z m 0,0"
-         data-name="Path 254"
-         transform="translate(54,30.689)"
-         id="path34"
-         inkscape:connector-curvature="0" />
-      <path
-         d="m 23.451,17.281 h 12.557 v 1.984 a 7.392,7.392 0 0 1 -4.007,6.566 z m 0,0"
-         data-name="Path 255"
-         transform="translate(54,30.689)"
-         id="path36"
-         inkscape:connector-curvature="0" />
-      <path
-         d="m 21.959,18.774 7.791,7.791 a 7.431,7.431 0 0 1 -1.127,0.086 h -1.1 l -2.568,3.258 a 1.055,1.055 0 0 1 -1.657,0 l -1.343,-1.7 z m 0,0"
-         data-name="Path 256"
-         transform="translate(54,30.689)"
-         id="path38"
-         inkscape:connector-curvature="0" />
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 65.999998 57">
+  <g data-name="Group 129">
+    <path d="M25.28528562 20.1581235a1.27588658 1.27588658 0 01-1.27588658-1.27588659V6.270758h-4.4641365v12.61221218a1.27588658 1.27588658 0 01-1.27588658 1.27588658H0v4.46486977h18.26864269a1.27588658 1.27588658 0 011.27588658 1.27588658v12.6070793h4.46486977V25.89887984a1.27588658 1.27588658 0 011.27588658-1.27588658H43.5561281v-4.46486977zm0 0" data-name="Path 248"/>
+    <path d="M26.5611722 15.80324395l9.42836187-9.42836187a8.94587143 8.94587143 0 00-1.3675451-.10412408H26.5611722zm0 0" data-name="Path 249"/>
+    <path d="M28.36574511 17.60635033h15.1881832v-2.403653a8.94147182 8.94147182 0 00-4.84470267-7.9405608zm0 0" data-name="Path 250"/>
+    <path d="M28.3613455 27.17476642l10.32074922 10.35521281a8.94587143 8.94587143 0 004.87330012-7.95522615v-2.39998666zm0 0" data-name="Path 251"/>
+    <path d="M16.99202284 15.80324395V6.270758h-8.0600835a8.94587143 8.94587143 0 00-1.36607857.10412408zm0 0" data-name="Path 252"/>
+    <path d="M26.5611722 28.98447221v9.5222202h8.06081677a8.96420313 8.96420313 0 001.33161496-.0989912zm0 0" data-name="Path 253"/>
+    <path d="M15.1881832 17.60635033L4.84470266 7.26213653A8.94147182 8.94147182 0 000 15.20269734v2.40291973zm0 0" data-name="Path 254"/>
+    <path d="M15.1881832 27.17476642H0v2.39998666a8.94147182 8.94147182 0 004.84690247 7.94202733zm0 0" data-name="Path 255"/>
+    <path d="M16.9927561 28.97933934l-9.42396226 9.423229a8.98986752 8.98986752 0 001.36241223.1033908h1.32574881l3.10685715 3.9413163a1.27588658 1.27588658 0 002.00475513 0l1.62418895-2.0604835zm0 0" data-name="Path 256"/>
+    <g data-name="english-language">
+      <path d="M50.66882916 37.19267589a.7735979.7735979 0 00.7735979-.7735979v-7.64505373h2.70649274v7.64505373a.7735979.7735979 0 00.77286464.7735979H65.9941335v2.70649274H54.92178443a.7735979.7735979 0 00-.7735979.7735979v7.64285392h-2.70355966v-7.64285392a.7735979.7735979 0 00-.7757977-.7735979H39.5964801v-2.70649274zm0 0" data-name="Path 248"/>
+      <path d="M49.89743107 34.551444l-5.7143587-5.71435868a5.4217847 5.4217847 0 01.82785975-.06306106h4.88649895zm0 0" data-name="Path 249"/>
+      <path d="M48.80412826 35.64621336H39.5964801v-1.45700382a5.42031816 5.42031816 0 012.93673894-4.8139054zm0 0" data-name="Path 250"/>
+      <path d="M48.80632806 41.44563116l-6.25624385 6.27750863a5.42105143 5.42105143 0 01-2.95433738-4.82270462v-1.45480401zm0 0" data-name="Path 251"/>
+      <path d="M55.6983154 34.551444v-5.77741974h4.88649896a5.42105143 5.42105143 0 01.82785974.06306106zm0 0" data-name="Path 252"/>
+      <path d="M49.89743107 42.54333358v5.77228687h-4.88649895a5.43205046 5.43205046 0 01-.80659497-.06012799zm0 0" data-name="Path 253"/>
+      <path d="M56.79235149 35.64621336l6.27090921-6.27017595a5.42031816 5.42031816 0 012.93673895 4.8139054v1.45700382zm0 0" data-name="Path 254"/>
+      <path d="M56.79235149 41.44563116h9.20764816v1.454804a5.42031816 5.42031816 0 01-2.93820548 4.81463868zm0 0" data-name="Path 255"/>
+      <path d="M55.6983154 42.5404005l5.71289216 5.71289216a5.44891562 5.44891562 0 01-.8263932.06306106h-.80659497l-1.8830326 2.38898763a.7735979.7735979 0 01-1.21502533 0l-.98477913-1.24655585zm0 0" data-name="Path 256"/>
     </g>
   </g>
 </svg>

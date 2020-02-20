@@ -86,35 +86,35 @@
               .h2.fs22.mb20 Евреи в твоей семье?
           .col-lg-6
             .form__group.mb12
-              label.form__radio
-                input(type="radio" name="modal-radio" checked)
-                span.form__radio-input
-                span.form__radio-label Бабушка по материнской линии
+              label.form__checkbox
+                input(type="checkbox" checked)
+                span.form__checkbox-input
+                span.form__checkbox-label Бабушка по материнской линии
             .form__group.mb12
-              label.form__radio
-                input(type="radio" name="modal-radio")
-                span.form__radio-input
-                span.form__radio-label Дедушка по материнской линии
+              label.form__checkbox
+                input(type="checkbox")
+                span.form__checkbox-input
+                span.form__checkbox-label Дедушка по материнской линии
             .form__group.mb12
-              label.form__radio
-                input(type="radio" name="modal-radio")
-                span.form__radio-input
-                span.form__radio-label Бабушка по отцовской линии
+              label.form__checkbox
+                input(type="checkbox")
+                span.form__checkbox-input
+                span.form__checkbox-label Бабушка по отцовской линии
             .form__group.mb12
-              label.form__radio
-                input(type="radio" name="modal-radio")
-                span.form__radio-input
-                span.form__radio-label Дедушка по отцовской линии
+              label.form__checkbox
+                input(type="checkbox")
+                span.form__checkbox-input
+                span.form__checkbox-label Дедушка по отцовской линии
             .form__group.mb12
-              label.form__radio
-                input(type="radio" name="modal-radio")
-                span.form__radio-input
-                span.form__radio-label Может кто-то и есть но я не знаю(  
+              label.form__checkbox
+                input(type="checkbox")
+                span.form__checkbox-input
+                span.form__checkbox-label Может кто-то и есть но я не знаю(  
             .form__group.mb35
-              label.form__radio
-                input(type="radio" name="modal-radio")
-                span.form__radio-input
-                span.form__radio-label Я прошел\а Гиюр
+              label.form__checkbox
+                input(type="checkbox")
+                span.form__checkbox-input
+                span.form__checkbox-label Я прошел\а Гиюр
       fieldset
         .form__group
           label.form__checkbox
@@ -123,9 +123,8 @@
             span.form__checkbox-label.fs12.font-weight-normal Заполняя эту анкету, Вы соглашаетесь с политикой конфиденциальности и даете разрешение на обработку персональных данных. 
               a(href="#!" target="_blank") Политика конфиденциальности.
         .text-center
-          button(type="button").btn.btn--big 
-            span.d-none.d-md-inline-block Забронировать
-            span.d-md-none Бронь
+          button(type="button").btn.btn--big.ttX-14px
+            span Забронировать
     .modal__wrapper-register
       div
         .h2.fs22 Уже зарегистрированные?
@@ -148,8 +147,9 @@
                   input.form__control.j-input(type="text" name="text" placeholder="" value="")
                   img(src="./images/icon-form-lock.svg", alt="").icon-img
               .col.col-sm-auto.text-center.pl-sm-0
-                button(type="button").btn.btn--small.btn--only-arrow
-                  span &nbsp;
+                button(type="button").btn.btn--small
+                  span.d-lg-none Войти
+                  span.d-none.d-lg-inline-block &nbsp;
         .social-enter.modal__social-enter
           div
             a(href="#!").social-enter__btn 

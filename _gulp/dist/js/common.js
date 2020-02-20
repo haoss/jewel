@@ -56,7 +56,7 @@ $(document).on('ready', function(){
   });
 
   $('.j-carousel').slick({
-    arrows: false,
+    arrows: true,
     dots: true,
     autoplay: true,
     autoplaySpeed: 3000,
@@ -110,29 +110,26 @@ $(document).on('ready', function(){
     dots: false,
     infinite: true,
     slidesToShow: 1,
-    fade: false,
+    fade: true,
     cssEase: 'linear',
-    speed: 100,
+    speed: 300,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    pauseOnHover: false,
+    pauseOnDotsHover: false,
     nextArrow: '#social-share__next',
     prevArrow: '#social-share__prev',
     responsive: [
       {
-        breakpoint: 767,
+        breakpoint: 989,
         settings: {
           centerMode: true,
-          slidesToShow: 2,
+          slidesToShow: 1,
           fade: false,
-          centerPadding: '100px',
-        }
-      },
-      {
-        breakpoint: 900,
-        settings: {
-          centerMode: false,
-          slidesToShow: 2,
-          fade: false,
-          centerPadding: '100px',
-          variableWidth: true
+          centerPadding: '20px',
+          variableWidth: true,
+          autoplaySpeed: 4000,
+          speed: 300,
         }
       },
     ]
@@ -227,7 +224,15 @@ $(window).on('load', function() {
 });
 
 $(window).on('scroll', function() { });
-$(window).on('resize', function() { });
+$(window).on('resize', function() {
+  var width = $(window).width();
+  var nav = $('.navigation');
+  if (width >= 1440 && nav.hasClass('is-active')) {
+    $('body').attr('style','');
+  } else if (width <= 1439 && nav.hasClass('is-active')) {
+    $('body').attr('style','overflow: hidden');
+  }
+});
 
 /*
 version 2015-09-23 14:30 GMT +2

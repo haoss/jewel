@@ -1602,7 +1602,7 @@
   &__wrapper {
     display: flex;
     flex-direction: column;
-    @media (min-width: 1200px) {
+    @media (min-width: 1440px) {
       flex-direction: row;
       align-items: center;
     }
@@ -2101,7 +2101,7 @@
     @media (min-width: 990px) {
       padding: 60px 30px 55px 30px;
     }
-    @media (min-width: 1440px) {
+    @media (min-width: 1650px) {
       padding: 65px 70px;
       margin-bottom: 30px;
     }
@@ -2413,7 +2413,7 @@
         font-size: rem(14px);
         white-space: nowrap;
       }
-      @media (min-width: 1400px) {
+      @media (min-width: 1650px) {
         display: block;
         background: none;
         color: $primary-color;

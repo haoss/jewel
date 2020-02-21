@@ -1,4 +1,4 @@
-// @import "node_modules/normalize-scss/sass/_normalize.scss";
+// @import "0-vendor/normalize-scss/sass/_normalize.scss";
 
 $root-font-size: 16px;
 $grid-columns: 12;
@@ -10,51 +10,52 @@ $grid-breakpoints: (
   md: 768px,
   lg: 990px,
   xl: 1200px,
-  xxl: 1400px
+  xxl: 1440px
 );
 
 $container-max-widths: (
   lg: 970px,
-  xl: 1140px
+  xl: 870px,
+  xxl: 1140px
 );
 
-@import "node_modules/bootstrap/scss/functions";
-@import "node_modules/bootstrap/scss/variables";
-@import "node_modules/bootstrap/scss/mixins";
-// @import "node_modules/bootstrap/scss/root";
-@import "node_modules/bootstrap/scss/reboot";
-// @import "node_modules/bootstrap/scss/type";
-@import "node_modules/bootstrap/scss/images";
-// @import "node_modules/bootstrap/scss/code";
-@import "node_modules/bootstrap/scss/grid";
-// @import "node_modules/bootstrap/scss/tables";
-// @import "node_modules/bootstrap/scss/forms";
-// @import "node_modules/bootstrap/scss/buttons";
-// @import "node_modules/bootstrap/scss/transitions";
-// @import "node_modules/bootstrap/scss/dropdown";
-// @import "node_modules/bootstrap/scss/button-group";
-// @import "node_modules/bootstrap/scss/input-group";
-// @import "node_modules/bootstrap/scss/custom-forms";
-// @import "node_modules/bootstrap/scss/nav";
-// @import "node_modules/bootstrap/scss/navbar";
-// @import "node_modules/bootstrap/scss/card";
-// @import "node_modules/bootstrap/scss/breadcrumb";
-// @import "node_modules/bootstrap/scss/pagination";
-// @import "node_modules/bootstrap/scss/badge";
-// @import "node_modules/bootstrap/scss/jumbotron";
-// @import "node_modules/bootstrap/scss/alert";
-// @import "node_modules/bootstrap/scss/progress";
-// @import "node_modules/bootstrap/scss/media";
-// @import "node_modules/bootstrap/scss/list-group";
-// @import "node_modules/bootstrap/scss/close";
-// @import "node_modules/bootstrap/scss/toasts";
-// @import "node_modules/bootstrap/scss/modal";
-// @import "node_modules/bootstrap/scss/tooltip";
-// @import "node_modules/bootstrap/scss/popover";
-// @import "node_modules/bootstrap/scss/carousel";
-// @import "node_modules/bootstrap/scss/spinners";
-@import "node_modules/bootstrap/scss/utilities";
-// @import "node_modules/bootstrap/scss/print";
+@import "0-vendor/bootstrap/scss/functions";
+@import "0-vendor/bootstrap/scss/variables";
+@import "0-vendor/bootstrap/scss/mixins";
+// @import "0-vendor/bootstrap/scss/root";
+@import "0-vendor/bootstrap/scss/reboot";
+// @import "0-vendor/bootstrap/scss/type";
+@import "0-vendor/bootstrap/scss/images";
+// @import "0-vendor/bootstrap/scss/code";
+@import "0-vendor/bootstrap/scss/grid";
+// @import "0-vendor/bootstrap/scss/tables";
+// @import "0-vendor/bootstrap/scss/forms";
+// @import "0-vendor/bootstrap/scss/buttons";
+// @import "0-vendor/bootstrap/scss/transitions";
+// @import "0-vendor/bootstrap/scss/dropdown";
+// @import "0-vendor/bootstrap/scss/button-group";
+// @import "0-vendor/bootstrap/scss/input-group";
+// @import "0-vendor/bootstrap/scss/custom-forms";
+// @import "0-vendor/bootstrap/scss/nav";
+// @import "0-vendor/bootstrap/scss/navbar";
+// @import "0-vendor/bootstrap/scss/card";
+// @import "0-vendor/bootstrap/scss/breadcrumb";
+// @import "0-vendor/bootstrap/scss/pagination";
+// @import "0-vendor/bootstrap/scss/badge";
+// @import "0-vendor/bootstrap/scss/jumbotron";
+// @import "0-vendor/bootstrap/scss/alert";
+// @import "0-vendor/bootstrap/scss/progress";
+// @import "0-vendor/bootstrap/scss/media";
+// @import "0-vendor/bootstrap/scss/list-group";
+// @import "0-vendor/bootstrap/scss/close";
+// @import "0-vendor/bootstrap/scss/toasts";
+// @import "0-vendor/bootstrap/scss/modal";
+// @import "0-vendor/bootstrap/scss/tooltip";
+// @import "0-vendor/bootstrap/scss/popover";
+// @import "0-vendor/bootstrap/scss/carousel";
+// @import "0-vendor/bootstrap/scss/spinners";
+@import "0-vendor/bootstrap/scss/utilities";
+// @import "0-vendor/bootstrap/scss/print";
 
 @import "1-base/_mixin.scss";
 @import "1-base/_variables.scss";

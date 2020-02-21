@@ -100,32 +100,6 @@ $(document).on('ready', function(){
           autoplaySpeed: 4500,
           dots: false
         }
-      },
-      {
-        breakpoint: 1199,
-        settings: {
-          arrows: true,
-          centerMode: true,
-          slidesToShow: 2,
-          centerPadding: '0px',
-          slidesToScroll: 1,
-          autoplay: true,
-          autoplaySpeed: 4500,
-          dots: false
-        }
-      },
-      {
-        breakpoint: 1280,
-        settings: {
-          arrows: true,
-          centerMode: true,
-          slidesToShow: 2,
-          centerPadding: '0px',
-          slidesToScroll: 1,
-          autoplay: true,
-          autoplaySpeed: 4500,
-          dots: false
-        }
       }
     ]
   });

@@ -104,7 +104,7 @@
     @media (min-width: 1200px) {
       width: 220px;
       top: 50px;
-      transform: translate(-50%,0%);
+      transform: translate(calc(-50% + 6px),0);
     }
   }
   &::before {

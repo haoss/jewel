@@ -23,13 +23,13 @@
   left: -276px;
   transform: translateX(0);
   transition: all 0.15s;
-  @media (min-width: 1440px) {
+  @media (min-width: 1200px) {
     width: 290px;
     left: 0;
   }
   &.is-active {
     transform: translateX(276px);
-    @media (min-width: 1440px) {
+    @media (min-width: 1200px) {
       transform: translateX(0);
     }
   }
@@ -41,7 +41,7 @@
     overflow-y: auto;
     height: 100%;
     padding: 31px 0 0 0;
-    @media (min-width: 1440px) {
+    @media (min-width: 1200px) {
       padding-top: 0;
       &::-webkit-scrollbar {
         width: 3px;
@@ -93,7 +93,7 @@
     font-size: rem(12px);
     padding: 0 35px 0 25px;
     line-height: 1.7;
-    @media (min-width: 1440px) {
+    @media (min-width: 1200px) {
       padding-left: 40px;
     }
   }
@@ -101,7 +101,7 @@
     font-size: rem(14px);
     padding: 0 20px 0 25px;
     margin-bottom: 10px;
-    @media (min-width: 1440px) {
+    @media (min-width: 1200px) {
       padding-left: 40px;
     }
     a {
@@ -122,20 +122,20 @@
     margin-bottom: 25px;
     line-height: 1.7;
     font-weight: 500;
-    @media (min-width: 1440px) {
+    @media (min-width: 1200px) {
       padding-left: 40px;
     }
   }
   &__logo {
     display: none;
-    @media (min-width: 1440px) {
+    @media (min-width: 1200px) {
       display: block;
     }
   }
   &__social {
     padding: 0 25px 0 10px;
     margin-bottom: 20px;
-    @media (min-width: 1440px) {
+    @media (min-width: 1200px) {
       padding-left: 25px;
     }
   }
@@ -147,14 +147,14 @@
     margin-top: -112px;
     margin-left: -10px;
     transform: translateY(0);
-    @media (min-width: 1440px) {
+    @media (min-width: 1200px) {
       margin-left: 21px !important;
     }
     p {
       margin-bottom: 8px;
       line-height: 2;
       padding-left: 25px;
-      @media (min-width: 1440px) {
+      @media (min-width: 1200px) {
         padding-left: 20px;
       }
     }
@@ -169,7 +169,7 @@
   padding: 0 35px 0 25px;
   line-height: 1.85;
   margin-bottom: 10px;
-  @media (min-width: 1440px) {
+  @media (min-width: 1200px) {
     padding-left: 40px;
   }
 }
@@ -181,11 +181,11 @@
   padding: 0 75px 0 25px;
   margin-bottom: 25px;
   position: relative;
-  @media (min-width: 1440px) {
+  @media (min-width: 1200px) {
     padding-left: 40px;
   }
   &::before {
-    @media (min-width: 1440px) {
+    @media (min-width: 1200px) {
       content: '';
       width: 290px;
       height: 116px;

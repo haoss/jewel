@@ -10,12 +10,14 @@ $grid-breakpoints: (
   md: 768px,
   lg: 990px,
   xl: 1200px,
-  xxl: 1441px
+  xxl: 1400px,
+  xxxl: 1600px
 );
 
 $container-max-widths: (
-  lg: 989px,
-  xxl: 1140px
+  lg: 970px,
+  xl: 910px,
+  xxxl: 1140px
 );
 
 @import "0-vendor/bootstrap/scss/functions";

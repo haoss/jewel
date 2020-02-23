@@ -202,14 +202,14 @@
         @media (min-width: 990px) {
           clip-path: polygon(50% 0%, 100% 0, 100% 0, calc(100% - 60px) 100%, 0 100%, 0 100%, 60px 0);
         }
-        @media (min-width: 1440px) {
+        @media (min-width: 1600px) {
           clip-path: polygon(50% 0%, 100% 0, 100% 0, calc(100% - 134px) 100%, 0 100%, 0 100%, 134px 0);
         }
       }
       @media (min-width: 990px) {
         margin: 0 -25px;
       }
-      @media (min-width: 1650px) {
+      @media (min-width: 1440px) {
         margin: 0 -85px;
       }
     }
@@ -353,7 +353,7 @@
           @media (min-width: 768px) {
             height: 297px;
           }
-          @media (min-width: 1440px) {
+          @media (min-width: 1600px) {
             height: 377px;
           }
         }
@@ -370,8 +370,6 @@
     }
     @media (min-width: 1440px) {
       padding: 65px 70px;
-    }
-    @media (min-width: 1650px) {
       margin-left: -65px;
       margin-right: -65px;
     }
@@ -492,8 +490,6 @@
       bottom: 0;
       background: #f5fbfd;
       transform: skewX(25deg);
-      @media (min-width: 990px) {
-      }
     }
     p {
       margin-bottom: 8px;
@@ -542,18 +538,17 @@
     @media (min-width: 990px) {
       margin-left: 0;
     }
-    @media (min-width: 1650px) {
+    @media (min-width: 1440px) {
       max-width: inherit;
-      width: 560px;
+      max-width: 560px;
     }
     &>div {
       width: 50%;
-      @media (min-width: 1650px) {
+      @media (min-width: 1440px) {
         width: 33.3%;
       }
       &:last-child {
         width: 100%;
-        
       }
     }
   }
@@ -574,6 +569,9 @@
           @media (min-width: 576px) {
             width: 185px;
           }
+          @media (min-width: 1440px) {
+            width: 100%;
+          }
           &::before {
             background: $color-yellow;
           }
@@ -592,6 +590,9 @@
       @media (min-width: 576px) {
         width: 185px;
         transition: none;
+      }
+      @media (min-width: 1440px) {
+        width: 100%;
       }
       &::before {
         content: '';
@@ -625,7 +626,7 @@
     @media (min-width: 576px) {
       padding-top: 0;
     }
-    @media (min-width: 1650px) {
+    @media (min-width: 1440px) {
       float: right;
     }
     &>div {
@@ -734,13 +735,18 @@
     @media (min-width: 990px) {
       margin-left: 0;
     }
-    @media (min-width: 1650px) {
+    @media (min-width: 1440px) {
       max-width: inherit;
-      width: 560px;
+      max-width: 560px;
+    }
+    &>div {
+      @media (min-width: 1440px) {
+        width: 33.3%;
+      }
     }
   }
   &__label {
-    display: inline-block;
+    display: block;
     margin: 0 0 20px 0;
     font-weight: bold;
     font-size: rem(22px);
@@ -755,6 +761,9 @@
           width: 290px;
           @media (min-width: 576px) {
             width: 185px;
+          }
+          @media (min-width: 1440px) {
+            width: 100%;
           }
           &::before {
             background: $color-yellow;
@@ -775,6 +784,9 @@
       @media (min-width: 576px) {
         width: 185px;
         transition: none;
+      }
+      @media (min-width: 1440px) {
+        width: 100%;
       }
       &::before {
         content: '';
@@ -1602,7 +1614,7 @@
   &__wrapper {
     display: flex;
     flex-direction: column;
-    @media (min-width: 1440px) {
+    @media (min-width: 1600px) {
       flex-direction: row;
       align-items: center;
     }
@@ -2413,7 +2425,7 @@
         font-size: rem(14px);
         white-space: nowrap;
       }
-      @media (min-width: 1650px) {
+      @media (min-width: 1600px) {
         display: block;
         background: none;
         color: $primary-color;

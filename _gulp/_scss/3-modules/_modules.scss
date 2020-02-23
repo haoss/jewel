@@ -269,7 +269,7 @@
       }
     }
     .slick-arrow {
-      display: none;
+      display: none !important;
     }
     &--inside {
       .content__carousel-wrapper {
@@ -295,7 +295,7 @@
           margin-right: 0;
         }
         .slick-arrow {
-          display: block;
+          display: block !important; 
         }
         .slick-prev, .slick-next {
           background: $color-yellow;

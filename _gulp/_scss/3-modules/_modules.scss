@@ -361,7 +361,7 @@
     }
   }
   &__form {
-    border: 2px solid #fff648;
+    border: 2px solid $color-yellow;
     padding: 30px 15px 40px 15px;
     margin: 0 -10px 70px -10px;
     background: $color-white;
@@ -2112,7 +2112,7 @@
 
 .reservation {
   &__wrapper {
-    border: 2px solid #fff648;
+    border: 2px solid $color-yellow;
     padding: 30px 15px 40px 15px;
     margin: 0 -15px 70px -15px;
     background: $color-white;
@@ -2184,7 +2184,7 @@
       z-index: 5;
       &::before {
         content: '!';
-        color: #fff648;
+        color: $color-yellow;
         font-weight: bold;
         font-size: rem(200px);
         line-height: 1;

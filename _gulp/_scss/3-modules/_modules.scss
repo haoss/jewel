@@ -49,7 +49,7 @@
       @media (min-width: 990px) {
         font-size: rem(18px);
       }
-      @media (min-width: 1440px) {
+      @media (min-width: 1400px) {
         margin-bottom: 2px;
       }
     }
@@ -60,7 +60,7 @@
     @media (min-width: 990px) {
       margin-bottom: 25px;
     }
-    @media (min-width: 1440px) {
+    @media (min-width: 1400px) {
       margin-bottom: 40px;
     }
     &--all-project {
@@ -78,7 +78,7 @@
     @media (min-width: 990px) {
       margin-bottom: 50px;
     }
-    @media (min-width: 1440px) {
+    @media (min-width: 1400px) {
       margin-bottom: 45px;
     }
     &-head {
@@ -209,7 +209,7 @@
       @media (min-width: 990px) {
         margin: 0 -25px;
       }
-      @media (min-width: 1440px) {
+      @media (min-width: 1400px) {
         margin: 0 -85px;
       }
     }
@@ -222,7 +222,7 @@
         @media (min-width: 768px) {
           height: 262px;
         }
-        @media (min-width: 1440px) {
+        @media (min-width: 1400px) {
           height: auto;
           width: auto;
           max-width: 100%;
@@ -235,7 +235,7 @@
       @media (min-width: 990px) {
         padding-right: 60px;
       }
-      @media (min-width: 1440px) {
+      @media (min-width: 1400px) {
         padding-right: 135px;
       }
       li {
@@ -256,7 +256,7 @@
           @media (min-width: 990px) {
             height: 4px;
           }
-          @media (min-width: 1440px) {
+          @media (min-width: 1400px) {
             height: 6px;
           }
         }
@@ -285,7 +285,7 @@
             @media (min-width: 990px) {
               height: 294px;
             }
-            @media (min-width: 1440px) {
+            @media (min-width: 1400px) {
               height: auto;
             }
           }
@@ -368,7 +368,7 @@
     @media (min-width: 990px) {
       padding: 60px 30px 55px 30px;
     }
-    @media (min-width: 1440px) {
+    @media (min-width: 1400px) {
       padding: 65px 70px;
       margin-left: -65px;
       margin-right: -65px;
@@ -407,7 +407,7 @@
     @media (min-width: 990px) {
       clip-path: polygon(50% 0%, 100% 0, 100% 0, calc(100% - 60px) 100%, 0 100%, 0 100%, 60px 0);
     }
-    @media (min-width: 1440px) {
+    @media (min-width: 1400px) {
       clip-path: polygon(50% 0%, 100% 0, 100% 0, calc(100% - 134px) 100%, 0 100%, 0 100%, 134px 0);
     }
   }
@@ -544,13 +544,13 @@
     @media (min-width: 990px) {
       margin-left: 0;
     }
-    @media (min-width: 1440px) {
+    @media (min-width: 1400px) {
       max-width: inherit;
       max-width: 560px;
     }
     &>div {
       width: 50%;
-      @media (min-width: 1440px) {
+      @media (min-width: 1400px) {
         width: 33.3%;
       }
       &:last-child {
@@ -575,7 +575,7 @@
           @media (min-width: 576px) {
             width: 185px;
           }
-          @media (min-width: 1440px) {
+          @media (min-width: 1400px) {
             width: 100%;
           }
           &::before {
@@ -597,7 +597,7 @@
         width: 185px;
         transition: none;
       }
-      @media (min-width: 1440px) {
+      @media (min-width: 1400px) {
         width: 100%;
       }
       &::before {
@@ -632,7 +632,7 @@
     @media (min-width: 576px) {
       padding-top: 0;
     }
-    @media (min-width: 1440px) {
+    @media (min-width: 1400px) {
       float: right;
     }
     &>div {
@@ -741,12 +741,12 @@
     @media (min-width: 990px) {
       margin-left: 0;
     }
-    @media (min-width: 1440px) {
+    @media (min-width: 1400px) {
       max-width: inherit;
       max-width: 560px;
     }
     &>div {
-      @media (min-width: 1440px) {
+      @media (min-width: 1400px) {
         width: 33.3%;
       }
     }
@@ -768,7 +768,7 @@
           @media (min-width: 576px) {
             width: 185px;
           }
-          @media (min-width: 1440px) {
+          @media (min-width: 1400px) {
             width: 100%;
           }
           &::before {
@@ -791,7 +791,7 @@
         width: 185px;
         transition: none;
       }
-      @media (min-width: 1440px) {
+      @media (min-width: 1400px) {
         width: 100%;
       }
       &::before {
